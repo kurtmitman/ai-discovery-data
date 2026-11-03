@@ -38,6 +38,7 @@ OPEN_PROBLEM_SLUGS = {
 }
 INDEX_GROUP_ORDER = (
     "vulnerabilities",
+    "harm and cost",
     "open problems",
     "mathematical bounds and records",
     "algorithms",
@@ -85,6 +86,11 @@ THUMB_WIDTH = 400
 DETAIL_WRAP = 46
 
 def index_group(problem: Problem) -> str:
+    # Harm series share the vulnerabilities domain but count consequences, not
+    # discoveries, so they get their own block rather than sitting among the
+    # disclosure counts they are read against.
+    if problem.fields.get("Role") == "context: harm":
+        return "harm and cost"
     if problem.slug in OPEN_PROBLEM_SLUGS:
         return "open problems"
     if problem.domain == "mathematics" or problem.slug == "matrix-omega":

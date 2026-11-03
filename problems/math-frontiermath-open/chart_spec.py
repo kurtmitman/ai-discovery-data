@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from lib.vega import (  # noqa: E402
     AI,
+    AI_SOFT,
     HUMAN,
     NEUTRAL,
     load,
@@ -57,8 +58,8 @@ def charts(slug: str):
               ("date", "temporal", "date"),
               ("system", "nominal", "system"),
               ("note", "nominal", "note")],
-        color=("status", {"solved_ai": AI, "solved_human": HUMAN,
-                          "unsolved": NEUTRAL}),
+        color=("status", {"solved_ai": AI, "solved_human_ai": AI_SOFT,
+                          "solved_human": HUMAN, "unsolved": NEUTRAL}),
         href=True,
         height=max(220, 16 * len(values)),
     )

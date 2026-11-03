@@ -1989,7 +1989,7 @@ CVE-2026-74946,2026,2026-Q3,2026-08-18,High,other,locust1b
 CVE-2026-74947,2026,2026-Q3,2026-08-18,High,other,navapon
 CVE-2026-74948,2026,2026-Q3,2026-08-18,High,other,Yaqoub Aldurayhim
 CVE-2026-74949,2026,2026-Q3,2026-08-18,High,other,r00tdaddy
-CVE-2026-74950,2026,2026-Q3,2026-08-18,Moderate,other,Frederik Braun
+CVE-2026-74950,2026,2026-Q3,2026-08-18,Moderate,other,Trend Micro's Zero Day Initiative | Frederik Braun
 CVE-2026-74951,2026,2026-Q3,2026-08-18,Moderate,other,Hafiizh
 CVE-2026-74952,2026,2026-Q3,2026-08-18,Moderate,other,Tomoya Nakanishi
 CVE-2026-74953,2026,2026-Q3,2026-08-18,Moderate,other,Satoki Tsuji
@@ -2095,7 +2095,7 @@ CVE-2026-92029,2026,2026-Q3,2026-09-15,High,other,Mozilla
 CVE-2026-92030,2026,2026-Q3,2026-09-15,Moderate,other,anas cherni
 CVE-2026-92031,2026,2026-Q3,2026-09-15,Moderate,other,Qi Qin
 CVE-2026-92032,2026,2026-Q3,2026-09-15,Moderate,other,Mozilla
-CVE-2026-92033,2026,2026-Q3,2026-09-15,High,other,Steven Julian
+CVE-2026-92033,2026,2026-Q3,2026-09-15,Moderate,other,Steven Julian
 CVE-2026-92034,2026,2026-Q3,2026-09-15,High,other,Steven Julian
 CVE-2026-92035,2026,2026-Q3,2026-09-15,High,other,Mozilla
 CVE-2026-92036,2026,2026-Q3,2026-09-15,High,other,Mozilla
@@ -2145,3 +2145,350 @@ CVE-2026-92079,2026,2026-Q3,2026-09-15,Low,other,barbarossa404
 CVE-2026-92238,2026,2026-Q3,2026-09-15,Unrated,other,"Ramesh Adhikari, Dr. Faruk Kazi (CoE-CNDS Lab, VJTI, Mumbai, India)"
 CVE-2026-92239,2026,2026-Q3,2026-09-15,Unrated,other,"Ramesh Adhikari, Dr. Faruk Kazi (CoE-CNDS Lab, VJTI, Mumbai, India)"
 CVE-2026-92240,2026,2026-Q3,2026-09-15,Low,other,Ahmed Albalawi
+CVE-2026-100756,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100757,2026,2026-Q3,2026-09-29,High,other,Mohamed Mbarek
+CVE-2026-100758,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100759,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100760,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100761,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100762,2026,2026-Q3,2026-09-29,High,other,Yaqoub Aldurayhim
+CVE-2026-100763,2026,2026-Q3,2026-09-29,High,other,Shaheen Fazim
+CVE-2026-100764,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100765,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100766,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100767,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100768,2026,2026-Q3,2026-09-29,High,other,Yaqoub Aldurayhim
+CVE-2026-100769,2026,2026-Q3,2026-09-29,High,other,Tomer Fichman
+CVE-2026-100770,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100771,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100772,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100773,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100774,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100775,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100776,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100777,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100778,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100779,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100780,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100781,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100782,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100783,2026,2026-Q3,2026-09-29,High,other,5up3rh3i
+CVE-2026-100784,2026,2026-Q3,2026-09-29,High,other,5up3rh3i
+CVE-2026-100785,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100786,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100787,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100788,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100789,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100790,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100791,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-100792,2026,2026-Q3,2026-09-29,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-100793,2026,2026-Q3,2026-09-29,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-100794,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100795,2026,2026-Q3,2026-09-29,Moderate,other,Rintaro Kobayashi
+CVE-2026-100796,2026,2026-Q3,2026-09-29,Moderate,other,"SecBuddyF, Tencent KeenLab (CodeBuddy Security)"
+CVE-2026-100797,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100798,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100799,2026,2026-Q3,2026-09-29,Moderate,other,5up3rh3i
+CVE-2026-100800,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100801,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100802,2026,2026-Q3,2026-09-29,Moderate,other,5up3rh3i
+CVE-2026-100803,2026,2026-Q3,2026-09-29,Moderate,other,Yaqoub Aldurayhim
+CVE-2026-100804,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100805,2026,2026-Q3,2026-09-29,Moderate,other,Hyeonjun Ahn
+CVE-2026-100806,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100807,2026,2026-Q3,2026-09-29,Moderate,other,Khanh Nguyen
+CVE-2026-100808,2026,2026-Q3,2026-09-29,Moderate,other,WinD39
+CVE-2026-100809,2026,2026-Q3,2026-09-29,Moderate,other,Finn Westendorf
+CVE-2026-100810,2026,2026-Q3,2026-09-29,Moderate,other,Finn Westendorf
+CVE-2026-100811,2026,2026-Q3,2026-09-29,Moderate,other,Yaqoub Aldurayhim
+CVE-2026-100812,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100813,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100814,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100815,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100816,2026,2026-Q3,2026-09-29,Moderate,other,Rintaro Kawasugi
+CVE-2026-100817,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100818,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100819,2026,2026-Q3,2026-09-29,Moderate,other,Mozilla
+CVE-2026-100820,2026,2026-Q3,2026-09-29,Moderate,other,Tran Quac
+CVE-2026-100821,2026,2026-Q3,2026-09-29,Moderate,other,Nguyen Thanh Nguyen
+CVE-2026-100822,2026,2026-Q3,2026-09-29,Low,other,Tomoya Nakanishi
+CVE-2026-100823,2026,2026-Q3,2026-09-29,Low,other,Abdul Samad
+CVE-2026-100824,2026,2026-Q3,2026-09-29,Low,other,Mozilla
+CVE-2026-100825,2026,2026-Q3,2026-09-29,Low,other,x0e
+CVE-2026-100826,2026,2026-Q3,2026-09-29,Low,other,Mozilla
+CVE-2026-100828,2026,2026-Q3,2026-09-29,Low,other,Rintaro Kawasugi
+CVE-2026-100829,2026,2026-Q3,2026-09-29,Low,other,Rintaro Kawasugi
+CVE-2026-100830,2026,2026-Q3,2026-09-29,Low,other,Finn Westendorf
+CVE-2026-100831,2026,2026-Q3,2026-09-29,Low,other,Mozilla
+CVE-2026-100832,2026,2026-Q3,2026-09-29,High,other,Mozilla
+CVE-2026-96869,2026,2026-Q3,2026-09-29,Moderate,other,Carlo Di Dato
+CVE-2026-103500,2026,2026-Q3,2026-09-30,Low,other,Ahmed Albalawi <ahmedalbalawij@gmail.com>
+CVE-2026-103417,2026,2026-Q4,2026-10-05,Moderate,other,planctonone
+CVE-2026-103418,2026,2026-Q4,2026-10-05,High,other,Muneaki Nishimura
+CVE-2026-106016,2026,2026-Q4,2026-10-06,Moderate,other,Abdulrahman Alzahrani
+CVE-2026-109704,2026,2026-Q4,2026-10-13,High,other,Noel
+CVE-2026-109705,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109706,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109707,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109708,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109709,2026,2026-Q4,2026-10-13,High,other,Yaqoub Aldurayhim
+CVE-2026-109710,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109711,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109712,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109713,2026,2026-Q4,2026-10-13,High,other,locust1b
+CVE-2026-109714,2026,2026-Q4,2026-10-13,High,other,Irvan Kurniawan
+CVE-2026-109715,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109716,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109717,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109718,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109719,2026,2026-Q4,2026-10-13,High,other,Shu Takahashi  of Velcore Consulting Inc.
+CVE-2026-109720,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109721,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109722,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109723,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109724,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109725,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109726,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109727,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109728,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109729,2026,2026-Q4,2026-10-13,High,other,Tomer Fichman
+CVE-2026-109730,2026,2026-Q4,2026-10-13,High,other,Robert Longson
+CVE-2026-109731,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109732,2026,2026-Q4,2026-10-13,High,other,Mozilla
+CVE-2026-109733,2026,2026-Q4,2026-10-13,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-109734,2026,2026-Q4,2026-10-13,Moderate,other,Mirko Brodesser
+CVE-2026-109735,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109736,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109737,2026,2026-Q4,2026-10-13,Moderate,other,Souma Ohsawa
+CVE-2026-109738,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109739,2026,2026-Q4,2026-10-13,Moderate,other,Tomoya Nakanishi
+CVE-2026-109740,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109741,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109742,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109743,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109744,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109745,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109746,2026,2026-Q4,2026-10-13,Moderate,other,hamayanhamayan
+CVE-2026-109747,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109748,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109749,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109750,2026,2026-Q4,2026-10-13,Moderate,other,cl0und
+CVE-2026-109751,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109752,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109753,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109754,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109755,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109756,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109757,2026,2026-Q4,2026-10-13,Moderate,other,Yaqoub Aldurayhim
+CVE-2026-109759,2026,2026-Q4,2026-10-13,Moderate,other,Myungyong Lee
+CVE-2026-109760,2026,2026-Q4,2026-10-13,Moderate,other,Myungyong Lee
+CVE-2026-109761,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109762,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109763,2026,2026-Q4,2026-10-13,Moderate,other,Riku Bamba
+CVE-2026-109764,2026,2026-Q4,2026-10-13,Moderate,other,HyeonSeung Kim
+CVE-2026-109765,2026,2026-Q4,2026-10-13,Moderate,other,Shu Takahashi  of Velcore Consulting Inc.
+CVE-2026-109766,2026,2026-Q4,2026-10-13,Moderate,other,Souma Ohsawa
+CVE-2026-109767,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-109768,2026,2026-Q4,2026-10-13,Low,other,Mozilla
+CVE-2026-109769,2026,2026-Q4,2026-10-13,Low,other,Mohamed Mbarek
+CVE-2026-109770,2026,2026-Q4,2026-10-13,Low,other,Mozilla
+CVE-2026-109771,2026,2026-Q4,2026-10-13,Low,other,5up3rh3i
+CVE-2026-109772,2026,2026-Q4,2026-10-13,Low,other,Finn Westendorf
+CVE-2026-109773,2026,2026-Q4,2026-10-13,Low,other,Bruno
+CVE-2026-109774,2026,2026-Q4,2026-10-13,Low,other,zx
+CVE-2026-109775,2026,2026-Q4,2026-10-13,Low,other,Shu Takahashi  of Velcore Consulting Inc.
+CVE-2026-109776,2026,2026-Q4,2026-10-13,Low,other,Mozilla
+CVE-2026-109777,2026,2026-Q4,2026-10-13,Low,other,Shu Takahashi  of Velcore Consulting Inc.
+CVE-2026-109778,2026,2026-Q4,2026-10-13,Low,other,Mozilla
+CVE-2026-109779,2026,2026-Q4,2026-10-13,Low,other,Mozilla
+CVE-2026-109780,2026,2026-Q4,2026-10-13,Low,other,Shannon Booth
+CVE-2026-109781,2026,2026-Q4,2026-10-13,Low,other,Nguyen Thanh Nguyen
+CVE-2026-109782,2026,2026-Q4,2026-10-13,Moderate,other,Abdulrahman Alzahrani
+CVE-2026-109783,2026,2026-Q4,2026-10-13,Moderate,other,Mozilla
+CVE-2026-110247,2026,2026-Q4,2026-10-13,Moderate,other,Ahmed Albalawi <ahmedalbalawij@gmail.com>
+CVE-2026-110249,2026,2026-Q4,2026-10-13,Low,other,SuyZ <nguyentuanhung1149@gmail.com>
+CVE-2026-113399,2026,2026-Q4,2026-10-20,High,other,Mozilla
+CVE-2026-113400,2026,2026-Q4,2026-10-20,Moderate,other,Mozilla
+CVE-2026-113401,2026,2026-Q4,2026-10-20,Low,other,Ahmed Hesham
+CVE-2026-113470,2026,2026-Q4,2026-10-20,High,other,Wayne
+CVE-2026-113866,2026,2026-Q4,2026-10-20,High,other,Magnus Melin
+CVE-2026-113867,2026,2026-Q4,2026-10-20,High,other,Magnus Melin
+CVE-2026-113868,2026,2026-Q4,2026-10-20,High,other,Nguyen Tuan Hung (VNU HCM - UIT)
+CVE-2026-113869,2026,2026-Q4,2026-10-20,Moderate,other,Stefan Tatschner
+CVE-2026-116631,2026,2026-Q4,2026-10-26,Low,other,Yuyang Zhou
+CVE-2026-116632,2026,2026-Q4,2026-10-26,Moderate,other,xisigr
+CVE-2026-117860,2026,2026-Q4,2026-10-27,High,other,satyamasd
+CVE-2026-117861,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117862,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117863,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117864,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117865,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117866,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117867,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117868,2026,2026-Q4,2026-10-27,High,other,Yaqoub Aldurayhim
+CVE-2026-117869,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117870,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117871,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117872,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117873,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117874,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117875,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117876,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-117877,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117878,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-117879,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-117880,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117881,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-117882,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-117883,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-117884,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117885,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117886,2026,2026-Q4,2026-10-27,High,other,tsui
+CVE-2026-117887,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117888,2026,2026-Q4,2026-10-27,High,other,Minseong Kim
+CVE-2026-117889,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117890,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117891,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117892,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117893,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117894,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117895,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117896,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117897,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117898,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117899,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117900,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117901,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117902,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117903,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117904,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117905,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117906,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117907,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117908,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117909,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117910,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117911,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117912,2026,2026-Q4,2026-10-27,High,other,Takashi Suzuki
+CVE-2026-117913,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117914,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117915,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117916,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117917,2026,2026-Q4,2026-10-27,High,other,Nguyen Tuan Hung
+CVE-2026-117918,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117919,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117920,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117921,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117922,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117923,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117924,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117925,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117926,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117927,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117928,2026,2026-Q4,2026-10-27,High,other,Minseong Kim
+CVE-2026-117929,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-117930,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117931,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117932,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117933,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117934,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117935,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117936,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117937,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117938,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117939,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117940,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117941,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117942,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117943,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117944,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117945,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117946,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117947,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117948,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117949,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117950,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117951,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117952,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117953,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117954,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-117955,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117956,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117957,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117958,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117959,2026,2026-Q4,2026-10-27,Moderate,other,Muhammad Ali
+CVE-2026-117960,2026,2026-Q4,2026-10-27,Moderate,other,Mohamed Mbarek
+CVE-2026-117961,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117962,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117963,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117964,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117965,2026,2026-Q4,2026-10-27,Moderate,other,Takashi Suzuki
+CVE-2026-117966,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117967,2026,2026-Q4,2026-10-27,Moderate,other,Nguyen Tuan Hung
+CVE-2026-117968,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117969,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117970,2026,2026-Q4,2026-10-27,Moderate,other,Nguyen Thanh Nguyen
+CVE-2026-117971,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117972,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117973,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117974,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117975,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117976,2026,2026-Q4,2026-10-27,Moderate,other,Shu Takahashi of Velcore Consulting Inc.
+CVE-2026-117977,2026,2026-Q4,2026-10-27,Moderate,other,quanhx
+CVE-2026-117978,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117979,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117980,2026,2026-Q4,2026-10-27,Moderate,other,Massimo Palozzi
+CVE-2026-117981,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117982,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117983,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117984,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117985,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117986,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117987,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117988,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117989,2026,2026-Q4,2026-10-27,Moderate,other,Nguyen Tuan Hung
+CVE-2026-117990,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117991,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117992,2026,2026-Q4,2026-10-27,Moderate,other,Takashi Suzuki
+CVE-2026-117993,2026,2026-Q4,2026-10-27,Moderate,other,5up3rh3i
+CVE-2026-117994,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117995,2026,2026-Q4,2026-10-27,Moderate,other,haruka yamazaki
+CVE-2026-117996,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117997,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-117998,2026,2026-Q4,2026-10-27,Low,other,Ibuki Sato
+CVE-2026-117999,2026,2026-Q4,2026-10-27,Low,other,Mozilla
+CVE-2026-118000,2026,2026-Q4,2026-10-27,Low,other,Mozilla
+CVE-2026-118002,2026,2026-Q4,2026-10-27,Low,other,Abdulrahman Alzahrani
+CVE-2026-118003,2026,2026-Q4,2026-10-27,Low,other,eldjiikgull
+CVE-2026-118004,2026,2026-Q4,2026-10-27,Low,other,Mozilla
+CVE-2026-118005,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-118006,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-118007,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-118008,2026,2026-Q4,2026-10-27,High,ai_affiliated,Amy Burnett of OpenAI
+CVE-2026-118009,2026,2026-Q4,2026-10-27,High,other,Nguyen Thanh Nguyen
+CVE-2026-118010,2026,2026-Q4,2026-10-27,High,other,Mozilla
+CVE-2026-118011,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118012,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118013,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118014,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118015,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118016,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118017,2026,2026-Q4,2026-10-27,High,explicit_ai,OpenAI Codex Security (kylebot)
+CVE-2026-118018,2026,2026-Q4,2026-10-27,Moderate,other,haxatron1
+CVE-2026-118019,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118020,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118021,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118022,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118023,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118024,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118025,2026,2026-Q4,2026-10-27,Moderate,other,Mozilla
+CVE-2026-118026,2026,2026-Q4,2026-10-27,Low,other,Mozilla
+CVE-2026-118027,2026,2026-Q4,2026-10-27,Low,other,Mozilla
+CVE-2026-118174,2026,2026-Q4,2026-10-27,High,other,Magnus Melin
+CVE-2026-118175,2026,2026-Q4,2026-10-27,High,other,YuYoung Sung
+CVE-2026-118176,2026,2026-Q4,2026-10-27,High,other,YuYoung Sung
+CVE-2026-118177,2026,2026-Q4,2026-10-27,High,other,Magnus Melin
+CVE-2026-118178,2026,2026-Q4,2026-10-27,High,other,KhalidAlharthi
+CVE-2026-118179,2026,2026-Q4,2026-10-27,Moderate,other,Nguyen Tuan Hung
+CVE-2026-118180,2026,2026-Q4,2026-10-27,Moderate,other,Magnus Melin
+CVE-2026-120572,2026,2026-Q4,2026-11-03,High,other,Mozilla

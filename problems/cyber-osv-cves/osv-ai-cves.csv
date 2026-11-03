@@ -4,6 +4,7 @@ CVE-2025-10966,2025-11-05,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel
 CVE-2025-13034,2026-01-07,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
 CVE-2025-14017,2026-01-07,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
 CVE-2025-14819,2026-01-07,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
+CVE-2026-28364,2026-02-17,ai_affiliated,Justin Timperio | Nicolás Ojeda Bär | Xavier Leroy | Gabriel Scherer | Olivier Nicole | Damien Doligez | Mindy Preston | Edwin Török | Hannes Mehnert | Akshay M Singh | Antonin Décimo | Anthropic
 CVE-2026-21620,2026-02-20,ai_affiliated,Luigino Camastra / Aisle Research | Jakub Witczak | Raimo Niskanen
 CVE-2026-23941,2026-03-13,ai_affiliated,Luigino Camastra / Aisle Research | Konrad Pietrzak
 CVE-2026-23942,2026-03-13,ai_affiliated,Luigino Camastra / Aisle Research | Jakub Witczak | Michał Wąsowski
@@ -11,6 +12,7 @@ CVE-2026-23943,2026-03-13,ai_affiliated,Igor Morgenstern / Aisle Research | Mich
 CVE-2026-28808,2026-04-07,ai_affiliated,Igor Morgenstern / Aisle Research | Konrad Pietrzak
 CVE-2026-28810,2026-04-07,ai_affiliated,Luigino Camastra / Aisle Research | Raimo Niskanen
 CVE-2026-32144,2026-04-07,ai_affiliated,Igor Morgenstern / Aisle Research | Jakub Witczak | Ingela Anderton Andin
+CVE-2026-41083,2026-06-18,ai_affiliated,Andrew Nesbitt | David Allsopp | Florian Angeletti | Hannes Mehnert | Anthropic | Edwin Török | Nicolás Ojeda Bär | Xavier Leroy
 CVE-2026-10536,2026-06-24,ai_affiliated,Joshua Rogers (Aisle Research) | Stefan Eissing
 CVE-2026-11352,2026-06-24,ai_affiliated,vectorqueue on hackerone (AntAISecurityLab) | Stefan Eissing
 CVE-2026-11564,2026-06-24,ai_affiliated,Filipe Casal of Trail of Bits in collaboration with OpenAI | Stefan Eissing
@@ -32,3 +34,23 @@ CVE-2026-80255,2026-09-02,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel
 CVE-2026-82208,2026-09-02,ai_affiliated,Stanislav Fort (Aisle Research) | Stefan Eissing
 CVE-2026-82209,2026-09-02,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
 CVE-2026-89422,2026-09-22,ai_affiliated,Milad Nasr / Anthropic | Luna Tong / Anthropic | Ingela Andin
+CVE-2026-107928,2026-10-14,explicit_ai,Luna with Claude | Anthropic | Stefan Eissing
+CVE-2026-86409,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Viktor Szakats
+CVE-2026-86410,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
+CVE-2026-86411,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Stefan Eissing
+CVE-2026-86412,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
+CVE-2026-86413,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Stefan Eissing
+CVE-2026-86414,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Stefan Eissing
+CVE-2026-86415,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Stefan Eissing
+CVE-2026-87862,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
+CVE-2026-87863,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Daniel Stenberg
+CVE-2026-87864,2026-10-14,ai_affiliated,Stanislav Fort (Aisle Research) | Stefan Eissing
+CVE-2026-92386,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research) | Daniel Stenberg
+CVE-2026-92387,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research) | Daniel Stenberg
+CVE-2026-92388,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research) | Daniel Stenberg
+CVE-2026-92389,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research) | Daniel Stenberg
+CVE-2026-92390,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92391,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research) | Daniel Stenberg
+CVE-2026-92392,2026-10-14,explicit_ai,Luna with Claude | Anthropic | Stefan Eissing
+CVE-2026-94265,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-94266,2026-10-14,ai_affiliated,Joshua Rogers (Aisle Research) | Daniel Stenberg

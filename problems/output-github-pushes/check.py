@@ -63,10 +63,15 @@ def offline(rows: list[dict[str, str]], prose: str) -> list[str]:
                 )
 
     by_quarter = {row["quarter"]: row for row in rows}
+    # The recent-quarters endpoints move with every release: the latest
+    # quarter and the one five quarters before it.
+    start, end = rows[-6], rows[-1]
     claims = {
         "135.4 million in 2022-Q4": ("2022-Q4", 135.4),
-        "167.8 million in 2024-Q4": ("2024-Q4", 167.8),
-        "319.8 million in 2026-Q1": ("2026-Q1", 319.8),
+        f"{int(start['git_pushes']) / 1e6:.1f} million in {start['quarter']}":
+            (start["quarter"], round(int(start["git_pushes"]) / 1e6, 1)),
+        f"{int(end['git_pushes']) / 1e6:.1f} million in {end['quarter']}":
+            (end["quarter"], round(int(end["git_pushes"]) / 1e6, 1)),
         "246.8 million in 2025-Q4": ("2025-Q4", 246.8),
     }
     for phrase, (quarter, millions) in claims.items():
@@ -82,7 +87,8 @@ def offline(rows: list[dict[str, str]], prose: str) -> list[str]:
     middle = by_quarter["2022-Q4"]
     growth = {
         "adds 68%": (first, middle),
-        "adds 136%": (middle, last),
+        f"adds {round((int(last['git_pushes']) / int(middle['git_pushes']) - 1) * 100)}%":
+            (middle, last),
     }
     for phrase, (start, end) in growth.items():
         stated = int(re.search(r"(\d+)", phrase).group(1))

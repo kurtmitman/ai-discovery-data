@@ -3,10 +3,10 @@
 - **Domain:** vulnerabilities
 - **Role:** discovery series
 - **Metric:** CVEs issued by Microsoft's own CNA per month, dated by first publication in the Security Update Guide, split by whether an acknowledgment credit names an AI method, an AI-security employer, a fuzzer, or none of these
-- **Coverage:** 2016–2026, partial through 2026-09-23; no February or March 2016 document exists upstream, so the first year is ten months
+- **Coverage:** 2016–2026, partial through 2026-10-30; no February or March 2016 document exists upstream, so the first year is ten months
 - **Data:** annual [`msrc-cves.csv`](msrc-cves.csv); monthly counts by band in [`msrc-by-month.csv`](msrc-by-month.csv); per-credit rows in [`msrc-finders.csv`](msrc-finders.csv); every AI-marked CVE with its full credit strings in [`msrc-ai-cves.csv`](msrc-ai-cves.csv)
 - **Upstream:** <https://api.msrc.microsoft.com/cvrf/v3.0/updates> (rendered at <https://msrc.microsoft.com/update-guide>)
-- **Verdict:** accelerating — 2,961 CVEs through 2026-09-23 against 1,243 in 2025; the part year annualizes to about 3.3 times 2025
+- **Verdict:** accelerating — 4,436 CVEs through 2026-10-30 against 1,243 in 2025; the part year annualizes to about 4.3 times 2025
 
 ![Monthly Microsoft security-update CVEs, split by AI method, AI affiliation, and fuzzer credit.](discovery-cyber-microsoft.png)
 
@@ -46,17 +46,17 @@ remaining.
 - **2016 span:** 371 CVEs across ten documented months
 - **plateau and growth:** between 863 and 961 a year from 2019 through
   2023; 14% growth in each of 2024 and 2025
-- **2026 (through 2026-09-23):** 2,961 CVEs, 2.38 times the 2025 full year;
-  annualizes to about 3.3 times 2025
+- **2026 (through 2026-10-30):** 4,436 CVEs, 3.57 times the 2025 full year;
+  annualizes to about 4.3 times 2025
 - **record months:** 220 CVEs dated June 2026, then 662 CVEs dated July
   2026, 3.0 times the June figure
-- **ai-marked:** 0 before 2025; 17 in 2025; 30 in 2026, or 1.0% of the part
-  year — 22 name an AI system or method and 8 name only an AI-security
+- **ai-marked:** 0 before 2025; 17 in 2025; 31 in 2026, or 0.7% of the part
+  year — 24 name an AI system or method and 7 name only an AI-security
   employer
 - **fuzz band:** never exceeds 2 CVEs in any year
 - **acknowledgments:** 87% of 2016's CVEs carry at least one named credit,
-  rising to 97% in the 2026 part year
-- **no-customer-action CVEs:** 23 in 2024, 68 in 2025 and 176 in the 2026
+  rising to 96% in the 2026 part year
+- **no-customer-action CVEs:** 23 in 2024, 68 in 2025 and 189 in the 2026
   part year
 
 The collection-wide [cumulative index](../../CUMULATIVE.md) redraws this
@@ -70,8 +70,8 @@ The CSVs are built by [`fetch.py`](fetch.py), which walks every monthly
 security-update document in the CVRF API — matched on document title,
 because the IDs are irregular — and applies the CNA rule above. Documents
 released after `lib/dates.py`'s snapshot date are skipped, so a refetch
-reproduces the committed window; the vendored window ends 2026-09-23, just
-after the September 2026 Patch Tuesday, released 2026-09-08. Acknowledgment strings are stripped of
+reproduces the committed window; the vendored window ends 2026-10-30, after
+the October 2026 Patch Tuesday, released 2026-10-13. Acknowledgment strings are stripped of
 HTML and classified with the shared markers in
 [`../../lib/credits.py`](../../lib/credits.py): `EXPLICIT_AI_METHOD` for a
 named system or method, `AI_AFFILIATION` for an employer, `FUZZ` for
@@ -123,8 +123,8 @@ above and fails when the monthly, annual and per-CVE files stop agreeing.
   effort.
 - **edges of coverage.** The first year is ten months; a month with no
   bar — February 2017, for one — is a month in which no CVE has its
-  earliest publication; 2026 is a part year through 2026-09-23, ending just
-  after the September Patch Tuesday rather than on a complete calendar
+  earliest publication; 2026 is a part year through 2026-10-30, ending
+  after the October Patch Tuesday rather than on a complete calendar
   month. The rare
   Microsoft-product CVE issued by another CNA — a 2022 Windows SMB flaw
   issued by Rapid7's CNA, for instance — is excluded by the counting rule.
@@ -134,10 +134,10 @@ above and fails when the monthly, annual and per-CVE files stop agreeing.
 Every AI-marked CVE is itemized with its full credit strings in
 [`msrc-ai-cves.csv`](msrc-ai-cves.csv); the quotes below are read from that
 file as vendored, 2026-09-14. No AI marker appears in any acknowledgment
-before 2025, as of the 2026-09-23 snapshot.
+before 2025, as of the 2026-10-30 snapshot.
 
 - **SEC-agent team.** All 17 AI-marked CVEs of 2025 carry a SEC-agent
-  credit, 14 of them jointly with ENKI WhiteHat, and 15 of 2026's 30
+  credit, 14 of them jointly with ENKI WhiteHat, and 15 of 2026's 31
   AI-marked CVEs carry one. The team's SLYP pipeline runs LLM agents
   against Windows COTS binaries [@secagent2026slyp].
 
@@ -145,21 +145,25 @@ before 2025, as of the 2026-09-23 snapshot.
 > SEC-agent team with ENKI WhiteHat"
 > — MSRC acknowledgment strings for CVE-2025-53802, vendored in [`msrc-ai-cves.csv`](msrc-ai-cves.csv), read 2026-09-14
 
-- **Claude and Anthropic.** 7 of 2026's AI-marked CVEs credit Claude or
+- **Claude and Anthropic.** 8 of 2026's AI-marked CVEs credit Claude or
   Anthropic [@anthropicmythos2026]. One of them, CVE-2026-33096, is
-  co-credited to "WARP & MORSE teams at Microsoft".
+  co-credited to "WARP & MORSE teams at Microsoft". A ninth credit naming
+  Claude, "Nadav Claude Cohen with glow" on CVE-2026-108466, names a person
+  and is excluded by the shared classifier's reviewed list of such names.
 
 > "Calif.io in collaboration with Claude and Anthropic Research"
 > — MSRC acknowledgment for CVE-2026-40380, vendored in [`msrc-ai-cves.csv`](msrc-ai-cves.csv), read 2026-09-14
 
 - **XBOW.** 3 CVEs credit "XBOW", an affiliation with no method stated.
-- **OpenAI.** The remaining 5 CVEs each carry a credit naming OpenAI, all
-  affiliations with no method stated. Two, dated 2026-08-11, are credited
-  solely to "Thomas Neil James Shadwell (zemnmez) with OpenAI"; the other
-  three, dated 2026-09-08, name OpenAI in differing strings — that same
-  Shadwell credit among six credits on one CVE, "Khai Tran with OpenAI"
-  among three on another, and "Hung Nguyen (mov) of Calif.io in
-  collaboration with OpenAI Codex Security" on the third.
+- **OpenAI.** The remaining 5 CVEs each carry a credit naming OpenAI. Two,
+  dated 2026-08-11, are credited solely to "Thomas Neil James Shadwell
+  (zemnmez) with OpenAI"; the other three, dated 2026-09-08, name OpenAI in
+  differing strings — that same Shadwell credit among six credits on one
+  CVE, "Khai Tran with OpenAI" among three on another, and "Hung Nguyen
+  (mov) of Calif.io in collaboration with OpenAI Codex Security" on the
+  third. Four are affiliations with no method stated; the third names a
+  system, OpenAI Codex Security, which the shared classifier matches as a
+  method from the 2026-11-03 refresh on.
 
 ## Sources
 

@@ -41,7 +41,10 @@ from lib.credits import (  # noqa: E402
 from lib.table import read_csv, write_csv  # noqa: E402
 from lib.web import fetch  # noqa: E402
 
-METADATA_COMMIT = "597a9a75044fb94b2823d111fd96ad9607a38189"
+METADATA_COMMIT = "87411d0d5464389e91a4c683b6a377d227743779"
+# Only the same-period cutoff: each year's CVEs published on or before this
+# month and day fill `comparable_through_aug_05`, so it stays 5 August when
+# METADATA_COMMIT moves; changing it would change what that column means.
 SNAPSHOT_DATE = date(2026, 8, 5)
 ARCHIVE_URL = (
     "https://github.com/openssl/release-metadata/archive/"

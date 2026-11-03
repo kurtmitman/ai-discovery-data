@@ -4,12 +4,10 @@
 - **Role:** discovery series
 - **Metric:** Elo relative to Stockfish 15, from 20,000 games per build on one
 fixed machine and time control
-- **Coverage:** 2013-04-30 to 2026-09-22, 2,659 tested development builds
+- **Coverage:** 2013-04-30 to 2026-10-28, 2,700 tested development builds
 - **Data:** [`stockfish-ncm-elo.csv`](stockfish-ncm-elo.csv)
 - **Upstream:** <https://nextchessmove.com/dev-builds>
-- **Verdict:** no acceleration — 15 Elo through 2026-09-22 (annualizing to
-about 21 Elo/year) against 32 Elo in 2025 and a 51 Elo/year mean over
-2013–2026
+- **Verdict:** no acceleration — 22 Elo through 2026-10-28 (annualizing to about 26 Elo/year) against 32 Elo in 2025 and a 51 Elo/year mean over 2013–2026
 
 ![Stockfish development-build Elo against Stockfish 15 from 2013 to 2026, with releases marked and the first two LLM-credited changes to play open.](discovery-algorithms-stockfish.png)
 
@@ -31,16 +29,16 @@ Elo per year rather than records per year. Each build is dated by its test.
 ## Facts
 
 - **span:** Stockfish 3 measures −537.61 ± 7.82 against Stockfish 15 on
-  2013-04-30, and the newest build measures +139.16 ± 1.95 on 2026-09-22 —
-  about 677 Elo of pure software progress, averaging 51 Elo a year
-- **builds:** 2,659 tested development builds
-- **final-day spread:** 8 builds share that final date and span 139.16 to
-  143.57, about four Elo of same-day measurement noise
+  2013-04-30, and the newest build measures +145.52 ± 1.93 on 2026-10-28 —
+  about 683 Elo of pure software progress, averaging 51 Elo a year
+- **builds:** 2,700 tested development builds
+- **final-day spread:** 3 builds share that final date and span 144.33 to
+  146.2, about two Elo of same-day measurement noise
 - **nnue-era gains:** year-end to year-end, calendar 2020 gained about 117
   Elo and 2021 about 117, around the NNUE merge of 2020-08-06
 - **recent gains:** the same year-end convention gives 49 in 2022, 41 in
-  2023, 25 in 2024, 32 in 2025, and 15 through 2026-09-22, which annualizes
-  to about 21
+  2023, 25 in 2024, 32 in 2025, and 22 through 2026-10-28, which annualizes
+  to about 26
 - **nnue patch (project figures):** Stockfish's regression tables put the
   NNUE patch at roughly 58 Elo — master against Stockfish 11 measured
   +25.49 six days before the merge and +83.42 just after — and the
@@ -100,6 +98,10 @@ in every figure here.
 
 ## Limitations
 
+- **the series starts at Stockfish 3 by choice.** From autumn 2026 the
+  measurer's page also lists builds back to 2008-09-01, before Stockfish 1;
+  [`fetch.py`](fetch.py) keeps the series' original start at the Stockfish 3
+  build so the span and the per-year means stay comparable across refreshes.
 - **the LLM markers are dates, not measured effects.** Each is placed at the
   last build measured that day, so its height carries no information about
   what the patch did; the patches' own effects are in their commit messages

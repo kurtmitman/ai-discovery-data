@@ -3,10 +3,10 @@
 - **Domain:** outside the three domains
 - **Role:** contrast case: volume
 - **Metric:** code output; git pushes to GitHub per quarter, summed over economies
-- **Coverage:** 2020-Q1 to 2026-Q1, quarterly; fetched 2026-08-10
+- **Coverage:** 2020-Q1 to 2026-Q2, quarterly; fetched 2026-11-03
 - **Data:** [`github-innovationgraph-global.csv`](github-innovationgraph-global.csv)
 - **Upstream:** <https://github.com/github/innovationgraph>
-- **Verdict:** accelerating — 319.8 million pushes in 2026-Q1 against 246.8 million in 2025-Q4 and a 2025 quarterly mean of 212.2 million
+- **Verdict:** accelerating — 407.6 million pushes in 2026-Q2 against 246.8 million in 2025-Q4 and a 2025 quarterly mean of 212.2 million
 
 ![Git pushes to GitHub per quarter, 2020 to 2026, with January 2026 onward shaded.](output-github-pushes.png)
 
@@ -29,10 +29,10 @@ carries no authorship field.
 
 - **chatgpt quarter:** 135.4 million in 2022-Q4 (the quarter ChatGPT was
   released)
-- **recent quarters:** from 167.8 million in 2024-Q4 to 319.8 million in
-  2026-Q1, 1.9 times in five quarters
-- **growth split:** 2020-Q1 to 2022-Q4 adds 68%; 2022-Q4 to 2026-Q1 adds
-  136%
+- **recent quarters:** from 177.7 million in 2025-Q1 to 407.6 million in
+  2026-Q2, 2.3 times in five quarters
+- **growth split:** 2020-Q1 to 2022-Q4 adds 68%; 2022-Q4 to 2026-Q2 adds
+  201%
 - **2025 mean:** a 2025 quarterly mean of 212.2 million pushes
 
 The collection-wide [cumulative index](../../CUMULATIVE.md) redraws this
@@ -94,7 +94,7 @@ field.
 The dataset carries no authorship field; no AI share can be computed from
 it. [`github-innovationgraph-global.csv`](github-innovationgraph-global.csv)
 holds per-quarter totals of pushes, repositories and developers; no AI
-credit appears in the Innovation Graph files as of the vendored 2026-Q1
+credit appears in the Innovation Graph files as of the vendored 2026-Q2
 release.
 
 ## Sources

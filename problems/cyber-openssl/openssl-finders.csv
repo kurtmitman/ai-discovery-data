@@ -183,6 +183,8 @@ year,finder,explicit_ai,ai_affiliated,fuzz,ai_evidence_url,cves
 2026,Alex Gaynor (Anthropic),no,yes,no,,5
 2026,Luigino Camastra (Aisle Research),yes,yes,no,https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities,4
 2026,Igor Morgenstern (Aisle Research),yes,yes,no,https://aisle.com/blog/aisle-discovers-20-openssl-zero-days-in-6-months,2
+2026,Filipe Casal (Trail of Bits),no,no,no,,2
+2026,Bhabani Sankar Das,no,no,no,,2
 2026,Stanislav Fort (Aisle Research); Petr Šimeček (Aisle Research); Hamza (Metadust),yes,yes,no,https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities,1
 2026,Tomas Dulka (Aisle Research); Stanislav Fort (Aisle Research),yes,yes,no,https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities,1
 2026,Petr Šimeček (Aisle Research); Stanislav Fort (Aisle Research),yes,yes,no,https://aisle.com/blog/aisle-discovered-12-out-of-12-openssl-vulnerabilities,1
@@ -202,7 +204,26 @@ year,finder,explicit_ai,ai_affiliated,fuzz,ai_evidence_url,cves
 2026,Mayank Jangid; Kushal Khemka; Hari Priandana; Bhabani Sankar Das; Qifan Zhang (Palo Alto Networks),no,no,no,,1
 2026,Zhanpeng Liu (Tencent Xuanwu Lab); Guannan Wang (Tencent Xuanwu Lab); Guancheng Li (Tencent Xuanwu Lab); Bhabani Sankar Das,no,no,no,,1
 2026,TrendAI Zero Day Initiative,no,no,no,,1
-2026,Thai Duong (Calif.io in collaboration with Claude and Anthropic Research),yes,yes,no,https://raw.githubusercontent.com/openssl/release-metadata/597a9a75044fb94b2823d111fd96ad9607a38189/secjson/CVE-2026-45447.json,1
+2026,Thai Duong (Calif.io in collaboration with Claude and Anthropic Research),yes,yes,no,https://raw.githubusercontent.com/openssl/release-metadata/87411d0d5464389e91a4c683b6a377d227743779/secjson/CVE-2026-45447.json,1
 2026,Zehua Qiao; Jinwen He,no,no,no,,1
 2026,Bhabani Sankar Das; Haruki Oyama (Waseda University),no,no,no,,1
 2026,Bhabani Sankar Das; Zhenzhe Shao,no,no,no,,1
+2026,Fuzz0x (ZKSC Institute of Security Research); Emilio Galle; Feng Xue (ThreatBoon),no,no,yes,,1
+2026,Amazon Web Services,no,no,no,,1
+2026,Bhabani Sankar Das; Filipe Casal(Trail of Bits),no,no,no,,1
+2026,Filipe Casal (Trail of Bits); Brandon Luo; TrendAI Zero Day Initiative,no,no,no,,1
+2026,Pavоl Žáčik (Red Hat),no,no,no,,1
+2026,Opal Wright (Trail of Bits),no,no,no,,1
+2026,Ying Dong; Bhabani Sankar Das,no,no,no,,1
+2026,Billy Brumley (Rochester Institute of Technology),no,no,no,,1
+2026,Fuzz0x (ZKSC Institute of Security Research),no,no,yes,,1
+2026,Ali Firas; Nikolas Gauder (NVIDIA),no,no,no,,1
+2026,Saku0512; Opal Wright (Trail of Bits),no,no,no,,1
+2026,Zhen Yan (AntAISecurityLab); Bhabani Sankar Das,no,yes,no,,1
+2026,Abhinav Agarwal; Feng Xue,no,no,no,,1
+2026,Filipe Casal (Trail of Bits); Brandon Luo; Luigino Camastra (Aisle Research),no,yes,no,,1
+2026,Moltenbit; Bhabani Sankar Das; Saiyowa Security Team,no,no,no,,1
+2026,Mounir Idrassi,no,no,no,,1
+2026,Vladimir Tokarev,no,no,no,,1
+2026,Laurent Gaffie (secorizon.com),no,no,no,,1
+2026,Tim Becker (Xint.io); aydinmercan,no,no,no,,1

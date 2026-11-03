@@ -3,10 +3,10 @@
 - **Domain:** mathematics
 - **Role:** discovery series
 - **Metric:** dated solution events on Epoch AI's pool of open research problems, placed by curator-assigned notability tier
-- **Coverage:** benchmark announced 2026-02-26; pages read 2026-09-14, with recorded solves from 2026-03-23 to 2026-08-20
+- **Coverage:** benchmark announced 2026-02-26; pages read 2026-11-03, with recorded solves from 2026-03-23 to 2026-10-06
 - **Data:** [`frontiermath-open-problems.csv`](frontiermath-open-problems.csv), [`frontiermath-open-solutions.csv`](frontiermath-open-solutions.csv)
 - **Upstream:** <https://epoch.ai/frontiermath/open-problems>
-- **Verdict:** too early — 7 dated solves between 2026-03-23 and 2026-08-20; the pool was announced 2026-02-26 and no prior-year rate exists
+- **Verdict:** too early — 10 dated solves between 2026-03-23 and 2026-10-06; the pool was announced 2026-02-26 and no prior-year rate exists
 
 ![Dated solution events by notability tier, with the surviving pool per tier.](discovery-math-frontiermath-open.png)
 
@@ -37,8 +37,13 @@ floor:
 > research program."
 > — Epoch AI, FrontierMath: Open Problems FAQ, read 2026-08-14 [@epoch2026openproblems]
 
-A "discovery" in this series is a problem page moving to a solved status,
-solved by AI or solved by humans. Solve dates come from the pages'
+A "discovery" in this series is a problem page moving to a solved status:
+solved by AI, solved by humans, or solved by humans and AI together, a
+status the site added after the first two:
+
+> "While we initially marked this problem as being solved by humans, we have since introduced a new “human + AI” solution status."
+> — Epoch AI, inverse-galois problem page, read 2026-11-03 [@epoch2026openproblems]
+ Solve dates come from the pages'
 solution-update prose and Epoch's announcement posts: the ramsey-hypergraphs
 row is dated by the announcement post because its page states no solve date,
 the hadamard row by the day of the public report its page links, and the
@@ -49,10 +54,10 @@ withdrawn.
 
 ## Facts
 
-- **pages:** 54 problem pages in the sitemap read of 2026-09-14; 8 marked solved by AI, 1 by humans, 45 unsolved
+- **pages:** 54 problem pages in the sitemap read of 2026-11-03; 7 marked solved by AI, 5 by humans and AI together, 0 by humans, 42 unsolved
 - **tiers:** 23 moderately interesting · 20 solid result · 6 major advance · 4 breakthrough; 1 withdrawn page badged Novel example
-- **events:** 9 recorded solves; 7 carry a date, running 2026-03-23 to 2026-08-20
-- **placement:** 6 solves in moderately interesting, 2 in solid result, 1 on the Novel-example page; 0 in major advance and 0 in breakthrough
+- **events:** 12 recorded solves; 10 carry a date, running 2026-03-23 to 2026-10-06
+- **placement:** 7 solves in moderately interesting, 2 in solid result, 1 on the Novel-example page; 1 in major advance and 1 in breakthrough
 - **front-page tally:** AI solves of 3/22, 1/18, 0/6 and 0/3 across the four tiers, under the headline "Recently expanded to 50 problems", read 2026-08-14
 
 The front-page tally differs from the page-by-page sitemap read the CSVs
@@ -61,7 +66,7 @@ the active pool, and the withdrawal. The
 [Erdős catalogue](../math-erdos/README.md) records the same
 one-stock-several-counts pattern on its corpus.
 
-The collection-wide [cumulative index](../../CUMULATIVE.md) redraws the seven
+The collection-wide [cumulative index](../../CUMULATIVE.md) redraws the ten
 dated events as a running count:
 
 ![Cumulative dated solution events.](cumulative-math-frontiermath-open.png)
@@ -137,12 +142,15 @@ dated events as a running count:
 > — Epoch AI, genus-2-jacobian-torsion problem page, read 2026-08-14 [@epoch2026openproblems]
 
 ### inverse-galois — The Inverse Galois Problem for the Mathieu Group \(M_{23}\)
-- **event:** solved_human
+- **event:** solved_human_ai
 - **date:** 2026-08-11
-- **system:**
+- **system:** Claude Fable 5, Claude Opus 4.8, ChatGPT 5.6 Sol
 - **elicited by:** Huang et al.
 - **tier:** Solid result
-- **notes:** Solved with heavy AI involvement but scored human: Epoch requires the core ideas be unambiguously AI's and the authors say no sharp line can be drawn
+- **notes:** First scored human; moved to the human + AI status the site introduced in autumn 2026, since the authors' comments make AI instrumental
+
+> "Since comments from the authors make it clear that AI was instrumental in solving this problem, we have updated its status with this new label."
+> — Epoch AI, inverse-galois problem page, read 2026-11-03 [@epoch2026openproblems]
 
 > "We hold a high bar for considering a problem “solved by AI”, in
 > particular requiring that the core ideas of the solution be unambiguously
@@ -154,12 +162,12 @@ dated events as a running count:
 > — author of the \(M_{23}\) solution, quoted on Epoch AI's inverse-galois problem page, read 2026-08-14 [@epoch2026openproblems]
 
 ### hadamard — Hadamard Matrix of Order 668
-- **event:** solved_ai
+- **event:** solved_human_ai
 - **date:** 2026-08-12
 - **system:** Claude
 - **elicited by:** Levent Alpöge and a team of three humans
 - **tier:** Moderately interesting
-- **notes:** Provisionally marked solved by AI pending detail on the human share; the construction encodes Hadamard matrices of all previously unknown admissible orders up to 2000
+- **notes:** Provisionally marked solved by AI pending detail on the human share; the construction encodes Hadamard matrices of all previously unknown admissible orders up to 2000; the status chip reads Solved (human + AI) at the 2026-11-03 refetch while the page text still says provisionally solved by AI
 
 > "We have provisionally marked the problem as being solved by AI, though
 > will revise this if further reports from the team indicate that humans
@@ -167,12 +175,12 @@ dated events as a running count:
 > — Epoch AI, hadamard problem page, read 2026-08-14 [@epoch2026openproblems]
 
 ### elliptic-curve-rank — Elliptic Curves over \(\mathbb{Q}\) of Large Rank
-- **event:** solved_ai
+- **event:** solved_human_ai
 - **date:** 2026-08-20
 - **system:** Claude
 - **elicited by:** Levent Alpöge and Ava Howell
 - **tier:** Moderately interesting
-- **notes:** The problem asked for rank at least 30; ICARM leaderboard curve #273 reached it on 2026-08-20 credited to Claude with Alpöge and Howell in the submitting account's commentary; self-reported with no paper as of the 2026-09-14 refetch; the same team posted a rank ≥ 31 curve on 2026-08-23
+- **notes:** The problem asked for rank at least 30; ICARM leaderboard curve #273 reached it on 2026-08-20 credited to Claude with Alpöge and Howell in the submitting account's commentary; self-reported with no paper as of the 2026-09-14 refetch; the same team posted a rank ≥ 31 curve on 2026-08-23; the status chip reads Solved (human + AI) at the 2026-11-03 refetch while the page text still says solved by AI
 
 The same event is this collection's
 [elliptic-curve rank record](../math-elliptic-rank/README.md), where the
@@ -182,10 +190,46 @@ the credit are documented in full.
 ### genus-2-rational-points — Many Rational Points on a Genus-2 Curve
 - **event:** solved_ai
 - **date:**
-- **system:**
-- **elicited by:**
+- **system:** GPT-6 Astra
+- **elicited by:** Epoch pre-release evaluation
 - **tier:** Moderately interesting
-- **notes:** Marked Solved (AI) at the 2026-09-14 refetch; no public announcement or credited system found as of 2026-09-15 and no new rational-points record beyond Elkies–Stoll's 642 located; the problem page is unreachable from this environment and the entry awaits detail
+- **notes:** Marked Solved (AI) at the 2026-09-14 refetch; the page later states GPT-6 Astra found a genus-2 curve with 648 rational points in a pre-release evaluation, above Elkies–Stoll's 642; the page states no date
+
+> "First solved by: GPT-6 Astra In a pre-release evaluation on FM:OP, GPT-6 Astra found a genus-2 curve with 648 rational points."
+> — Epoch AI, genus-2-rational-points problem page, read 2026-11-03 [@epoch2026openproblems]
+
+### committee-election — The Core in Approval-Based Committee Elections
+- **event:** solved_human_ai
+- **date:** 2026-09-10
+- **system:** GPT-6 Astra
+- **elicited by:** Patrick Becker, Matthias Greger and Dominik Peters
+- **tier:** Major advance
+- **notes:** Dated by arXiv 2609.11912; the authors attribute the primary idea and proof to GPT-6 Astra in a lengthy interactive session; the core is shown never empty, so the problem was unsolvable as stated and is marked solved under Epoch's policy
+
+> "The authors attribute the primary idea and proof to GPT-6 Astra and a “lengthy interactive session”. Peters conveyed to us that he doubts that the team would have found the proof without Astra, but also that Astra does not appear to be capable of solving the problem out of the box with a simple prompt. As such, we mark this as a human + AI solution."
+> — Epoch AI, committee-election problem page, read 2026-11-03 [@epoch2026openproblems]
+
+### apery-irrationality — Apéry-Style Irrationality Proofs via Linear Recurrences
+- **event:** solved_human_ai
+- **date:** 2026-09-17
+- **system:**
+- **elicited by:** Aabir Fauzan
+- **tier:** Breakthrough
+- **notes:** zeta(5) proved irrational, dated by the Zenodo preprint (record 22826419) with a Lean formalization; not Apery-style but marked solved under Epoch's policy; the page names no AI system; Catalan's constant, another target, proved irrational in OpenAI's 2026-10-06 release
+
+> "The most natural target for this problem — showing that \(\zeta(5)\) is irrational — has been achieved! [...] We believe this solution meets our criteria for being marked as “human + AI”, and will update if more information becomes available. Update: On October 6, 2026, OpenAI released hundreds of new results in mathematics due to an internal model. In one preprint, they prove that Catalan’s constant is irrational, solving another target of this problem."
+> — Epoch AI, apery-irrationality problem page, read 2026-11-03 [@epoch2026openproblems]
+
+### large-mahler-measure — Littlewood Polynomials with Large Normalized Mahler Measure
+- **event:** solved_ai
+- **date:** 2026-10-06
+- **system:** internal OpenAI model
+- **elicited by:** OpenAI
+- **tier:** Moderately interesting
+- **notes:** Dated by OpenAI's release of hundreds of mathematics results; the preprint proves ultraflat real Littlewood polynomials exist, which gives normalized Mahler measure arbitrarily close to one
+
+> "On October 6, 2026, OpenAI released hundreds of new results in mathematics. In one preprint, they prove the existence of ultraflat real Littlewood polynomials. This implies that there are Littlewood polynomials with normalized Mahler measure arbitrarily close to one. Therefore, we are marking this problem as solved by AI."
+> — Epoch AI, large-mahler-measure problem page, read 2026-11-03 [@epoch2026openproblems]
 
 ## Method
 
@@ -205,7 +249,8 @@ the folder rather than passing silently.
 
 [`figure.py`](figure.py) places each dated event at its date and tier lane,
 and beside the timeline draws the whole pool as one stacked bar per tier —
-open, solved by AI, solved by humans — with each bar's label stating how
+open, solved by AI (AI red), solved by humans and AI together (the softer
+AI red), solved by humans — with each bar's label stating how
 much of the tier remains unsolved. Undated solves — the withdrawn explicit-deformations page and the
 genus-2-rational-points page — are stated in a corner note rather than
 drawn.
@@ -214,7 +259,7 @@ It also draws the cumulative count of dated solves for
 
 ## Limitations
 
-- **no baseline.** The pool is six months old and there is no pre-2026
+- **no baseline.** The pool is eight months old and there is no pre-2026
   series; no rate comparison against earlier years is possible.
 - **machine-checkable selection.** Computational verification is an
   admission criterion, and the FAQ states the resulting bias:
@@ -230,28 +275,35 @@ It also draws the cumulative count of dated solves for
 - **solve dates are announcement dates.** Pre-release solves are dated by
   when Epoch tested or announced them, not when a model first produced the
   answer; two solves have no recoverable date at all.
-- **the AI/human line is an editorial call.** The inverse-galois solve
-  involved AI heavily and is scored human; the hadamard solve is
-  provisionally scored AI pending detail on the human share (both scoring
-  statements are quoted in the register above).
+- **the AI/human line is an editorial call, and it moves.** The site added
+  a human + AI status after its first solves and moved three earlier rows
+  into it: inverse-galois from human, hadamard and elliptic-curve-rank from
+  AI. On the last two the page text still reads as solved by AI while the
+  status chip reads human + AI; the register records both.
+- **a solve can answer the problem in a form it did not ask for.** The
+  committee-election solve shows the requested object cannot exist, and the
+  apery-irrationality solve proves ζ(5) irrational by a method that is not
+  Apéry-style; the site marks both solved under its policy (quoted above).
 - **tier denominators are small.** The top two tiers hold 6 and 4 rows, so
   tier-level shares rest on single-digit denominators.
 
 ## AI attribution
 
-8 of the 9 recorded solves are credited to AI systems in the event ledger:
-GPT-5.4 Pro (ramsey-hypergraphs), Claude Fable 5 (q2-absolute-galois),
-GPT-5.6 Sol (superpermutations and genus-2-jacobian-torsion), Claude
-(hadamard and elliptic-curve-rank), one solve on the withdrawn
-explicit-deformations page for which the event ledger records no date and
-no system, and the genus-2-rational-points solve, marked Solved (AI) at
-the 2026-09-14 refetch with no public detail found yet
-[@epoch2026openproblems]. The ninth, inverse-galois, is scored
-solved-by-humans under the bar quoted in its register entry. The
-genus-2-jacobian-torsion solve is a literature-search result: the page
-states the solving curve was already in a public database (quoted above).
-No solve is recorded in the major-advance or breakthrough tiers as of the
-2026-09-14 read.
+7 of the 12 recorded solves are credited to AI systems in the event ledger and 5 to humans and AI together. Solved by AI: GPT-5.4 Pro
+(ramsey-hypergraphs), Claude Fable 5 (q2-absolute-galois), GPT-5.6 Sol
+(superpermutations and genus-2-jacobian-torsion), an internal OpenAI model
+(large-mahler-measure), one solve on the withdrawn explicit-deformations
+page for which the event ledger records no date and no system, and
+GPT-6 Astra on genus-2-rational-points, found in a pre-release evaluation
+on a date the page does not state. Solved by humans and AI
+together: inverse-galois (Claude Fable 5, Claude Opus 4.8 and ChatGPT 5.6
+Sol), hadamard and elliptic-curve-rank (Claude), committee-election
+(GPT-6 Astra), and apery-irrationality, whose page names no AI system
+[@epoch2026openproblems]. The genus-2-jacobian-torsion solve is a
+literature-search result: the page states the solving curve was already in
+a public database (quoted above). The top two tiers now hold one solve
+each, both human + AI: committee-election in major advance and
+apery-irrationality in breakthrough, as of the 2026-11-03 read.
 
 ## Sources
 

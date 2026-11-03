@@ -58,9 +58,17 @@ def main() -> int:
                                     "other_attributed")
 
     failures: list[str] = []
-    if explicit_2026 + affiliated_2026 != int(current["ai_attributed"]):
-        failures.append("the finder table's 2026 AI bands do not sum to the "
-                        "annual ai_attributed column")
+    # One CVE can carry two AI-marked finder credits (in 2026, "Luna with
+    # Claude" and "Anthropic" on the same CVE), so the finder table's credit
+    # count may exceed the CVE count but never fall short of it.
+    ai_credits = explicit_2026 + affiliated_2026
+    if ai_credits < int(current["ai_attributed"]):
+        failures.append("the finder table's 2026 AI bands hold fewer credits "
+                        "than the annual ai_attributed column has CVEs")
+    ai_severe = int(current["ai_sev_high"]) + int(current["ai_sev_critical"])
+    severe_clause = ("none High or Critical" if not ai_severe else
+                     f"{current['ai_sev_high']} High and "
+                     f"{current['ai_sev_critical']} Critical")
     big_sleep_years = {row["year"] for row in finders
                        if "Big Sleep" in row["finder"]}
     if big_sleep_years != {"2025"}:
@@ -90,26 +98,23 @@ def main() -> int:
             "annualized fact",
         f"**prior rate:** {year_2025['total']} disclosures in 2025; a "
         f"{average:.1f}/year mean over 2014–2023": "prior-rate fact",
-        f"**2026 quarters:** 2026-Q1: {quarters['2026-Q1']} · 2026-Q2: "
-        f"{quarters['2026-Q2']}": "quarters fact",
+        "**2026 quarters:** " + " · ".join(
+            f"{quarter}: {count}" for quarter, count in sorted(quarters.items())):
+            "quarters fact",
         f"**ai-band severity (2026):** {current['ai_sev_low']} of "
         f"{current['ai_attributed']} AI-marked disclosures rated Low "
-        f"({ai_low_share}%), none High or Critical; "
+        f"({ai_low_share}%), {severe_clause}; "
         f"{current['other_sev_low']} of {current['other_attributed']} other "
         f"disclosures rated Low ({other_low_share}%)": "AI severity fact",
         f"**severity drift:** 2010–2022 disclosures were {early_low}% Low "
         f"and {early_severe}% High or Critical; 2023–2025 non-AI disclosures "
         f"were {recent_human_low}% Low": "severity-drift fact",
-        f"{int(current['ai_attributed']) - explicit_2026} of the "
-        f"{current['ai_attributed']} AI-marked credits of 2026 name only an "
-        "employer": "affiliation-only count",
+        f"{affiliated_2026} of the {ai_credits} AI-marked credits of 2026 "
+        "name only an employer": "affiliation-only count",
         f"{aisle} credit Aisle Research": "Aisle count",
         "Stanislav Fort of Aisle Research appears in both curl and OpenSSL":
             "cross-project finder",
     }
-    if int(current["ai_sev_high"]) or int(current["ai_sev_critical"]):
-        failures.append("2026 AI-marked disclosures include High or Critical "
-                        "ratings; the severity fact line says none")
     return report(failures + missing(prose(HERE), claims))
 
 

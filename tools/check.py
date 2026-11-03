@@ -74,7 +74,7 @@ SECTIONS = ("Definition", "Facts", "Method", "Limitations", "AI attribution",
 # The one place a page states why it is in the collection, as a controlled
 # phrase rather than a paragraph; FORMAT.md defines the vocabulary.
 ROLES = {"discovery series", "prestige ledger", "control: no-AI baseline",
-         "contrast case: volume", "denominator frame"}
+         "contrast case: volume", "denominator frame", "context: harm"}
 VERDICTS = {"accelerating", "no acceleration", "declining", "inconclusive",
             "too early", "baseline"}
 

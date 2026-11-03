@@ -51,7 +51,6 @@ ties keep the earlier ordering. The criteria are:
 | **Materials — [Starrydata](https://docs.starrydata.org/datasets/)** · thermoelectric ZT, battery capacity/retention, magnetic frontiers | ✅ | ✅ | ✅ | ✅ | 🟡 | **9** | Open dataset linking experimental curves to papers; supports many reconstructed frontiers (design #7). A quantity has to be chosen and standardized, and materials AI exposure is real but diffuse. |
 | **Enzymology — [ENZYME](https://enzyme.expasy.org/) + [BRENDA](https://www.brenda-enzymes.org/)** · first characterization of each EC activity | ✅ | 🟡 | 🟡 | ✅ | ✅ | **8** | A newly demonstrated catalytic activity is close to a stable unit of biological function. Dates are recoverable only per-entry from BRENDA, whose licence restricts redistribution — the two soft spots. |
 | **Structural biology — [Protein Data Bank](https://www.rcsb.org/)** · first experimental structure per UniProt protein / Pfam family | 🟡 | ✅ | ✅ | 🟡 | ✅ | **8** | Deposition and release dates are clean and AlphaFold makes it highly AI-exposed. Needs a dedup rule to turn raw structure throughput into first-of-kind events. |
-| **Astronomy — [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html)** · confirmed exoplanets, especially re-found in archival Kepler/TESS data | 🟡 | ✅ | ✅ | 🟡 | ✅ | **8** | Discovery year, method, facility and instrument are all programmatic. The raw count is detector-limited throughput; the AI-legible frontier is the archival-reanalysis subset (design #6), which must be carved out. |
 | **Superconductivity — NIMS SuperCon** · new superconductors, record critical-temperature frontier | ✅ | 🟡 | 🟡 | ✅ | 🟡 | **7** | More than ten thousand materials with transition temperatures and citations. Whether consistent first-report dates can be recovered is the open audit question, and access is a database rather than a clean bulk file. |
 | **Medical genetics — [ClinVar archives](https://ftp.ncbi.nlm.nih.gov/pub/clinvar/)** · first high-confidence pathogenic variant–disease call | 🟡 | ✅ | ✅ | 🟡 | 🟡 | **7** | Retained monthly releases let you reconstruct new expert-reviewed classifications and later state transitions rather than counting all submissions. The "high-confidence + first" rule still has to be pinned. |
 | **Particle physics — [PDG historical editions](https://pdg.lbl.gov/rpp-archive/)** · precision frontiers for masses, lifetimes, couplings | 🟡 | ✅ | 🟡 | ✅ | 🟡 | **7** | Editions reach back to 1957; recent ones have an API, older ones are PDF archaeology. It is a constructed uncertainty-fall index rather than discrete events, and fundamental-constant precision is only weakly AI-exposed — useful partly as a low-exposure frontier. |
@@ -196,6 +195,25 @@ folder carries Dujella's lower-bound and exact-rank frontiers, the ICARM
 leaderboard snapshot, and the 2026 rank ≥ 30 step, whose AI attribution is
 held as a dated quote from the board's editable commentary field rather than
 as a settled credit.
+
+## NASA Exoplanet Archive
+
+Built as [problems/astro-exoplanets/](problems/astro-exoplanets/): confirmed
+planets per quarter by discovery publication month, with the archival-data
+subset of design #6 carved out as Kepler and K2 planets published after the
+spacecraft's October 2018 retirement, and a hand-checked register of
+discovery papers whose own title or abstract states a machine-learning
+method. The archival flag covers Kepler and K2 only; TESS and ground-based
+archives remain to be separated.
+
+## Verizon Data Breach Investigations Report
+
+Considered for the harm-and-cost group and not built. The 2025 report states
+that exploitation of vulnerabilities reached 20% of breaches as an initial
+access vector; the 2024 report measured a differently worded quantity
+("critical path to initiate a breach"), and the 2026 report could not be
+downloaded without registration at the 2026-11-03 read. Two comparable
+editions at most do not make a series with a consistent definition.
 
 ## Cross-domain analyses
 

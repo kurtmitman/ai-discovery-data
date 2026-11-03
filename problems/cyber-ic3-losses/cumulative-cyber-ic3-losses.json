@@ -1,0 +1,44 @@
+{
+ "better": "up",
+ "kind": "counts",
+ "now": 2026.8378,
+ "series": [
+  {
+   "label": "",
+   "x": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+   ],
+   "y": [
+    0.0,
+    2453.0,
+    5126.0,
+    6909.0,
+    8402.0,
+    10449.0,
+    12923.0,
+    16652.0,
+    19037.0,
+    21862.0,
+    25018.0,
+    28629.0
+   ]
+  }
+ ],
+ "source_label": "FBI Internet Crime Reports 2015–2025, each year's own report",
+ "source_url": "https://www.ic3.gov/AnnualReport/Reports",
+ "subtitle": "Cumulative count of events to date",
+ "title": "Ransomware complaints to the FBI's IC3: cumulative",
+ "ylabel": "Ransomware complaints to date",
+ "ylog": false
+}

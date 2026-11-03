@@ -9,7 +9,7 @@ Three signals are read out of a credit string, and they are independent:
 
 ``explicit_ai``
     The credit names an AI system or states an AI method — "using Claude",
-    "powered by Mythos", "Big Sleep". This is the only signal that speaks to how
+    "powered by Mythos", "Big Sleep", "OpenAI Codex Security". This is the only signal that speaks to how
     a finding was made.
 ``ai_affiliated``
     The credit names an AI lab or an AI-security company — Anthropic, OpenAI,
@@ -33,11 +33,16 @@ finding-level provenance from another source — see
 
 The bare name "Claude" is ambiguous before the model era, so that one marker is
 accepted only from 2024 onward. Callers pass the disclosure year to enforce that
-guard even though no currently vendored pre-2024 credit is affected.
+guard even though no currently vendored pre-2024 credit is affected. It stays
+ambiguous after 2024 too: a person can be named Claude. Such names are listed in
+``CLAUDE_AS_PERSON`` and removed before the marker is matched, one reviewed
+credit at a time rather than by a capitalization rule, because "Claude Opus"
+and "Claude Fable" look exactly like a given name followed by a surname.
 
 Several markers are ordinary words — "agent", "Gemini", "GPT" — so a refetch can
 reclassify a credit that merely contains one. Every currently vendored AI-marked
-credit was reviewed and none is a false positive; keeping it that way relies on
+credit was reviewed and, after the ``CLAUDE_AS_PERSON`` exclusions, none is a
+false positive; keeping it that way relies on
 the vendored evidence files (msrc-ai-cves.csv, firefox-ai-cves.csv, the finders
 tables), where any classification drift shows up as a reviewable diff rather
 than as a silent change in a count.
@@ -63,10 +68,14 @@ AI_AFFILIATION = re.compile(
 # the company is an affiliation, and its CVE-level claims are provenance a
 # caller adds separately.
 EXPLICIT_AI_METHOD = re.compile(
-    r"\bgpt\b|big sleep|mythos|\bgemini\b|\bLLM\b|\bagent\b|using AI\b",
+    r"\bgpt\b|big sleep|mythos|codex security|\bgemini\b|\bLLM\b|\bagent\b"
+    r"|using AI\b",
     re.I,
 )
 CLAUDE = re.compile(r"\bclaude\b", re.I)
+# People whose name contains "Claude", found by reviewing AI-marked credits.
+# MSRC credits "Nadav Claude Cohen with glow" on CVE-2026-108466 (2026-10-13).
+CLAUDE_AS_PERSON = re.compile(r"\bNadav Claude Cohen\b", re.I)
 
 FUZZ = re.compile(r"fuzz", re.I)
 
@@ -113,7 +122,8 @@ def names_ai_method(finder: str, year: int | None = None) -> bool:
     finder = finder or ""
     return bool(
         EXPLICIT_AI_METHOD.search(finder)
-        or (CLAUDE.search(finder) and (year is None or year >= 2024))
+        or (CLAUDE.search(CLAUDE_AS_PERSON.sub("", finder))
+            and (year is None or year >= 2024))
     )
 
 

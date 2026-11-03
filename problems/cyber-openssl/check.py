@@ -119,11 +119,16 @@ def main() -> int:
     if baseline_low != 50:
         failures.append(f"the 2015–2025 Low share is {baseline_low}%, so "
                         "'half of all rated CVEs were Low' is wrong")
-    if not (sum(r["severity"] == "High" for r in corroborated) == 2
-            and sum(r["severity"] == "High" for r in this_year) == 2
-            and not any(r["severity"] == "Critical" for r in this_year)):
-        failures.append("the corroborated set no longer holds exactly the "
-                        "two High-severity CVEs of 2026")
+    high_corroborated = sum(r["severity"] == "High" for r in corroborated)
+    high_2026 = [r for r in this_year if r["severity"] == "High"]
+    if any(r["severity"] == "Critical" for r in this_year):
+        failures.append("2026 now has a Critical CVE; the severity fact line "
+                        "describes High as the top rating")
+    others = [r["cve"] for r in high_2026 if r["explicit_ai"] == "no"]
+    high_phrase = (f"which holds {high_corroborated} of the {len(high_2026)} "
+                   "High-severity CVEs of 2026"
+                   + (f"; the other, {others[0]}, carries a conventional credit"
+                      if len(others) == 1 else ""))
 
     def table_row(label: str, subset) -> str:
         cells = " | ".join(str(sum(r["severity"] == s for r in subset))
@@ -215,7 +220,7 @@ def main() -> int:
         f"**2026 Low shares by cohort:** {low_share(conventional)}% for "
         f"conventional or fuzzing credits, {low_share(affiliated)}% for "
         f"affiliation-only credits, and {low_share(corroborated)}% for the "
-        "corroborated-AI set": "2026 cohort severity fact",
+        f"corroborated-AI set, {high_phrase}": "2026 cohort severity fact",
         f"**corroborated set:** {len(all_corroborated)} CVEs. {len(aisle)} "
         "are enumerated by Aisle's CVE-level accounts — "
         f"{aisle_by_date['2025-09-30']} published 2025-09-30"
@@ -226,7 +231,8 @@ def main() -> int:
         f"corroborated CVEs were published in 2026, {corr_2025} in 2025":
             "corroborated by year",
         f"**affiliation-only:** {current['ai_affiliated_unverified']} "
-        "further 2026 CVEs name Aisle or Anthropic": "affiliation register",
+        "further 2026 CVEs name Aisle, Anthropic or AntAISecurityLab":
+            "affiliation register",
     }
     failures += missing(prose(HERE), claims)
     return report(failures)

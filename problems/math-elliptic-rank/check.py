@@ -14,7 +14,7 @@ sys.path.insert(0, str(HERE.parents[1]))
 from lib.prose import missing, prose, report  # noqa: E402
 from lib.table import read_csv  # noqa: E402
 
-WORDS = {8: "eight", 18: "eighteen", 19: "nineteen", 20: "twenty"}
+WORDS = {8: "eight", 18: "eighteen", 19: "nineteen", 20: "twenty", 21: "twenty-one"}
 
 
 def main() -> int:
@@ -110,7 +110,7 @@ def main() -> int:
         f"Coverage:** {WORDS[len(records)]} record steps, {first['year']} to "
         f"{last['year']}": "coverage field",
         f"One of the {len(records)} record steps carries an AI credit: the "
-        "`credit` column is `ai` for the 2026 row and `human` for the other "
+        "`credit` column is `ai` for the 2026 rank ≥ 30 row and `human` for the other "
         f"{len(humans)}": "AI-attribution lead",
     }
     return report(failures + missing(prose(HERE), claims))
