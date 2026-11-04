@@ -32,24 +32,24 @@ year,finder,category,cves
 2015,Oren Souroujon,other,1
 2015,Isaac Boukris,other,1
 2015,Paras Sethia,other,1
-2015,Marc Hesse at RethinkDB,other,1
 2015,Andrey Labunets (Facebook),other,1
+2015,Marc Hesse at RethinkDB,other,1
 2016,Cure53,other,7
 2016,Dan McNulty,other,2
-2016,Luật Nguyễn,other,2
 2016,Fernando Muñoz,other,2
+2016,Luật Nguyễn,other,2
 2016,Kamil Dudka,other,1
 2016,Daniel Stenberg,other,1
 2016,Christian Heimes,other,1
 2016,the Mitre CVE Assignment Team,other,1
 2016,Red Hat,other,1
-2016,Bru Rom,other,1
-2016,the curl security team,other,1
 2016,Marcelo Echeverria,other,1
+2016,the curl security team,other,1
+2016,Bru Rom,other,1
 2016,Guohui from Huawei WeiRan Labs,other,1
 2016,Moti Avrahami,other,1
-2016,Ray Satiro (Jay),other,1
 2016,Isaac Boukris,other,1
+2016,Ray Satiro (Jay),other,1
 2017,Brian Carpenter (Geeknik Labs),other,2
 2017,Even Rouault,other,2
 2017,John Schoenick,other,1
@@ -102,8 +102,8 @@ year,finder,category,cves
 2023,Harry Sintonen,other,9
 2023,Hiroki Kurosawa,other,3
 2023,Maksymilian Arciemowicz,other,1
-2023,w0x42 on hackerone,other,1
 2023,Jay Satiro,other,1
+2023,w0x42 on hackerone,other,1
 2023,selmelc on hackerone,other,1
 2023,Wei Chong Tan,other,1
 2023,Patrick Monnerat,other,1
@@ -113,8 +113,8 @@ year,finder,category,cves
 2024,newfunction,other,1
 2024,Dov Murik (Transmit Security),other,1
 2024,Frank Yueh,other,1
-2024,w0x42 on hackerone,other,1
 2024,Dexter Gerig,other,1
+2024,w0x42 on hackerone,other,1
 2024,Dan Fandrich,other,1
 2025,Hiroki Kurosawa,other,2
 2025,Stanislav Fort (Aisle Research),ai_affiliated,1
@@ -125,11 +125,16 @@ year,finder,category,cves
 2025,Ankom Coper,other,1
 2025,Christian Heusel,other,1
 2025,Yihang Zhou,other,1
-2026,Stanislav Fort (Aisle Research),ai_affiliated,9
-2026,Joshua Rogers (Aisle Research),ai_affiliated,6
-2026,Muhamad Arga Reksapati,other,4
+2026,Stanislav Fort (Aisle Research),ai_affiliated,19
+2026,Joshua Rogers (Aisle Research),ai_affiliated,14
+2026,Muhamad Arga Reksapati,other,5
+2026,Luna with Claude,explicit_ai,2
+2026,Anthropic,ai_affiliated,2
 2026,Eunsoo Kim (Autonomous Code Security team at Microsoft),ai_affiliated,2
 2026,Harry Sintonen,other,2
+2026,Maksim Hayder,other,1
+2026,Bobbeh Rhino,other,1
+2026,Axel Mierczuk,other,1
 2026,Martin Dukek,other,1
 2026,Stephan Zeisberg (Security Research Labs),other,1
 2026,alienowo on hackerone (AntAISecurityLab),ai_affiliated,1

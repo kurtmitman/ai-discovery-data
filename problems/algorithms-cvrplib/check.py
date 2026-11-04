@@ -49,7 +49,7 @@ def main() -> int:
         f"posted {last_pre_2026}": "last pre-2026 objective",
         f"the {counts['optimality_proof']} optimality-proof events cover "
         f"{len(proved)} distinct instances": "proved-instances fact",
-        f"declining — {years['2026']} events in 2026 against "
+        f"{years['2026']} events in 2026 against "
         f"{years['2025']} in 2025; {pre_2021} of the "
         f"{counts['objective_improvement']} better-objective events were "
         "posted 2015–2021": "verdict clause",

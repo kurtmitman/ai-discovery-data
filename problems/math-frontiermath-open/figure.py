@@ -6,8 +6,9 @@ Run: python3 problems/math-frontiermath-open/figure.py
 discovery-math-frontiermath-open.png is two panels sharing the notability
 lanes: a timeline placing each dated solution event by date, and a
 denominator panel drawing the whole pool today as one stacked bar per tier —
-open, solved by AI, solved by humans — so the six events on the left are
-read against the 47 problems still standing on the right.
+open, solved by AI, solved by humans and AI together, solved by humans — so
+the events on the left are read against the problems still standing on the
+right.
 cumulative-math-frontiermath-open.png is the running count of solved
 problems for the collection-wide cumulative index. Both read the mechanical
 page ledger and the hand-transcribed event ledger beside this file.
@@ -32,6 +33,7 @@ from matplotlib import pyplot as plt  # noqa: E402
 
 from lib.chart import (  # noqa: E402
     AI,
+    AI_SOFT,
     HUMAN,
     NOW,
     save,
@@ -50,10 +52,16 @@ LABELS = {
     "q2-absolute-galois": "Gal. group of Q$_2$\n(Claude Fable 5)",
     "superpermutations": "superpermutations\n(GPT-5.6 Sol)",
     "genus-2-jacobian-torsion": "genus-2 torsion\n(GPT-5.6 Sol)",
-    "inverse-galois": "inverse Galois M$_{23}$\n(scored human)",
-    "hadamard": "Hadamard 668\n(Claude)",
-    "elliptic-curve-rank": "elliptic rank ≥ 30\n(Claude)",
+    "inverse-galois": "inverse Galois M$_{23}$\n(human + AI)",
+    "hadamard": "Hadamard 668\n(human + Claude)",
+    "elliptic-curve-rank": "elliptic rank ≥ 30\n(human + Claude)",
+    "committee-election": "committee core\n(human + GPT-6 Astra)",
+    "apery-irrationality": "ζ(5) irrational\n(human + AI)",
+    "large-mahler-measure": "Mahler measure\n(OpenAI model)",
 }
+# Event colours: solved by AI, by humans and AI together, by humans.
+EVENT_COLOUR = {"solved_ai": AI, "solved_human_ai": AI_SOFT,
+                "solved_human": HUMAN}
 # Hand-placed offsets keep neighbouring labels off each other and off the
 # lane above; (dx, dy) in points.
 OFFSETS = {
@@ -64,6 +72,9 @@ OFFSETS = {
     "inverse-galois": (0, 12),
     "hadamard": (-4, 12),
     "elliptic-curve-rank": (30, -30),
+    "committee-election": (0, -30),
+    "apery-irrationality": (0, -30),
+    "large-mahler-measure": (0, 12),
 }
 ANNOUNCED = "2026-02-26"
 
@@ -92,7 +103,7 @@ def main() -> None:
         tier = by_slug[row["slug"]]["notability"]
         x = year_fraction(row["date"])
         y = TIERS.index(tier)
-        colour = AI if row["event"] == "solved_ai" else HUMAN
+        colour = EVENT_COLOUR[row["event"]]
         ax.scatter([x], [y], s=64, color=colour, edgecolor="white",
                    linewidth=0.8, zorder=4)
         dx, dy = OFFSETS[row["slug"]]
@@ -118,7 +129,7 @@ def main() -> None:
     ax.set_ylim(-0.75, 3.55)
     ax.set_yticks(range(len(TIERS)))
     ax.set_yticklabels(TIERS, fontsize=8.5)
-    months = [f"2026-{month:02d}" for month in range(2, 9, 2)]
+    months = [f"2026-{month:02d}" for month in range(2, 12, 2)]
     ax.set_xticks([year_fraction(month) for month in months])
     ax.set_xticklabels(months, fontsize=8.5)
     shade_era(ax, right)
@@ -126,7 +137,7 @@ def main() -> None:
     note = (f"{len(problems)} problem pages; "
             f"{len(dated) + len(undated)} recorded solves.\nNot drawn: "
             f"{len(undated)} undated AI solve{'' if len(undated) == 1 else 's'}"
-            "\n(withdrawn from the pool, or pending detail).")
+            "\n(withdrawn from the pool, or no stated date).")
     ax.text(0.03, 0.03, note, transform=ax.transAxes, fontsize=8.2,
             color="#333333", va="bottom", linespacing=1.4)
 
@@ -138,16 +149,17 @@ def main() -> None:
         in_tier = [row for row in problems if row["notability"] == tier]
         open_count = sum(row["status"] == "unsolved" for row in in_tier)
         ai_count = sum(row["status"] == "solved_ai" for row in in_tier)
+        joint_count = sum(row["status"] == "solved_human_ai" for row in in_tier)
         human_count = sum(row["status"] == "solved_human" for row in in_tier)
         base = 0
         for count, colour in ((open_count, OPEN_COLOUR), (ai_count, AI),
-                              (human_count, HUMAN)):
+                              (joint_count, AI_SOFT), (human_count, HUMAN)):
             if count:
                 pool_ax.barh(lane, count, left=base, height=0.42,
                              color=colour, edgecolor="white", linewidth=0.6,
                              zorder=3)
             base += count
-        solved = ai_count + human_count
+        solved = ai_count + joint_count + human_count
         reading = (f"{open_count} of {base} open" if solved
                    else f"all {base} open")
         # Above the bar rather than beside it: the panel is too narrow for a

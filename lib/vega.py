@@ -20,6 +20,7 @@ from lib.palette import (  # noqa: F401
     HUMAN,
     HUMAN_SOFT,
     NEUTRAL,
+    SEVERITY_RAMP,
     UNATTRIBUTED as DARKGREY,
 )
 from lib.table import read_csv
@@ -308,10 +309,16 @@ def periodic_series(csv: str, period: str, y_column: str, y_title: str,
 
 
 def periodic_split_series(csv: str, period: str, columns: dict[str, str],
-                          colors: dict[str, str], y_title: str):
+                          colors: dict[str, str], y_title: str,
+                          drop_leading_zeros: bool = False):
     """Stacked bands at a quarterly or monthly cadence."""
     def build(slug: str):
-        rows = _fill_periods(load(slug, csv), period)
+        rows = load(slug, csv)
+        if drop_leading_zeros:
+            first = next(i for i, r in enumerate(rows)
+                         if any(num(r[c]) for c in columns))
+            rows = rows[first:]
+        rows = _fill_periods(rows, period)
         spec = stacked_bars(rows, period, columns, colors,
                             x_title=period.capitalize(), y_title=y_title)
         spec["encoding"]["x"]["axis"] = _period_axis(period)

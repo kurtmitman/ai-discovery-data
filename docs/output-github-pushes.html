@@ -48,10 +48,10 @@ footer { margin-top: 3em; color: #57606a; font-size: 0.85em;
 <li><strong>Domain:</strong> outside the three domains</li>
 <li><strong>Role:</strong> contrast case: volume</li>
 <li><strong>Metric:</strong> code output; git pushes to GitHub per quarter, summed over economies</li>
-<li><strong>Coverage:</strong> 2020-Q1 to 2026-Q1, quarterly; fetched 2026-08-10</li>
+<li><strong>Coverage:</strong> 2020-Q1 to 2026-Q2, quarterly; fetched 2026-11-03</li>
 <li><strong>Data:</strong> <a href="https://github.com/tecunningham/ai-discovery-data/blob/main/problems/output-github-pushes/github-innovationgraph-global.csv"><code>github-innovationgraph-global.csv</code></a></li>
 <li><strong>Upstream:</strong> <a href="https://github.com/github/innovationgraph">https://github.com/github/innovationgraph</a></li>
-<li><strong>Verdict:</strong> accelerating — 319.8 million pushes in 2026-Q1 against 246.8 million in 2025-Q4 and a 2025 quarterly mean of 212.2 million</li>
+<li><strong>Verdict:</strong> accelerating — 407.6 million pushes in 2026-Q2 against 246.8 million in 2025-Q4 and a 2025 quarterly mean of 212.2 million</li>
 </ul>
 <h3>GitHub global git pushes</h3>
 <div id="chart0" class="chart"></div>
@@ -71,10 +71,10 @@ carries no authorship field.</p>
 <ul>
 <li><strong>chatgpt quarter:</strong> 135.4 million in 2022-Q4 (the quarter ChatGPT was
   released)</li>
-<li><strong>recent quarters:</strong> from 167.8 million in 2024-Q4 to 319.8 million in
-  2026-Q1, 1.9 times in five quarters</li>
-<li><strong>growth split:</strong> 2020-Q1 to 2022-Q4 adds 68%; 2022-Q4 to 2026-Q1 adds
-  136%</li>
+<li><strong>recent quarters:</strong> from 177.7 million in 2025-Q1 to 407.6 million in
+  2026-Q2, 2.3 times in five quarters</li>
+<li><strong>growth split:</strong> 2020-Q1 to 2022-Q4 adds 68%; 2022-Q4 to 2026-Q2 adds
+  201%</li>
 <li><strong>2025 mean:</strong> a 2025 quarterly mean of 212.2 million pushes</li>
 </ul>
 <p>The collection-wide <a href="cumulative.html">cumulative index</a> redraws this
@@ -127,7 +127,7 @@ field.</p>
 <p>The dataset carries no authorship field; no AI share can be computed from
 it. <a href="https://github.com/tecunningham/ai-discovery-data/blob/main/problems/output-github-pushes/github-innovationgraph-global.csv"><code>github-innovationgraph-global.csv</code></a>
 holds per-quarter totals of pushes, repositories and developers; no AI
-credit appears in the Innovation Graph files as of the vendored 2026-Q1
+credit appears in the Innovation Graph files as of the vendored 2026-Q2
 release.</p>
 <h2 id="sources">Sources</h2>
 <ul>
@@ -147,7 +147,7 @@ chart inline; the PNGs committed in the repository remain the archival
 record, drawn from the same CSVs. Rebuilt by
 <code>tools/build_docs.py</code>.</footer>
 <script>
-vegaEmbed('#chart0', {"$schema":"https://vega.github.io/schema/vega-lite/v5.json","config":{"axis":{"gridColor":"#e3e3e3","labelFontSize":12,"titleFontSize":12},"legend":{"labelFontSize":12,"titleFontSize":12},"view":{"stroke":null}},"data":{"values":[{"quarter":"2020-Q1","series":"git pushes","value":80818507,"x":"2020-02-15"},{"quarter":"2020-Q2","series":"git pushes","value":97826757,"x":"2020-05-15"},{"quarter":"2020-Q3","series":"git pushes","value":90342286,"x":"2020-08-15"},{"quarter":"2020-Q4","series":"git pushes","value":95305074,"x":"2020-11-15"},{"quarter":"2021-Q1","series":"git pushes","value":100124471,"x":"2021-02-15"},{"quarter":"2021-Q2","series":"git pushes","value":106274154,"x":"2021-05-15"},{"quarter":"2021-Q3","series":"git pushes","value":99170316,"x":"2021-08-15"},{"quarter":"2021-Q4","series":"git pushes","value":107413770,"x":"2021-11-15"},{"quarter":"2022-Q1","series":"git pushes","value":117027199,"x":"2022-02-15"},{"quarter":"2022-Q2","series":"git pushes","value":125509146,"x":"2022-05-15"},{"quarter":"2022-Q3","series":"git pushes","value":125575542,"x":"2022-08-15"},{"quarter":"2022-Q4","series":"git pushes","value":135432974,"x":"2022-11-15"},{"quarter":"2023-Q1","series":"git pushes","value":144228396,"x":"2023-02-15"},{"quarter":"2023-Q2","series":"git pushes","value":147009169,"x":"2023-05-15"},{"quarter":"2023-Q3","series":"git pushes","value":141334665,"x":"2023-08-15"},{"quarter":"2023-Q4","series":"git pushes","value":149427748,"x":"2023-11-15"},{"quarter":"2024-Q1","series":"git pushes","value":153037523,"x":"2024-02-15"},{"quarter":"2024-Q2","series":"git pushes","value":158300927,"x":"2024-05-15"},{"quarter":"2024-Q3","series":"git pushes","value":152879513,"x":"2024-08-15"},{"quarter":"2024-Q4","series":"git pushes","value":167788463,"x":"2024-11-15"},{"quarter":"2025-Q1","series":"git pushes","value":177693914,"x":"2025-02-15"},{"quarter":"2025-Q2","series":"git pushes","value":209236125,"x":"2025-05-15"},{"quarter":"2025-Q3","series":"git pushes","value":214957089,"x":"2025-08-15"},{"quarter":"2025-Q4","series":"git pushes","value":246758015,"x":"2025-11-15"},{"quarter":"2026-Q1","series":"git pushes","value":319841623,"x":"2026-02-15"}]},"encoding":{"color":{"field":"series","legend":{"orient":"top"},"scale":{"domain":["git pushes"],"range":["#37474f"]},"title":null,"type":"nominal"},"tooltip":[{"field":"x","title":"Date","type":"temporal"},{"field":"series","title":"series","type":"nominal"},{"field":"value","title":"Git pushes per quarter","type":"quantitative"},{"field":"quarter","title":"quarter","type":"nominal"}],"x":{"field":"x","title":"Date","type":"temporal"},"y":{"field":"value","title":"Git pushes per quarter","type":"quantitative"}},"height":340,"mark":{"strokeWidth":1.6,"type":"line"},"width":"container"}, {actions: {export: true, source: false, compiled: false, editor: false}});
+vegaEmbed('#chart0', {"$schema":"https://vega.github.io/schema/vega-lite/v5.json","config":{"axis":{"gridColor":"#e3e3e3","labelFontSize":12,"titleFontSize":12},"legend":{"labelFontSize":12,"titleFontSize":12},"view":{"stroke":null}},"data":{"values":[{"quarter":"2020-Q1","series":"git pushes","value":80818507,"x":"2020-02-15"},{"quarter":"2020-Q2","series":"git pushes","value":97826757,"x":"2020-05-15"},{"quarter":"2020-Q3","series":"git pushes","value":90342286,"x":"2020-08-15"},{"quarter":"2020-Q4","series":"git pushes","value":95305074,"x":"2020-11-15"},{"quarter":"2021-Q1","series":"git pushes","value":100124471,"x":"2021-02-15"},{"quarter":"2021-Q2","series":"git pushes","value":106274154,"x":"2021-05-15"},{"quarter":"2021-Q3","series":"git pushes","value":99170316,"x":"2021-08-15"},{"quarter":"2021-Q4","series":"git pushes","value":107413770,"x":"2021-11-15"},{"quarter":"2022-Q1","series":"git pushes","value":117027199,"x":"2022-02-15"},{"quarter":"2022-Q2","series":"git pushes","value":125509146,"x":"2022-05-15"},{"quarter":"2022-Q3","series":"git pushes","value":125575542,"x":"2022-08-15"},{"quarter":"2022-Q4","series":"git pushes","value":135432974,"x":"2022-11-15"},{"quarter":"2023-Q1","series":"git pushes","value":144228396,"x":"2023-02-15"},{"quarter":"2023-Q2","series":"git pushes","value":147009169,"x":"2023-05-15"},{"quarter":"2023-Q3","series":"git pushes","value":141334665,"x":"2023-08-15"},{"quarter":"2023-Q4","series":"git pushes","value":149427748,"x":"2023-11-15"},{"quarter":"2024-Q1","series":"git pushes","value":153037523,"x":"2024-02-15"},{"quarter":"2024-Q2","series":"git pushes","value":158300927,"x":"2024-05-15"},{"quarter":"2024-Q3","series":"git pushes","value":152879513,"x":"2024-08-15"},{"quarter":"2024-Q4","series":"git pushes","value":167788463,"x":"2024-11-15"},{"quarter":"2025-Q1","series":"git pushes","value":177693914,"x":"2025-02-15"},{"quarter":"2025-Q2","series":"git pushes","value":209236125,"x":"2025-05-15"},{"quarter":"2025-Q3","series":"git pushes","value":214957089,"x":"2025-08-15"},{"quarter":"2025-Q4","series":"git pushes","value":246758015,"x":"2025-11-15"},{"quarter":"2026-Q1","series":"git pushes","value":319841623,"x":"2026-02-15"},{"quarter":"2026-Q2","series":"git pushes","value":407605336,"x":"2026-05-15"}]},"encoding":{"color":{"field":"series","legend":{"orient":"top"},"scale":{"domain":["git pushes"],"range":["#37474f"]},"title":null,"type":"nominal"},"tooltip":[{"field":"x","title":"Date","type":"temporal"},{"field":"series","title":"series","type":"nominal"},{"field":"value","title":"Git pushes per quarter","type":"quantitative"},{"field":"quarter","title":"quarter","type":"nominal"}],"x":{"field":"x","title":"Date","type":"temporal"},"y":{"field":"value","title":"Git pushes per quarter","type":"quantitative"}},"height":340,"mark":{"strokeWidth":1.6,"type":"line"},"width":"container"}, {actions: {export: true, source: false, compiled: false, editor: false}});
 </script>
 </body>
 </html>

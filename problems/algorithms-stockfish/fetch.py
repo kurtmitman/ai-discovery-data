@@ -46,6 +46,13 @@ ENTRY = re.compile(
     rf'({STRING}|null),\[(-?\d+(?:\.\d+)?),(\d+(?:\.\d+)?)\]')
 
 
+# The series starts at the Stockfish 3 release build. In autumn 2026 the page
+# began listing builds back to 2008-09-01, before Stockfish 1 forked from
+# Glaurung; keeping the committed start avoids redefining the span and the
+# per-year means every verdict and fact here is computed against.
+FIRST_RELEASE = "3"
+
+
 def parse(text: str) -> list[dict[str, str]]:
     rows, seen = [], set()
     for sha, day, release, elo, err in ENTRY.findall(text):
@@ -54,7 +61,9 @@ def parse(text: str) -> list[dict[str, str]]:
         seen.add(sha)
         rows.append({"date": day, "release": json.loads(release) or "",
                      "elo_vs_sf15": elo, "elo_err": err})
-    return rows
+    rows.sort(key=lambda row: row["date"])
+    start = next(i for i, row in enumerate(rows) if row["release"] == FIRST_RELEASE)
+    return rows[start:]
 
 
 def main() -> int:

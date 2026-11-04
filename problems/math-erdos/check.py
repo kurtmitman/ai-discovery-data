@@ -13,7 +13,7 @@ sys.path.insert(0, str(HERE.parents[1]))
 from lib.prose import missing, prose, report  # noqa: E402
 from lib.table import read_csv  # noqa: E402
 
-WORDS = {13: "thirteen", 14: "fourteen", 30: "thirty", 34: "thirty-four",
+WORDS = {0: "no", 13: "thirteen", 14: "fourteen", 16: "sixteen", 30: "thirty", 34: "thirty-four",
          39: "thirty-nine", 40: "forty", 53: "fifty-three"}
 
 

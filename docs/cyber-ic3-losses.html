@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FBI Internet Crime Complaint Center: ransomware and reported losses — ai-discovery-data</title>
+<meta name="description" content="complaints identified as ransomware per year to the FBI&#x27;s Internet Crime Complaint Center, with ransomware losses and total reported losses across all crime types, one value per…">
+<meta property="og:title" content="FBI Internet Crime Complaint Center: ransomware and reported losses">
+<meta property="og:description" content="complaints identified as ransomware per year to the FBI&#x27;s Internet Crime Complaint Center, with ransomware losses and total reported losses across all crime types, one value per…">
+<base target="_blank">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.33.1/build/vega.min.js" integrity="sha384-NMXhl2TbCXxcN7o4ROC56Funm78m4AylL8gMg/7Kn4YU+wrm23K9l7cY8lDRXQ9d" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.23.0/build/vega-lite.min.js" integrity="sha384-D9LYH0esGjcxQJsBuxOuXtCDJGXRWW1+KhluzWPqi0rLJmiR/ygPChefaD+rFFDQ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.29.0/build/vega-embed.min.js" integrity="sha384-M+Ax7e/WFJpxSOF09HzI+Sj4wg9ottVd/uxmV2ItGGh02fLH28t2FAOJx3TJBap5" crossorigin="anonymous"></script>
+<script>window.MathJax = {tex: {inlineMath: [['$', '$']]}};</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" integrity="sha384-AHAnt9ZhGeHIrydA1Kp1L7FN+2UosbF7RQg6C+9Is/a7kDpQ1684C2iH2VWil6r4" crossorigin="anonymous"></script>
+<style>
+body { font: 15px/1.5 -apple-system, "Segoe UI", Helvetica, Arial,
+       sans-serif; color: #1f2328; margin: 0 auto; max-width: 860px;
+       padding: 24px 18px 60px; }
+h1 { font-size: 1.5em; margin-bottom: 0.2em; }
+h2 { font-size: 1.15em; margin: 1.8em 0 0.4em; border-bottom: 1px solid
+     #d8dee4; padding-bottom: 0.2em; }
+h3 { font-size: 1.02em; margin: 1.4em 0 0.3em; }
+img { max-width: 100%; height: auto; }
+table { border-collapse: collapse; margin: 0.8em 0; display: block;
+        overflow-x: auto; }
+th, td { border: 1px solid #d8dee4; padding: 4px 10px; }
+th { background: #f6f8fa; }
+code { background: #f6f8fa; padding: 0.1em 0.3em; border-radius: 4px;
+       font-size: 0.9em; }
+pre { background: #f6f8fa; padding: 10px 12px; border-radius: 6px;
+      overflow-x: auto; }
+pre code { background: none; padding: 0; }
+blockquote { color: #57606a; border-left: 3px solid #d8dee4;
+             margin: 0.8em 0; padding: 0 1em; }
+.metric { color: #57606a; margin: 0 0 0.6em; }
+.links a { margin-right: 1.2em; }
+.chart { width: 100%; }
+.note { color: #57606a; font-size: 0.88em; margin-top: 0.3em; }
+footer { margin-top: 3em; color: #57606a; font-size: 0.85em;
+         border-top: 1px solid #d8dee4; padding-top: 0.8em; }
+</style>
+</head>
+<body>
+<p class="links"><a href="index.html" target="_self">← all series</a></p>
+<h1>FBI Internet Crime Complaint Center: ransomware and reported losses</h1>
+<ul>
+<li><strong>Domain:</strong> vulnerabilities</li>
+<li><strong>Role:</strong> context: harm</li>
+<li><strong>Metric:</strong> complaints identified as ransomware per year to the FBI's Internet Crime Complaint Center, with ransomware losses and total reported losses across all crime types, one value per year as that year's annual report states it</li>
+<li><strong>Coverage:</strong> 2015–2025, one row per annual report; annual cadence; reports read 2026-11-03</li>
+<li><strong>Data:</strong> <a href="https://github.com/tecunningham/ai-discovery-data/blob/main/problems/cyber-ic3-losses/ic3-by-year.csv"><code>ic3-by-year.csv</code></a></li>
+<li><strong>Upstream:</strong> <a href="https://www.ic3.gov/AnnualReport/Reports">https://www.ic3.gov/AnnualReport/Reports</a> (one PDF per year, <code>https://www.ic3.gov/AnnualReport/Reports/&lt;year&gt;_IC3Report.pdf</code>)</li>
+<li><strong>Verdict:</strong> too early — the 2026 report is due in 2027; 3,611 ransomware complaints in 2025 against 3,156 in 2024 and a 2,502/year mean over 2015–2024</li>
+</ul>
+<h3>Ransomware complaints</h3>
+<div id="chart0" class="chart"></div>
+<p class="note">Each bar is the figure one annual report states for its own year.</p>
+<h3>Reported losses</h3>
+<div id="chart1" class="chart"></div>
+<p class="note">Each bar is the figure one annual report states for its own year. Ransomware losses, a fraction of a percent of these, are in the CSV&#x27;s ransomware_losses_usd column.</p>
+<h2 id="definition">Definition</h2>
+<p>The FBI's Internet Crime Complaint Center (IC3) takes complaints from victims
+of internet-enabled crime and publishes an annual Internet Crime Report
+[@fbi2026ic3]. Each report tabulates complaints and reported losses by crime
+type, with ransomware as one row.</p>
+<p>The counted event here is one complaint identified as ransomware in the year
+of the report. The two dollar columns are what complainants reported losing:
+ransomware losses from the crime-type loss table, and total reported losses
+across every crime type from the report's own headline figure. Neither is an
+estimate of the cost of ransomware or of cybercrime; the reports say what
+the ransomware figure leaves out:</p>
+<blockquote>
+<p>Regarding ransomware adjusted losses, this number does not include
+estimates of lost business, time, wages, files, or equipment, or any
+third-party remediation services acquired by an entity. In some cases,
+entities do not report any loss amount to FBI, thereby creating an
+artificially low overall ransomware loss rate. Lastly, the number only
+represents what entities report to FBI via IC3 and does not account for
+the entity directly reporting to FBI field offices/agents.
+— FBI Internet Crime Complaint Center, 2024 Internet Crime Report, footnote to the crime-type loss table, read 2026-11-03 [@fbi2026ic3]</p>
+</blockquote>
+<p>Total reported losses span every crime type the reports tabulate, most of
+them frauds that involve no software flaw. The tables record neither how a
+ransomware attacker gained access nor which vulnerability, if any, was used.</p>
+<h2 id="facts">Facts</h2>
+<ul>
+<li><strong>rows:</strong> 11 annual reports, 2015–2025</li>
+<li><strong>ransomware complaints by year:</strong> 2015: 2,453 · 2016: 2,673 ·
+  2017: 1,783 · 2018: 1,493 · 2019: 2,047 · 2020: 2,474 · 2021: 3,729 ·
+  2022: 2,385 · 2023: 2,825 · 2024: 3,156 · 2025: 3,611</li>
+<li><strong>ransomware losses:</strong> $32.3 million in 2025 against $12.5 million in
+  2024; the largest year is 2023 at $59.6 million</li>
+<li><strong>ransomware share of losses:</strong> 0.3% of all reported losses over
+  2015–2025</li>
+<li><strong>total losses:</strong> $20.88 billion in 2025 against $1.07 billion in 2015</li>
+<li><strong>complaints:</strong> 1,008,597 in 2025, the most of any year here</li>
+</ul>
+<p><img alt="Total losses reported to IC3 per year across all crime types, in billions of dollars." src="https://raw.githubusercontent.com/tecunningham/ai-discovery-data/main/problems/cyber-ic3-losses/losses-cyber-ic3-losses.png" /></p>
+<p>The collection-wide <a href="cumulative.html">cumulative index</a> redraws the
+ransomware complaints as a running total:</p>
+<p><img alt="Ransomware complaints to IC3 to date." src="https://raw.githubusercontent.com/tecunningham/ai-discovery-data/main/problems/cyber-ic3-losses/cumulative-cyber-ic3-losses.png" /></p>
+<h2 id="method">Method</h2>
+<p>There is no <code>fetch.py</code> in this folder. Each row is transcribed by hand from
+that year's report, read as a PDF from the upstream listing. The ransomware
+columns come from the row labelled Ransomware in the report's two crime-type
+tables, by complaint count and by complaint loss. The total-loss column comes
+from the report's headline statement for its own year, and the
+<code>losses_as_stated</code> column keeps that statement's wording verbatim; for 2015
+it is the totals row of the victims-by-age table, the only place that report
+states an exact annual total. <code>source</code> and <code>source_url</code> name the report for
+every row. <a href="https://github.com/tecunningham/ai-discovery-data/blob/main/problems/cyber-ic3-losses/check.py"><code>check.py</code></a> recomputes the fact lines above and checks
+that each <code>losses_usd</code> value is the figure its <code>losses_as_stated</code> text states.</p>
+<p>Later reports restate earlier years in five-year comparison tables, sometimes
+with different rounding (the 2022 report's five-year chart puts 2020 at $4.2 billion
+where the 2020 report says "exceeding $4.1 billion"). Each row here uses its own year's
+report only.</p>
+<p><a href="https://github.com/tecunningham/ai-discovery-data/blob/main/problems/cyber-ic3-losses/figure.py"><code>figure.py</code></a> draws the ransomware complaints as one bar per year
+in the darkest severity-ramp colour, and the total reported losses as one
+grey bar per year in billions of dollars; the grey marks the totals as the
+agency's own figures, most rounded to the nearest $0.1 billion. The axes are
+linear, and January 2026 onward is shaded, as in every figure here, though
+no row reaches it.</p>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li><strong>complaints are a sample, not a census.</strong> A complaint exists only when a
+  victim files one with IC3; the quoted footnote states that reports made
+  directly to FBI field offices are not counted.</li>
+<li><strong>the loss columns understate cost.</strong> Ransomware losses exclude lost
+  business, recovery and remediation, per the quoted footnote, and many
+  complaints report no loss.</li>
+<li><strong>the total is not a vulnerability measure.</strong> Reported losses span every
+  crime type; the folder keeps them as scale for the ransomware figures,
+  not as a harm attributable to software flaws.</li>
+<li><strong>the ransomware row counts complaints, not attacks.</strong> Nothing in the
+  tables links a complaint to the vulnerability or access method used.</li>
+<li><strong>the rounding differs by year.</strong> 2015's total is exact to the dollar;
+  most later totals are stated to $0.1 billion and several as "exceeding" a
+  rounded figure.</li>
+<li><strong>the series is annual and lags.</strong> The report for a year appears in the
+  spring after it, so no 2026 value exists at this read.</li>
+</ul>
+<h2 id="ai-attribution">AI attribution</h2>
+<p>The crime-type tables record neither the attacker's method nor its tooling.
+No AI attribution appears in the ransomware rows of the 2015–2025 reports as
+of the 2026-11-03 read [@fbi2026ic3].</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>[@fbi2026ic3] — the 2015–2025 Internet Crime Reports every row is
+  transcribed from, and the footnote quoted under Definition.</li>
+<li>Sibling series:
+  <a href="cyber-kev-exploited.html">all software: vulnerabilities known exploited</a>
+  splits CISA's exploited-vulnerability catalogue by its known-ransomware-use
+  flag, a per-CVE count rather than a complaint count;
+  <a href="cyber-hhs-breaches.html">health-data breaches reported to HHS</a>
+  counts breaches and people affected, a different harm unit.</li>
+</ul>
+<footer>This page renders the folder's
+<a href="https://github.com/tecunningham/ai-discovery-data/tree/main/problems/cyber-ic3-losses/">README</a> with the interactive
+chart inline; the PNGs committed in the repository remain the archival
+record, drawn from the same CSVs. Rebuilt by
+<code>tools/build_docs.py</code>.</footer>
+<script>
+vegaEmbed('#chart0', {"$schema":"https://vega.github.io/schema/vega-lite/v5.json","config":{"axis":{"gridColor":"#e3e3e3","labelFontSize":12,"titleFontSize":12},"legend":{"labelFontSize":12,"titleFontSize":12},"view":{"stroke":null}},"data":{"values":[{"series":"ransomware complaints","value":2453,"x":"2015"},{"series":"ransomware complaints","value":2673,"x":"2016"},{"series":"ransomware complaints","value":1783,"x":"2017"},{"series":"ransomware complaints","value":1493,"x":"2018"},{"series":"ransomware complaints","value":2047,"x":"2019"},{"series":"ransomware complaints","value":2474,"x":"2020"},{"series":"ransomware complaints","value":3729,"x":"2021"},{"series":"ransomware complaints","value":2385,"x":"2022"},{"series":"ransomware complaints","value":2825,"x":"2023"},{"series":"ransomware complaints","value":3156,"x":"2024"},{"series":"ransomware complaints","value":3611,"x":"2025"}]},"encoding":{"color":{"field":"series","legend":{"orient":"top"},"scale":{"domain":["ransomware complaints"],"range":["#234f61"]},"title":null,"type":"nominal"},"tooltip":[{"field":"x","title":"Year","type":"ordinal"},{"field":"series","title":"series","type":"nominal"},{"field":"value","title":"count","type":"quantitative"}],"x":{"axis":{"labelAngle":-45},"field":"x","title":"Year","type":"ordinal"},"y":{"field":"value","stack":true,"title":"Ransomware complaints to IC3","type":"quantitative"}},"height":340,"mark":{"type":"bar"},"width":"container"}, {actions: {export: true, source: false, compiled: false, editor: false}});
+vegaEmbed('#chart1', {"$schema":"https://vega.github.io/schema/vega-lite/v5.json","config":{"axis":{"gridColor":"#e3e3e3","labelFontSize":12,"titleFontSize":12},"legend":{"labelFontSize":12,"titleFontSize":12},"view":{"stroke":null}},"data":{"values":[{"series":"all crime types","value":1070711522,"x":"2015"},{"series":"all crime types","value":1330000000,"x":"2016"},{"series":"all crime types","value":1400000000,"x":"2017"},{"series":"all crime types","value":2700000000,"x":"2018"},{"series":"all crime types","value":3500000000,"x":"2019"},{"series":"all crime types","value":4100000000,"x":"2020"},{"series":"all crime types","value":6900000000,"x":"2021"},{"series":"all crime types","value":10300000000,"x":"2022"},{"series":"all crime types","value":12500000000,"x":"2023"},{"series":"all crime types","value":16600000000,"x":"2024"},{"series":"all crime types","value":20877000000,"x":"2025"}]},"encoding":{"color":{"field":"series","legend":{"orient":"top"},"scale":{"domain":["all crime types"],"range":["#777777"]},"title":null,"type":"nominal"},"tooltip":[{"field":"x","title":"Year","type":"ordinal"},{"field":"series","title":"series","type":"nominal"},{"field":"value","title":"count","type":"quantitative"}],"x":{"axis":{"labelAngle":-45},"field":"x","title":"Year","type":"ordinal"},"y":{"field":"value","stack":true,"title":"Reported losses (US dollars)","type":"quantitative"}},"height":340,"mark":{"type":"bar"},"width":"container"}, {actions: {export: true, source: false, compiled: false, editor: false}});
+</script>
+</body>
+</html>

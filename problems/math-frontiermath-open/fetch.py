@@ -38,6 +38,9 @@ PREFIX = "https://epoch.ai/frontiermath/open-problems/"
 STATUS = {
     "Solved (AI)": "solved_ai",
     "Solved (human)": "solved_human",
+    # Added by the site in autumn 2026 for solves it credits jointly; kept as
+    # its own value rather than folded into either side.
+    "Solved (human + AI)": "solved_human_ai",
     "Unsolved": "unsolved",
 }
 # The badge is usually one of the four notability tiers, but not always:
@@ -57,7 +60,7 @@ def parse_page(url: str) -> dict[str, str]:
     page = fetch(url).decode("utf-8")
     title = re.search(r'<h1 class="title"[^>]*>([^<]+)</h1>', page)
     status = re.search(
-        r'<span class="chip chip-(?:unsolved|solved(?:-human)?) ui-4">'
+        r'<span class="chip chip-(?:unsolved|solved(?:-human|-ai-human)?) ui-4">'
         r'.*?</span>([^<]+)</span>',
         page, re.S)
     meta_start = page.find('<div class="problem-meta"')

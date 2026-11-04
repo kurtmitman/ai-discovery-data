@@ -144,16 +144,6 @@ ties keep the earlier ordering. The criteria are:</p>
 <td>Deposition and release dates are clean and AlphaFold makes it highly AI-exposed. Needs a dedup rule to turn raw structure throughput into first-of-kind events.</td>
 </tr>
 <tr>
-<td><strong>Astronomy — <a href="https://exoplanetarchive.ipac.caltech.edu/docs/API_PS_columns.html">NASA Exoplanet Archive</a></strong> · confirmed exoplanets, especially re-found in archival Kepler/TESS data</td>
-<td style="text-align: center;">🟡</td>
-<td style="text-align: center;">✅</td>
-<td style="text-align: center;">✅</td>
-<td style="text-align: center;">🟡</td>
-<td style="text-align: center;">✅</td>
-<td style="text-align: center;"><strong>8</strong></td>
-<td>Discovery year, method, facility and instrument are all programmatic. The raw count is detector-limited throughput; the AI-legible frontier is the archival-reanalysis subset (design #6), which must be carved out.</td>
-</tr>
-<tr>
 <td><strong>Superconductivity — NIMS SuperCon</strong> · new superconductors, record critical-temperature frontier</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">🟡</td>
@@ -384,6 +374,21 @@ folder carries Dujella's lower-bound and exact-rank frontiers, the ICARM
 leaderboard snapshot, and the 2026 rank ≥ 30 step, whose AI attribution is
 held as a dated quote from the board's editable commentary field rather than
 as a settled credit.</p>
+<h2 id="nasa-exoplanet-archive">NASA Exoplanet Archive</h2>
+<p>Built as <a href="astro-exoplanets.html">problems/astro-exoplanets/</a>: confirmed
+planets per quarter by discovery publication month, with the archival-data
+subset of design #6 carved out as Kepler and K2 planets published after the
+spacecraft's October 2018 retirement, and a hand-checked register of
+discovery papers whose own title or abstract states a machine-learning
+method. The archival flag covers Kepler and K2 only; TESS and ground-based
+archives remain to be separated.</p>
+<h2 id="verizon-data-breach-investigations-report">Verizon Data Breach Investigations Report</h2>
+<p>Considered for the harm-and-cost group and not built. The 2025 report states
+that exploitation of vulnerabilities reached 20% of breaches as an initial
+access vector; the 2024 report measured a differently worded quantity
+("critical path to initiate a breach"), and the 2026 report could not be
+downloaded without registration at the 2026-11-03 read. Two comparable
+editions at most do not make a series with a consistent definition.</p>
 <h2 id="cross-domain-analyses">Cross-domain analyses</h2>
 <h3 id="1-build-a-discovery-index-rather-than-an-output-index">1. Build a discovery index rather than an output index</h3>
 <p>Convert perhaps 30–50 series into dated discovery events. Fit the pre-AI trend

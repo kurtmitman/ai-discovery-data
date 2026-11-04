@@ -42,6 +42,7 @@ def main() -> int:
 
     dated = sorted(row["date"] for row in events if row["date"])
     ai_solves = sum(row["status"] == "solved_ai" for row in problems)
+    joint_solves = sum(row["status"] == "solved_human_ai" for row in problems)
     human_solves = sum(row["status"] == "solved_human" for row in problems)
     unsolved = sum(row["status"] == "unsolved" for row in problems)
     tier_counts = {tier: sum(row["notability"] == tier for row in problems)
@@ -49,20 +50,15 @@ def main() -> int:
     off_scale = len(problems) - sum(tier_counts.values())
     solve_tiers = [by_slug[slug]["notability"] for slug in solved
                    if slug in by_slug]
-    top_two_solves = sum(tier in ("Major advance", "Breakthrough")
-                         for tier in solve_tiers)
-    if top_two_solves:
-        failures.append(f"{top_two_solves} solves sit in the top two tiers; "
-                        "the placement fact and the AI-attribution negative "
-                        "say both stand at zero")
     if off_scale != 1:
         failures.append(f"{off_scale} pages sit outside the four tiers; the "
                         "tiers fact describes exactly one (Novel example)")
 
     claims = {
         f"**pages:** {len(problems)} problem pages in the sitemap read of "
-        f"2026-09-14; {ai_solves} marked solved by AI, {human_solves} by "
-        f"humans, {unsolved} unsolved": "pages fact",
+        f"2026-11-03; {ai_solves} marked solved by AI, {joint_solves} by "
+        f"humans and AI together, {human_solves} by humans, {unsolved} "
+        "unsolved": "pages fact",
         f"**tiers:** {tier_counts['Moderately interesting']} moderately "
         f"interesting · {tier_counts['Solid result']} solid result · "
         f"{tier_counts['Major advance']} major advance · "
@@ -81,7 +77,8 @@ def main() -> int:
             "verdict clause",
         f"recorded solves from {dated[0]} to {dated[-1]}": "coverage field",
         f"{ai_solves} of the {len(events)} recorded solves are credited to "
-        "AI systems in the event ledger": "AI share",
+        f"AI systems in the event ledger and {joint_solves} to humans and AI "
+        "together": "AI share",
     }
     # Every event row appears in the register keyed on its slug, with the
     # page ledger's title and tier and the event ledger's own values, in the

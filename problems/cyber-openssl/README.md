@@ -3,10 +3,10 @@
 - **Domain:** vulnerabilities
 - **Role:** discovery series
 - **Metric:** vulnerabilities disclosed per quarter, split by finder provenance: corroborated AI method, AI affiliation with method unverified, conventional or fuzzing credit, or no reporter credit
-- **Coverage:** 2002–2026, partial through 2026-08-05
+- **Coverage:** 2002–2026, partial through 2026-09-29
 - **Data:** CVE-level [`openssl-cves.csv`](openssl-cves.csv); annual [`openssl-by-year.csv`](openssl-by-year.csv); per-finder [`openssl-finders.csv`](openssl-finders.csv)
 - **Upstream:** <https://github.com/openssl/release-metadata/tree/main/secjson>
-- **Verdict:** accelerating — 39 CVEs by 2026-08-05 against 6 in all of 2025; the largest prior full years were 35 in 2016 and 32 in 2015
+- **Verdict:** accelerating — 63 CVEs by 2026-09-29 against 6 in all of 2025; the largest prior full years were 35 in 2016 and 32 in 2015
 
 ![Quarterly OpenSSL vulnerability disclosures, separating corroborated AI discovery from affiliation-only credits.](discovery-cyber-openssl.png)
 
@@ -30,37 +30,39 @@ not a discovery date, a count of bugs introduced or a measure of bugs
 remaining. Finder provenance identifies who reported a CVE and, when
 separately corroborated, the reported method; it does not measure search
 effort. In this folder, "corroborated AI" means CVE-level evidence that an
-AI system produced the finding, and 27 of 39, or 69%, of the 2026 CVEs
+AI system produced the finding, and 29 of 63, or 46%, of the 2026 CVEs
 carry an AI-lab affiliation or an explicit AI method marker — a wider band
 than the corroborated one, because affiliation alone is not counted as
 method evidence.
 
 ## Facts
 
-- **2026 (through 2026-08-05):** 39 CVEs; 18 corroborated AI, 9
-  AI-affiliated with method unverified, 12 with conventional or fuzzing
-  credits, 0 uncredited
+- **2026 (through 2026-09-29):** 63 CVEs; 18 corroborated AI, 11
+  AI-affiliated with method unverified, 33 with conventional or fuzzing
+  credits, 1 uncredited
 - **prior full-year peaks:** 35 in 2016 and 32 in 2015
 - **same-period comparison (1 January to 5 August):** 39 in 2026 versus 27
   in 2015, 19 in 2016 and 16 in 2023, the three largest prior same-period
   counts
 - **2025:** 6 CVEs; 3 corroborated AI
 - **2026 publication batches:** coordinated publications on 27 January, 13
-  March, 7 April, 9 June and 5 August contained 12, 1, 7, 18 and 1 CVEs
+  March, 7 April, 9 June, 5 August, 13 August, 25 August and 29 September
+  contained 12, 1, 7, 18, 1, 1, 9 and 14 CVEs
 - **2026 severity by provenance (OpenSSL's own ratings):**
 
 | Finder provenance | Critical | High | Moderate | Low |
 |---|---:|---:|---:|---:|
 | Corroborated AI | 0 | 2 | 1 | 15 |
-| AI-affiliated, method unverified | 0 | 0 | 3 | 6 |
-| Conventional/fuzzing | 0 | 0 | 3 | 9 |
-| No reporter credit | 0 | 0 | 0 | 0 |
+| AI-affiliated, method unverified | 0 | 0 | 3 | 8 |
+| Conventional/fuzzing | 0 | 1 | 7 | 26 |
+| No reporter credit | 0 | 0 | 0 | 1 |
 
 - **baseline severity (2015–2025):** half of all rated CVEs were Low and
   15% were High or Critical
-- **2026 Low shares by cohort:** 75% for conventional or fuzzing credits,
-  67% for affiliation-only credits, and 83% for the corroborated-AI set,
-  which also holds both High-severity CVEs of 2026
+- **2026 Low shares by cohort:** 76% for conventional or fuzzing credits,
+  73% for affiliation-only credits, and 83% for the corroborated-AI set,
+  which holds 2 of the 3 High-severity CVEs of 2026; the other,
+  CVE-2026-84782, carries a conventional credit
 
 ![OpenSSL disclosures by severity: counts by year and finder provenance since 2015.](severity-cyber-openssl.png)
 
@@ -87,11 +89,12 @@ series as cumulative disclosures to date:
 
 [`fetch.py`](fetch.py) downloads one tarball for OpenSSL release-metadata
 commit
-[`597a9a75044f`](https://github.com/openssl/release-metadata/commit/597a9a75044fb94b2823d111fd96ad9607a38189),
-the final metadata correction on 5 August 2026. The pin makes the vendored
-snapshot reproducible. It parses all 273 `secjson/CVE-*.json` records and
-fails on a missing publication date or severity; coverage is 273 of 273
-structured records, with no silent omissions. Reporter/finder credits are
+[`87411d0d5464`](https://github.com/openssl/release-metadata/commit/87411d0d5464389e91a4c683b6a377d227743779),
+the latest metadata commit on 23 October 2026, after the 29 September
+security release. The pin makes the vendored snapshot reproducible. It
+parses all 297 `secjson/CVE-*.json` records and fails on a missing
+publication date or severity; coverage is 297 of 297 structured records,
+with no silent omissions. Reporter/finder credits are
 kept separate from remediation developers.
 
 [`openssl-cves.csv`](openssl-cves.csv) is the auditable, one-row-per-CVE
@@ -173,9 +176,12 @@ python3 problems/cyber-openssl/fetch.py --check
 
 - **published by year:** 18 of the 21 corroborated CVEs were published in
   2026, 3 in 2025.
-- **affiliation-only:** 9 further 2026 CVEs name Aisle or Anthropic
+- **affiliation-only:** 11 further 2026 CVEs name Aisle, Anthropic or AntAISecurityLab
   affiliations without finding-level method evidence in the sources
-  collected here; they are `ai_affiliated=yes`, `explicit_ai=no`.
+  collected here; they are `ai_affiliated=yes`, `explicit_ai=no`. The two
+  added since the 2026-08-05 read, CVE-2026-54873 (AntAISecurityLab) and
+  CVE-2026-72897 (Aisle Research), were published 2026-09-29; no Aisle
+  account enumerating them was found on its blog as of 2026-11-03.
 - **Mythos:** Anthropic's disclosure dashboard records vulnerabilities
   attributed to Mythos and names Alex Gaynor on the project team; no
   OpenSSL CVE was identified in the dashboard snapshot consulted
@@ -185,7 +191,7 @@ python3 problems/cyber-openssl/fetch.py --check
   "likely using Mythos", which is not method evidence for his other OpenSSL
   reports [@aisleopensslapr2026].
 - **before 2025:** no CVE row carries an AI marker of either kind, as of
-  the pinned 2026-08-05 snapshot.
+  the pinned 2026-10-23 snapshot.
 
 ## Sources
 

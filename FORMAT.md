@@ -15,7 +15,7 @@ consecutive bare lines into one run-together paragraph:
 | Field | Content |
 |---|---|
 | `**Domain:**` | one word: `vulnerabilities`, `mathematics`, `algorithms`, or the outside-domain label |
-| `**Role:**` | one controlled phrase: `discovery series` · `prestige ledger` · `control: no-AI baseline` · `contrast case: volume` · `denominator frame` |
+| `**Role:**` | one controlled phrase: `discovery series` · `prestige ledger` · `control: no-AI baseline` · `contrast case: volume` · `denominator frame` · `context: harm` (consequences of exploited flaws: breaches, people affected, losses) |
 | `**Metric:**` | what is counted, in one sentence, including the unit and any split |
 | `**Coverage:**` | the span, the cadence, and the as-of date of the last read |
 | `**Data:**` | folder-local CSV links |

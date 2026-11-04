@@ -3,10 +3,10 @@
 - **Domain:** vulnerabilities
 - **Role:** discovery series
 - **Metric:** distinct CVE IDs linked to at least one active affected-package record in OSV, per quarter by earliest OSV publication date
-- **Coverage:** 2016–2026, partial through 2026-09-28
+- **Coverage:** 2016–2026, partial through 2026-11-03
 - **Data:** quarterly [`osv-cves-by-quarter.csv`](osv-cves-by-quarter.csv); annual [`osv-cves-by-year.csv`](osv-cves-by-year.csv); severity labels in [`osv-severity-by-year.csv`](osv-severity-by-year.csv); finder credits in [`osv-credits-by-year.csv`](osv-credits-by-year.csv); every AI-marked CVE with its credit strings in [`osv-ai-cves.csv`](osv-ai-cves.csv)
 - **Upstream:** <https://storage.googleapis.com/osv-vulnerabilities/all.zip> (documentation at <https://google.github.io/osv.dev/data/>)
-- **Verdict:** accelerating — 31,599 distinct CVEs through 2026-09-28 annualize to about 42,600, 2.8 times 2025's 15,163
+- **Verdict:** accelerating — 40,429 distinct CVEs through 2026-11-03 annualize to about 48,100, 3.1 times 2025's 15,319
 
 ![Quarterly distinct CVEs represented by active affected-package records in OSV.](discovery-cyber-osv-cves.png)
 
@@ -26,17 +26,17 @@ one event; an advisory naming several CVEs contributes one event per CVE.
 
 ## Facts
 
-- **by-year:** 2016: 1,472 · 2017: 4,588 · 2018: 4,877 · 2019: 5,161 ·
-  2020: 5,327 · 2021: 6,914 · 2022: 10,838 · 2023: 8,833 · 2024: 12,296 ·
-  2025: 15,163
-- **2026 (through 2026-09-28):** 31,599 distinct CVEs; annualizes to about
-  42,600, or 2.8 times the 2025 count
-- **peak quarter:** 2026-Q3 alone holds 14,910 distinct CVEs, more than any
+- **by-year:** 2016: 1,478 · 2017: 4,597 · 2018: 4,884 · 2019: 5,162 · 2020:
+  5,335 · 2021: 6,924 · 2022: 10,875 · 2023: 8,866 · 2024: 12,383 · 2025:
+  15,319
+- **2026 (through 2026-11-03):** 40,429 distinct CVEs; annualizes to about
+  48,100, or 3.1 times the 2025 count
+- **peak quarter:** 2026-Q3 alone holds 16,013 distinct CVEs, more than any
   full year before 2022
-- **severity coverage:** 36,332 of the 107,068 CVEs (34%) carry an ecosystem
+- **severity coverage:** 38,189 of the 116,252 CVEs (33%) carry an ecosystem
   severity label
-- **credit coverage:** 1,415 CVEs (1.3%) carry any credit
-- **ai-marked:** 33 CVEs — 2 whose credits state an AI method and 31
+- **credit coverage:** 1,628 CVEs (1.4%) carry any credit
+- **ai-marked:** 55 CVEs — 4 whose credits state an AI method and 51
   carrying an AI-lab affiliation only — each kept with its full credit
   strings in [`osv-ai-cves.csv`](osv-ai-cves.csv)
 
@@ -123,7 +123,7 @@ recomputes the fact lines above from the vendored CSVs.
 
 ## AI attribution
 
-The AI-marked ledger holds 33 CVEs. 2 carry credits stating an AI method:
+The AI-marked ledger holds 55 CVEs. 4 carry credits stating an AI method:
 
 > "Google Big Sleep | Daniel Stenberg"
 > — OSV credit strings for CVE-2025-9086, vendored in [`osv-ai-cves.csv`](osv-ai-cves.csv), read 2026-08-14
@@ -131,16 +131,19 @@ The AI-marked ledger holds 33 CVEs. 2 carry credits stating an AI method:
 > "Andrew Nesbitt (powered by Mythos) | Stefan Eissing"
 > — OSV credit strings for CVE-2026-8286, vendored in [`osv-ai-cves.csv`](osv-ai-cves.csv), read 2026-08-14
 
-The other 31 carry an AI-lab affiliation with no method stated: 23 name
+> "Luna with Claude | Anthropic | Stefan Eissing"
+> — OSV credit strings for CVE-2026-92392 and CVE-2026-107928, vendored in [`osv-ai-cves.csv`](osv-ai-cves.csv), read 2026-11-03
+
+The other 51 carry an AI-lab affiliation with no method stated: 41 name
 Aisle Research, 3 name AntAISecurityLab hackerone handles, 1 names "Filipe
 Casal of Trail of Bits in collaboration with OpenAI", 2 name "Eunsoo
-Kim (Autonomous Code Security team at Microsoft)" and 2 list "Anthropic"
-among its credits, all quoted from
-[`osv-ai-cves.csv`](osv-ai-cves.csv) as read 2026-09-28. Several of the
+Kim (Autonomous Code Security team at Microsoft)" and 4 list "Anthropic"
+among their credits, all quoted from
+[`osv-ai-cves.csv`](osv-ai-cves.csv) as read 2026-11-03. Several of the
 same credit strings appear in the curl series' finder table
 ([curl](../cyber-curl/README.md)), which counts the same projects'
 disclosures at the project level. No other CVE in the export carries any AI
-marker in its credits, as of the 2026-09-28 read.
+marker in its credits, as of the 2026-11-03 read.
 
 ## Sources
 
