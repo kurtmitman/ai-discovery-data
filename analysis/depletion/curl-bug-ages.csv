@@ -1,213 +1,240 @@
-cve,published,introduced_commit,introduced,age_years,severity,ai_marker,finder_band,finders
-CVE-2000-0973,2000-10-13,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,0.789,Critical,no,other,zillion
-CVE-2003-1605,2003-08-03,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,3.594,High,no,other,Daniel Stenberg
-CVE-2005-3185,2005-10-13,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,2.210,High,no,other,iDEFENSE
-CVE-2009-0037,2009-03-03,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,9.175,Medium,no,other,David Kierznowski
-CVE-2010-0734,2010-02-09,c95814c04d6a0436e5c4c88d2e1d57c7e0c91060,2003-04-22,6.801,High,no,other,Wesley Miaw
-CVE-2010-3842,2010-10-13,80675818e0417be8c991513b328c5507e93b47e5,2010-01-23,0.719,High,no,other,Dan Fandrich
-CVE-2012-0036,2012-01-24,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,2.116,High,no,other,Dan Fandrich
-CVE-2013-0249,2013-02-06,7a2647e16237a2771f564d432d96a6f198a0eeb5,2012-03-31,0.851,Critical,no,other,Volema
-CVE-2013-1944,2013-04-12,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,13.284,High,no,other,YAMADA Yasuharu
-CVE-2014-0015,2014-01-29,73c5f24fa40460f41d6cd9114827383edc57e287,2003-06-11,10.635,Medium,no,other,Paras Sethia
-CVE-2014-1263,2014-03-26,6d1ea388cbd9de7f2a944a0c64f5feaec1b1904a,2012-06-26,1.746,Medium,no,other,Roland Moriz
-CVE-2014-2522,2014-03-26,aaa42aa0d594b95c6c670a373ba30c507aa0a5ed,2012-06-11,1.786,Medium,no,other,David Ryskalczyk
-CVE-2014-3613,2014-09-10,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,14.698,Medium,no,other,Tim Ruehsen
-CVE-2014-3620,2014-09-10,85b9dc80232d1d7d48ee4dea6db5a2263ee68efd,2013-05-21,1.305,High,no,other,Tim Ruehsen
-CVE-2014-3707,2014-11-05,a005243908803662d4a05427bc1061db42f4d057,2007-10-15,7.056,Medium,no,other,Symeon Paraschoudis
-CVE-2014-8150,2015-01-08,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,15.027,High,no,other,Andrey Labunets (Facebook)
-CVE-2015-3144,2015-04-22,5de8d84098db1bd24e7fffefbe14e81f2a05995a,2014-05-06,0.962,Medium,no,other,Hanno Böck
-CVE-2015-3145,2015-04-22,f24dc09d209a2f91ca38d854f0c15ad93f3d7e2d,2013-06-12,1.860,Medium,no,other,Hanno Böck
-CVE-2015-3153,2015-04-29,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,15.331,High,no,other,Yehezkel Horowitz; Oren Souroujon
-CVE-2015-3237,2015-06-17,e80d9d5902f38407d971587f2a6b7b839247ca92,2014-11-29,0.547,High,no,other,Daniel Stenberg
-CVE-2016-3739,2016-05-18,51427e1947ddc07b4ce8ad9dcb04846125170f83,2010-05-05,6.036,High,no,other,Moti Avrahami
-CVE-2016-5419,2016-08-03,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,16.595,High,no,other,Bru Rom
-CVE-2016-8615,2016-11-02,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,16.844,High,no,other,Cure53
-CVE-2016-8617,2016-11-02,00b00c693127d9e3a4eedce4c8cdf6e87087192d,2001-08-03,15.249,Medium,no,other,Cure53
-CVE-2016-8618,2016-11-02,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,16.844,Medium,no,other,Cure53
-CVE-2016-8619,2016-11-02,def69c30879c0246bccb02d79e06b937e39d0ba4,2000-09-21,16.115,High,no,other,Cure53
-CVE-2016-8621,2016-11-02,f6433211ae9afb30ec461e6633dafc6d8c77eaa9,2004-09-11,12.142,Medium,no,other,Luật Nguyễn
-CVE-2016-8622,2016-11-02,75ca568fa1c19de4c5358fed246686de8467c238,2012-01-24,4.773,Medium,no,other,Cure53
-CVE-2016-8623,2016-11-02,41ae97e710f728495a1d6adba6476c21b94c4881,2003-08-04,13.246,High,no,other,Cure53
-CVE-2016-8624,2016-11-02,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,16.844,Medium,no,other,Fernando Muñoz
-CVE-2016-8625,2016-11-02,9631fa740708b1890197fad01e25b34b7e8eb80e,2004-04-26,12.519,High,no,other,Christian Heimes
-CVE-2016-9586,2016-12-21,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,16.977,Medium,no,other,Daniel Stenberg
-CVE-2016-9952,2016-12-21,4ab2d26cb83dfbb74ba9eeaaa4835b4dd12883d4,2012-07-09,4.450,Medium,no,other,Dan McNulty
-CVE-2016-9953,2016-12-21,4ab2d26cb83dfbb74ba9eeaaa4835b4dd12883d4,2012-07-09,4.450,Medium,no,other,Dan McNulty
-CVE-2016-9594,2016-12-23,f682156a4fc6c43fb38db4abda49b9a1bc1ed368,2016-11-14,0.107,High,no,other,Kamil Dudka
-CVE-2017-2629,2017-02-22,cb4e2be7c6d42ca0780f8e0a747cecf9ba45f151,2016-11-24,0.245,Medium,no,other,Marcus Hoffmann
-CVE-2017-7407,2017-04-03,d073ec0a719bfad28b791f1ead089be655b896e9,2000-02-21,17.111,Medium,no,other,Brian Carpenter (Geeknik Labs)
-CVE-2017-7468,2017-04-19,95c717bbd9c327c38b4efcc37d5cda29b8ee2a36,2016-12-20,0.328,High,no,other,lijian996 on github
-CVE-2017-9502,2017-06-14,1d4202ade602dd4f1192c69aed5cc905e7a9b4e2,2017-01-12,0.418,High,no,other,Marcel Raad
-CVE-2017-1000099,2017-08-09,7c312f84ea930d89c0f0f774b50032c4f9ae30e4,2017-05-01,0.272,Medium,no,other,Even Rouault
-CVE-2017-1000100,2017-08-09,56d9624b566ac15ffb4b4b6eef220a5000b767e0,2005-09-02,11.933,High,no,other,Even Rouault
-CVE-2017-1000101,2017-08-09,5ca96cb84410270e233c92bf1b2583cba40c3fad,2013-08-16,3.981,Medium,no,other,Brian Carpenter; Yongji Ouyang
-CVE-2017-1000254,2017-10-04,415d2e7cb7dd4f40b7c857f0fba23487dcd030a0,2001-03-02,16.592,Medium,no,other,Max Dymond
-CVE-2017-1000257,2017-10-23,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,7.861,Medium,no,other,Brian Carpenter (Geeknik Labs); 0xd34db347
-CVE-2017-8816,2017-11-29,86724581b6c02d160b52f817550cfdfc9c93af62,2014-01-29,3.831,Medium,no,other,Alex Nichols
-CVE-2017-8817,2017-11-29,0825cd80a62c21725fb3615f1fdd3aa6cc5f0f34,2010-05-12,7.549,Medium,no,fuzz,OSS-Fuzz
-CVE-2017-8818,2017-11-29,70f1db321a2b39c75f679b5b052aa1ac0636bd50,2017-08-28,0.254,High,no,other,John Schoenick
-CVE-2018-1000005,2018-01-24,0761a51ee0551ad9e523cbdba24ce00d22fff9c1,2016-05-12,1.701,Low,no,other,Zhouyihai Ding
-CVE-2018-1000007,2018-01-24,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,18.071,Low,no,other,Craig de Stigter
-CVE-2018-1000120,2018-03-14,6e1e9caa32da099569bb95e64faf0b5f3cf103b5,2004-12-16,13.239,High,no,other,Duy Phan Thanh
-CVE-2018-1000121,2018-03-14,2e056353b00d0944bdb2f8e948cc40a4dc0f3dfb,2010-05-24,7.804,Low,no,other,Dario Weisser
-CVE-2018-1000122,2018-03-14,bc4582b68a673d3b0f5a2e7d971605de2c8b3730,2010-01-21,8.142,Medium,no,fuzz,OSS-fuzz
-CVE-2018-1000300,2018-05-16,e40e9d7f0decc799e3ccfe2c418632f8bb52031a,2017-05-01,1.040,High,no,other,Dario Weisser
-CVE-2018-1000301,2018-05-16,bc4582b68a673d3b0f5a2e7d971605de2c8b3730,2010-01-21,8.314,Medium,no,fuzz,OSS-Fuzz
-CVE-2018-0500,2018-07-11,e40e9d7f0decc799e3ccfe2c418632f8bb52031a,2017-05-01,1.193,High,no,other,Peter Wu
-CVE-2018-14618,2018-09-05,be285cde3f52571087816759220a68cb994d9307,2006-04-05,12.419,High,no,other,Zhaoyang Wu
-CVE-2018-16839,2018-10-31,c56f9797e7feb7c2dc93bc389d4b85cc75220d77,2013-08-20,5.197,Low,no,other,Harry Sintonen
-CVE-2018-16840,2018-10-31,b46cfbc068ebe90f18e9777b9e877e4934c1b5e3,2018-02-15,0.707,Low,no,other,Brian Carpenter (Geeknik Labs)
-CVE-2018-16842,2018-10-31,d9ca9154d111e1287cc7ef06ec543094a4433f1f,2005-08-15,13.209,Low,no,other,Brian Carpenter (Geeknik Labs)
-CVE-2018-16890,2019-02-06,86724581b6c02d160b52f817550cfdfc9c93af62,2014-01-29,5.021,Medium,no,other,Wenxiang Qian of Tencent Blade Team
-CVE-2019-3822,2019-02-06,86724581b6c02d160b52f817550cfdfc9c93af62,2014-01-29,5.021,High,no,other,Wenxiang Qian of Tencent Blade Team
-CVE-2019-3823,2019-02-06,2766262a68688c1dd8143f9c4be84b46c408b70a,2013-10-26,5.282,Low,no,other,Brian Carpenter (Geeknik Labs)
-CVE-2019-5435,2019-05-22,fb30ac5a2d63773c529c19259754e2b306ac2e2e,2018-09-08,0.701,Low,no,other,Wenchao Li
-CVE-2019-5436,2019-05-22,0516ce7786e9500c2e447d48aa9b3f24a6ca70f9,2009-01-26,10.316,Low,no,other,l00p3r
-CVE-2019-5481,2019-09-11,0649433da53c7165f839e24e889e131e2894dd32,2016-11-11,2.832,Medium,no,other,Thomas Vegas
-CVE-2019-5482,2019-09-11,0516ce7786e9500c2e447d48aa9b3f24a6ca70f9,2009-01-26,10.623,Medium,no,other,Thomas Vegas
-CVE-2020-8169,2020-06-24,46e164069d1a5230e4e64cbd2ff46c46cce056bb,2018-09-22,1.755,Medium,no,other,Marek Szlagor; Gregory Jefferis; Jeroen Ooms
-CVE-2020-8177,2020-06-24,80675818e0417be8c991513b328c5507e93b47e5,2010-01-23,10.416,Medium,no,other,sn on hackerone
-CVE-2020-8231,2020-08-19,c43127414d89ccb9ef6517081f68986d991bcfb3,2013-01-17,7.586,Low,no,other,Marc Aldorasi
-CVE-2020-8284,2020-12-09,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,20.945,Low,no,other,Varnavas Papaioannou
-CVE-2020-8285,2020-12-09,0825cd80a62c21725fb3615f1fdd3aa6cc5f0f34,2010-05-12,10.577,Medium,no,other,xnynx on github
-CVE-2020-8286,2020-12-09,d1cf5d570663dac157740cb5e49d24614f185da7,2015-01-22,5.878,Medium,no,other,Ospoco
-CVE-2021-22876,2021-03-31,f30ffef477636dc10a72eb30590a84a0218e5935,2000-06-20,20.776,Low,no,other,Viktor Szakats
-CVE-2021-22890,2021-03-31,549310e907e82e44c59548351d4c6ac4aaada114,2018-11-21,2.356,Low,no,other,Mingtao Yang (Facebook)
-CVE-2021-22897,2021-05-26,9aefbff30d280c60fc9d8cc3e0b2f19fc70a2f28,2018-06-12,2.953,Low,no,other,Harry Sintonen
-CVE-2021-22898,2021-05-26,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,20.259,Medium,no,other,Harry Sintonen
-CVE-2021-22901,2021-05-26,a304051620b92e12b6b1b4e19edc57b34ea332b6,2021-01-19,0.348,High,no,other,Harry Sintonen
-CVE-2021-22922,2021-07-21,b5fdbe848bc3d088445817aa890d3f2f74ac5b02,2012-05-26,9.150,Medium,no,other,Harry Sintonen
-CVE-2021-22923,2021-07-21,b5fdbe848bc3d088445817aa890d3f2f74ac5b02,2012-05-26,9.150,Medium,no,other,Harry Sintonen
-CVE-2021-22924,2021-07-21,89721ff04af70f527baae1368f3b992777bf6526,2003-03-24,18.324,Medium,no,other,Harry Sintonen
-CVE-2021-22925,2021-07-21,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,20.413,Medium,no,other,Red Hat Product Security
-CVE-2021-22926,2021-07-21,d2fe616e7e44a106ac976aaeaa441ad7d8a6df11,2013-09-05,7.872,Medium,no,other,Harry Sintonen
-CVE-2021-22945,2021-09-15,2522903b792ac5a802f780df60dc4647c58e2477,2020-04-14,1.420,Medium,no,other,z2_
-CVE-2021-22946,2021-09-15,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,11.757,Medium,no,other,Patrick Monnerat
-CVE-2021-22947,2021-09-15,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,11.757,Medium,no,other,Patrick Monnerat
-CVE-2022-22576,2022-04-27,19a05c908f7d8be82de6f69f533317d8a0db49dd,2013-08-25,8.670,Medium,no,other,Patrick Monnerat
-CVE-2022-27774,2022-04-27,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,22.325,Medium,no,other,Harry Sintonen
-CVE-2022-27775,2022-04-27,2d0e9b40d3237b1450cbbfbcb996da244d964898,2019-05-05,2.977,Low,no,other,Harry Sintonen
-CVE-2022-27776,2022-04-27,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,22.325,Low,no,other,Harry Sintonen
-CVE-2022-27778,2022-05-11,08a96c6e4e6cf6a1917a117db1b5394713e3f01f,2022-03-10,0.169,Medium,no,other,Harry Sintonen
-CVE-2022-27779,2022-05-11,b27ad8e1d3e68eb3214fcbb398ca436873aa7c67,2022-01-27,0.285,Medium,no,other,Axel Chong
-CVE-2022-27780,2022-05-11,9a8564a920188e49d5bd8c1c8573ddef97f6e03a,2021-10-11,0.580,Medium,no,other,Axel Chong
-CVE-2022-27781,2022-05-11,f6c335d63f2da025a0a3efde1fe59e3bb7189b70,2013-10-30,8.529,Low,no,other,Florian Kohnhäuser
-CVE-2022-27782,2022-05-11,2147284cad624325f5b0034c2f394db62086d9e6,2006-11-02,15.519,Medium,no,other,Harry Sintonen
-CVE-2022-30115,2022-05-11,b27ad8e1d3e68eb3214fcbb398ca436873aa7c67,2022-01-27,0.285,Medium,no,other,Axel Chong
-CVE-2022-32205,2022-06-27,ed35d6590e72c23c568af1e3b8ac6e4e2d883888,2020-05-04,2.146,Low,no,other,Harry Sintonen
-CVE-2022-32206,2022-06-27,dbcced8e32b50c068ac297106f0502ee200a1ebd,2017-11-05,4.640,Medium,no,other,Harry Sintonen
-CVE-2022-32207,2022-06-27,b834890a3fa3f525cd8ef4e99554cdb4558d7e1b,2020-02-17,2.355,Medium,no,other,Harry Sintonen
-CVE-2022-32208,2022-06-27,54967d2a3ab5559631407f7b7f67ef48c2dda6dd,2007-07-01,14.987,Low,no,other,Harry Sintonen
-CVE-2022-35252,2022-08-31,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,22.671,Low,no,other,Axel Chong
-CVE-2022-32221,2022-10-26,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,21.596,Medium,no,other,Robby Simpson
-CVE-2022-35260,2022-10-26,eeaae10c0fb27aa066fdc296074edeacfdeb6522,2022-05-31,0.406,Low,no,other,Hiroki Kurosawa
-CVE-2022-42915,2022-10-26,51c0ebcff2140c38ff389b4fcfb8216f5e9d198c,2021-05-08,1.468,Medium,no,other,Trail of Bits
-CVE-2022-42916,2022-10-26,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,1.977,Medium,no,other,Hiroki Kurosawa
-CVE-2022-43551,2022-12-21,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,2.130,Medium,no,other,Hiroki Kurosawa
-CVE-2022-43552,2022-12-21,b7eeb6e67fca686f840eacd6b8394edb58b07482,2006-09-07,16.286,Low,no,other,Trail of Bits
-CVE-2023-23914,2023-02-15,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,2.284,Low,no,other,Harry Sintonen
-CVE-2023-23915,2023-02-15,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,2.284,Low,no,other,Harry Sintonen
-CVE-2023-23916,2023-02-15,dbcced8e32b50c068ac297106f0502ee200a1ebd,2017-11-05,5.279,Medium,no,other,Patrick Monnerat
-CVE-2023-27533,2023-03-20,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,22.076,Low,no,other,Harry Sintonen
-CVE-2023-27534,2023-03-20,ba6f20a2442ab1ebfe947cff19a552f92114a29a,2007-11-08,15.361,Low,no,other,Harry Sintonen
-CVE-2023-27535,2023-03-20,177dbc7be07125582ddb7416dba7140b88ab9f62,2005-01-25,18.146,Medium,no,other,Harry Sintonen
-CVE-2023-27536,2023-03-20,ebf42c4be76df40ec6d3bf32f229bbb274e2c32f,2011-08-03,11.627,Low,no,other,Harry Sintonen
-CVE-2023-27537,2023-03-20,076a2f629119222aeeb50f5a03bf9f9052fabb9a,2022-12-27,0.227,Low,no,other,Hiroki Kurosawa
-CVE-2023-27538,2023-03-20,2147284cad624325f5b0034c2f394db62086d9e6,2006-11-02,16.376,Low,no,other,Harry Sintonen
-CVE-2023-28319,2023-05-17,3467e89bb97e6c87c77e82a046c59cb4b2d29a74,2021-12-02,1.455,Medium,no,other,Wei Chong Tan
-CVE-2023-28320,2023-05-17,3c49b405de4fbf1fd7127f91908261268640e54f,2002-06-11,20.931,Low,no,other,Harry Sintonen
-CVE-2023-28321,2023-05-17,9631fa740708b1890197fad01e25b34b7e8eb80e,2004-04-26,19.056,Low,no,other,Hiroki Kurosawa
-CVE-2023-28322,2023-05-17,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,22.152,Low,no,other,Hiroki Kurosawa
-CVE-2023-38039,2023-09-13,4d94fac9f0d1dd02b8308291e4c47651142dc28b,2022-05-30,1.290,Medium,no,other,selmelc on hackerone
-CVE-2023-38545,2023-10-11,4a4b63daaa01ef59b131d91e8e6e6dfe275c0f08,2020-02-16,3.648,High,no,other,Jay Satiro
-CVE-2023-38546,2023-10-11,74d5a6fb3b9a96d9fa51ba90996e94c878ebd151,2001-10-19,21.978,Low,no,other,w0x42 on hackerone
-CVE-2023-46218,2023-12-06,e77b5b7453c1e8ccd7ec0816890d98e2f392e465,2015-10-17,8.136,Medium,no,other,Harry Sintonen
-CVE-2023-46219,2023-12-06,20f9dd6bae50b7223171b17ba7798946e74f877f,2022-06-26,1.446,Low,no,other,Maksymilian Arciemowicz
-CVE-2024-0853,2024-01-31,395365ad2d9a6c3f1a35d5e268a6af2824129832,2023-11-28,0.174,Low,no,other,Hiroki Kurosawa
-CVE-2024-2004,2024-03-27,e6f8445edef8e7996d1cfb141d6df184efef972c,2022-07-04,1.731,Low,no,other,Dan Fandrich
-CVE-2024-2379,2024-03-27,5d044ad9480a9f556f4b6a252d7533b1ba7fe57e,2024-01-11,0.207,Low,no,other,Dexter Gerig
-CVE-2024-2398,2024-03-27,ea7134ac874a66107e54ff93657ac565cf2ec4aa,2015-06-24,8.757,Medium,no,other,w0x42 on hackerone
-CVE-2024-2466,2024-03-27,fa714830e92cba7b16b9d3f2cc92a72ee9d821fa,2023-11-19,0.352,Medium,no,other,Frank Yueh
-CVE-2024-6197,2024-07-24,623c3a8fa0bdb2751f14b3741760d81910b7ec64,2024-01-27,0.489,Medium,no,other,z2_
-CVE-2024-6874,2024-07-24,add22feeef07858307be5722e1869e082554290e,2024-04-16,0.269,Low,no,other,z2_
-CVE-2024-7264,2024-07-31,3a24cb7bc456366cbc3a03f7ab6d2576105a1f2d,2013-07-15,11.044,Low,no,other,Dov Murik (Transmit Security)
-CVE-2024-8096,2024-09-11,f13669a375f5bfd14797bda91642cabe076974fa,2015-01-16,9.651,Medium,no,other,Hiroki Kurosawa
-CVE-2024-9681,2024-11-06,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,4.007,Low,no,other,newfunction
-CVE-2024-11053,2024-12-11,46620b97431e19c53ce82e55055c85830f088cf4,2021-02-13,3.823,Low,no,other,Harry Sintonen
-CVE-2025-0167,2025-02-05,46620b97431e19c53ce82e55055c85830f088cf4,2021-02-13,3.977,Low,no,other,Yihang Zhou
-CVE-2025-0665,2025-02-05,92124838c6b7e09e3f35ff84e1eb63cf0105c9b5,2024-11-14,0.227,Low,no,other,Ankom Coper; Christian Heusel
-CVE-2025-0725,2025-02-05,019c4088cfcca0d2b7c5cc4f52ca5dac0c616089,2003-04-11,21.822,Low,no,other,z2_
-CVE-2025-4947,2025-05-28,4c46e277b2a0c0489de0e0fcb91f315c62f0369c,2024-05-16,1.030,Medium,no,other,Hiroki Kurosawa
-CVE-2025-5025,2025-05-28,5f78cf503c786a1d48d13528dde038bccfa6c67c,2023-10-31,1.572,Medium,no,other,Hiroki Kurosawa
-CVE-2025-5399,2025-06-04,3588df9478d7c27046b34cdb510728a26bedabc7,2025-03-14,0.224,Low,no,other,z2_ on hackerone
-CVE-2025-10148,2025-09-10,d78e129d50b2d190f1c1bde2ad1f62f02f152db0,2024-09-27,0.952,Low,no,other,Calvin Ruocco (Vector Informatik GmbH)
-CVE-2025-9086,2025-09-10,1aea05a6c2699e80c75936d58569851555acd603,2025-02-19,0.556,Low,yes,explicit_ai,Google Big Sleep
-CVE-2025-10966,2025-11-05,6773c7ca65cf2183295e56603f9b86a5ce816a06,2020-01-12,5.813,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2025-13034,2026-01-07,3210101088dfa3d6a125d213226b092f2f866722,2024-04-09,1.746,Medium,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2025-14017,2026-01-07,ccba0d10b6baf5c73cae8cf4fb3f29f0f55c5a34,2007-08-16,18.394,Medium,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2025-14524,2026-01-07,06c1bea72faabb6fad4b7ef818aafaa336c9a7aa,2013-08-25,12.368,Low,no,other,anonymous237 on hackerone
-CVE-2025-14819,2026-01-07,3c16697ebd796f799227be293e8689aec5f8190d,2022-11-08,3.164,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2025-15079,2026-01-07,c92d2e14cfb0db662f958effd2ac86f995cf1b5a,2017-12-01,8.100,Low,no,other,Harry Sintonen
-CVE-2025-15224,2026-01-07,c92d2e14cfb0db662f958effd2ac86f995cf1b5a,2017-12-01,8.100,Low,no,other,Harry Sintonen
-CVE-2026-1965,2026-03-11,e56ae1426cb7a0a4a427cf8d6099a821fdaae428,2003-06-10,22.750,Medium,no,other,Zhicheng Chen
-CVE-2026-3783,2026-03-11,06c1bea72faabb6fad4b7ef818aafaa336c9a7aa,2013-08-25,12.541,Medium,no,other,spectreglobalsec on hackerone
-CVE-2026-3784,2026-03-11,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,25.051,Low,no,other,Muhamad Arga Reksapati (HackerOne: nobcoder)
-CVE-2026-3805,2026-03-11,f4831daa9b2a97e8a2921d6b62cc4dfdd0d8646e,2025-03-07,1.011,Medium,no,other,Daniel Wade
-CVE-2026-4873,2026-04-29,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,16.376,Low,no,other,Arkadi Vainbrand
-CVE-2026-5545,2026-04-29,e56ae1426cb7a0a4a427cf8d6099a821fdaae428,2003-06-10,22.884,Medium,no,other,Quac Tran and Ngoc Hieu
-CVE-2026-5773,2026-04-29,aec2e865f06669b9cb5d26cc1148d70bc418b163,2014-11-30,11.410,Low,no,other,Osama Hamad
-CVE-2026-6253,2026-04-29,3b60bb725913ce7339aefef0a14b12df4c24db60,2005-06-22,20.850,Medium,no,other,"Dwij Mehta (O2 Lab, Texas A&M University)"
-CVE-2026-6276,2026-04-29,e15e51384a423be31318b3c9c7d612a1aae661fd,2020-06-15,5.868,Low,no,other,Muhamad Arga Reksapati
-CVE-2026-6429,2026-04-29,01165e08e0d131b399fba2190f17af67e66f0888,2005-04-25,21.009,Medium,no,other,Muhamad Arga Reksapati
-CVE-2026-7009,2026-04-29,eefd03c572996e5de4dec4fe295ad6f103e0eefc,2025-10-03,0.570,Medium,no,other,Carlos Carrillo
-CVE-2026-7168,2026-04-29,fc6eff13b5414caf6edf22d73a3239e074a04216,2004-05-04,21.985,Medium,no,other,Muhamad Arga Reksapati
-CVE-2026-10536,2026-06-24,71b7e0161032927cdfb4e75ea40f65b8898b3956,2022-12-30,3.481,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-11352,2026-06-24,6a3d0b6d631d5e9bec797306b5b41a9f440a088d,2025-12-15,0.523,Low,yes,ai_affiliated,vectorqueue on hackerone (AntAISecurityLab)
-CVE-2026-11564,2026-06-24,eefd03c572996e5de4dec4fe295ad6f103e0eefc,2025-10-03,0.723,Low,yes,ai_affiliated,Filipe Casal of Trail of Bits in collaboration with OpenAI
-CVE-2026-11586,2026-06-24,0b091328773c64e23f5c4739da74527093c6a5ab,2025-09-05,0.800,Low,yes,ai_affiliated,evergarden1123 on hackerone (AntAISecurityLab)
-CVE-2026-11856,2026-06-24,334d78cd18a7310144383929bdcef34ffbf6159b,2003-05-22,23.089,Medium,no,other,jjchuck on hackerone
-CVE-2026-12064,2026-06-24,18270893abdb19f0ca170c118f8a2847dbd304be,2021-11-21,4.587,Low,yes,ai_affiliated,alienowo on hackerone (AntAISecurityLab)
-CVE-2026-8286,2026-06-24,a1701eea289fe7ea80651f801cf992838a491dde,2013-02-10,13.367,Low,yes,explicit_ai,Andrew Nesbitt (powered by Mythos)
-CVE-2026-8458,2026-06-24,97c272e5d173ad5f706443e2477f0a84f0044edd,2015-04-28,11.156,Low,no,other,Muhamad Arga Reksapati
-CVE-2026-8924,2026-06-24,e77b5b7453c1e8ccd7ec0816890d98e2f392e465,2015-10-17,10.684,Low,no,other,vegagent on hackerone
-CVE-2026-8925,2026-06-24,ab650379a8c25ca952f651476d25b4cdd77bb3fc,2025-06-10,1.038,Medium,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-8926,2026-06-24,e9b9bbac22c26cf67316fa8e6c6b9e831af31949,2024-11-17,1.599,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-8927,2026-06-24,fc6eff13b5414caf6edf22d73a3239e074a04216,2004-05-04,22.138,Medium,no,other,Ady Elouej
-CVE-2026-8932,2026-06-24,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,25.339,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-9079,2026-06-24,d5e83eb745762f48d8fafadc5df5dd3ae8d8941e,2024-04-04,2.220,Medium,no,other,Guannan Wang; Zhanpeng Liu; Jiashuo Liang; Guancheng Li
-CVE-2026-9080,2026-06-24,cfc657a48dbafb4194676d4c9d841388b3a22210,2025-02-22,1.334,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-9545,2026-06-24,962097b8dd44ed5b9e7984bc1cdffdbdd566857f,2024-10-11,1.700,Low,yes,ai_affiliated,Eunsoo Kim (Autonomous Code Security team at Microsoft)
-CVE-2026-9546,2026-06-24,2cb868242dc2ac9cd52ee64987ef51d5964a56f9,2025-12-04,0.553,Low,no,other,renjian on hackerone
-CVE-2026-9547,2026-06-24,507cf6a13db0375eadd4655b4c64710db29e9cf2,2020-02-27,6.321,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-13608,2026-09-02,eeca818b1e8d1e61c2d4d833aed56ce4c510a9d4,2022-01-11,4.641,Low,yes,ai_affiliated,Eunsoo Kim (Autonomous Code Security team at Microsoft)
-CVE-2026-18924,2026-09-02,ea7134ac874a66107e54ff93657ac565cf2ec4aa,2015-06-24,11.190,Low,no,other,Stephan Zeisberg (Security Research Labs)
-CVE-2026-19931,2026-09-02,6c6035532383e300c712e4c1cd9fdd749ed5cf59,2019-03-14,7.471,Medium,no,other,Martin Dukek
-CVE-2026-80229,2026-09-02,f2ce6c46b9dcc46ced0ce43fa95176ea7599a854,2025-04-29,1.345,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-80230,2026-09-02,8363656cb4e0c60a11d8531ead0ec43120b50591,2015-08-21,11.032,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-80231,2026-09-02,148534db57dda611cf8516e92e4d6e35fc1e5074,2020-05-08,6.318,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-80255,2026-09-02,1aea05a6c2699e80c75936d58569851555acd603,2025-02-19,1.534,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-82208,2026-09-02,0f2876b2c33f6784a27b6f7345bd8cd95b46352a,2024-07-29,2.094,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-82209,2026-09-02,e77b5b7453c1e8ccd7ec0816890d98e2f392e465,2015-10-17,10.876,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-107928,2026-10-14,664249d095275ec532f55dd1752d80c8c1093a77,2022-09-09,4.095,Low,yes,explicit_ai,Luna with Claude; Anthropic
-CVE-2026-107929,2026-10-14,3060557af702dd59155ea703a0790455c2f49a59,2024-06-04,2.358,Low,no,other,Maksim Hayder
-CVE-2026-86409,2026-10-14,08e8455dddc5e48e58a12ade3815c01ae3da3b64,2020-12-21,5.813,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-86411,2026-10-14,4ff212f8ed328fb95261e11add8f4d2f0616895a,2026-05-31,0.371,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-86412,2026-10-14,3f0629ca443825916cbc0795bcd5f241fbf7104c,2025-11-13,0.918,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-86413,2026-10-14,8f71d0fde515aa4c68002477356c35bd79927729,2026-05-12,0.424,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-86414,2026-10-14,52ceab5e41a01b4d1227876d51a3680a3ce5a841,2003-09-03,23.111,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-86415,2026-10-14,d69bfad3fa3daf5e72331f6870667607828d5891,2026-06-08,0.350,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-87861,2026-10-14,bd10924b47c8bf94127eaee8c56e7b5e5418da46,2026-06-16,0.328,Low,no,other,Axel Mierczuk
-CVE-2026-87862,2026-10-14,a94973805df96269bf3f3bf0a20ccb9887313316,2024-10-09,2.013,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-87863,2026-10-14,0c667188e0c6cda615a036b8a2b4125f2c404dde,2023-07-11,3.259,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-87864,2026-10-14,f8c8c76d39ac2fa825481ba42ab2247cd122f963,2013-03-02,13.618,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
-CVE-2026-87865,2026-10-14,e96fe70cabcb3a5a009821dbb453dc0160ddc3f5,2020-03-09,6.597,Low,no,other,Bobbeh Rhino
-CVE-2026-87866,2026-10-14,0675abbc7572ff6d711a1f325d9b812f98bce78f,2015-04-22,11.478,Low,no,other,Muhamad Arga Reksapati
-CVE-2026-92386,2026-10-14,142ac257b3242459b284020c59f1902b9687a954,2024-02-07,2.682,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-92387,2026-10-14,a5598b6fcb9ec6b57a7770939a0ffb004456f333,2024-08-19,2.151,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-92388,2026-10-14,0825cd80a62c21725fb3615f1fdd3aa6cc5f0f34,2010-05-12,16.423,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-92389,2026-10-14,56d9624b566ac15ffb4b4b6eef220a5000b767e0,2005-09-02,21.114,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-92390,2026-10-14,80675818e0417be8c991513b328c5507e93b47e5,2010-01-23,16.722,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-92391,2026-10-14,ce0881edee3c78609eae49665fb70264d8786d29,2017-09-02,9.114,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-92392,2026-10-14,cd9107e0128191b7b5396b9eb81bbd20c2d36755,2025-01-22,1.726,High,yes,explicit_ai,Luna with Claude; Anthropic
-CVE-2026-94265,2026-10-14,8f71d0fde515aa4c68002477356c35bd79927729,2026-05-12,0.424,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
-CVE-2026-94266,2026-10-14,46e164069d1a5230e4e64cbd2ff46c46cce056bb,2018-09-22,8.060,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+cve,published,introduced_commit,introduced,introduced_basis,age_years,severity,ai_marker,finder_band,finders
+CVE-2000-0973,2000-10-13,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,0.789,Critical,no,other,zillion
+CVE-2003-1605,2003-08-03,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,3.594,High,no,other,Daniel Stenberg
+CVE-2005-0490,2005-02-21,13962adcb55a676b0b47925680b2e17b3e4815f0,2000-09-28,release_tag,4.399,High,no,other,iDEFENSE
+CVE-2005-3185,2005-10-13,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,commit,2.210,High,no,other,iDEFENSE
+CVE-2005-4077,2005-12-07,c96f7f13dac506dee5ae8988eb98f024bf009e70,2004-04-26,release_tag,1.615,High,no,other,Stefan Esser
+CVE-2006-1061,2006-03-20,96cec4dfd7daa3ff87bad2140f28745d8417581e,2005-10-13,release_tag,0.433,High,no,other,Ulf Harnhammar
+CVE-2007-3564,2007-07-10,55225106b6a0ecface0f129367e533736a874a91,2005-05-16,release_tag,2.150,Low,no,other,Kees Cook
+CVE-2009-0037,2009-03-03,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,9.175,Medium,no,other,David Kierznowski
+CVE-2009-2417,2009-08-12,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,before_history,9.618,High,no,other,Scott Cantor
+CVE-2010-0734,2010-02-09,c95814c04d6a0436e5c4c88d2e1d57c7e0c91060,2003-04-22,commit,6.801,High,no,other,Wesley Miaw
+CVE-2010-3842,2010-10-13,80675818e0417be8c991513b328c5507e93b47e5,2010-01-23,commit,0.719,High,no,other,Dan Fandrich
+CVE-2011-2192,2011-06-23,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,release_tag,7.904,Medium,no,other,Richard Silverman
+CVE-2011-3389,2012-01-24,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,release_tag,8.492,High,no,other,product-security at Apple
+CVE-2012-0036,2012-01-24,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,commit,2.116,High,no,other,Dan Fandrich
+CVE-2013-0249,2013-02-06,7a2647e16237a2771f564d432d96a6f198a0eeb5,2012-03-31,commit,0.851,Critical,no,other,Volema
+CVE-2013-1944,2013-04-12,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,13.284,High,no,other,YAMADA Yasuharu
+CVE-2013-2174,2013-06-22,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,release_tag,12.251,High,no,other,Timo Sirainen
+CVE-2013-4545,2013-11-15,a7b98f5f6b8e4abbaf32314f68b1e43948df2271,2008-01-28,release_tag,5.796,Medium,no,other,Scott Cantor
+CVE-2013-6422,2013-12-17,827f0a318cdbf73800c2366cf6a3132f2b2a7c49,2011-02-17,release_tag,2.830,Medium,no,other,Marc Deslauriers
+CVE-2014-0015,2014-01-29,73c5f24fa40460f41d6cd9114827383edc57e287,2003-06-11,commit,10.635,Medium,no,other,Paras Sethia
+CVE-2014-0138,2014-03-26,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,release_tag,10.660,Medium,no,other,Steve Holme
+CVE-2014-0139,2014-03-26,bf9b9ca29d7bd7c81db6d0e4a85356831572f28d,2003-01-14,release_tag,11.194,Medium,no,other,Richard Moore
+CVE-2014-1263,2014-03-26,6d1ea388cbd9de7f2a944a0c64f5feaec1b1904a,2012-06-26,commit,1.746,Medium,no,other,Roland Moriz
+CVE-2014-2522,2014-03-26,aaa42aa0d594b95c6c670a373ba30c507aa0a5ed,2012-06-11,commit,1.786,Medium,no,other,David Ryskalczyk
+CVE-2014-3613,2014-09-10,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,14.698,Medium,no,other,Tim Ruehsen
+CVE-2014-3620,2014-09-10,85b9dc80232d1d7d48ee4dea6db5a2263ee68efd,2013-05-21,commit,1.305,High,no,other,Tim Ruehsen
+CVE-2014-3707,2014-11-05,a005243908803662d4a05427bc1061db42f4d057,2007-10-15,commit,7.056,Medium,no,other,Symeon Paraschoudis
+CVE-2014-8150,2015-01-08,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,15.027,High,no,other,Andrey Labunets (Facebook)
+CVE-2014-8151,2015-01-08,85c710e11e7a7c1caf02962bbbdc08a5561ae769,2013-06-22,release_tag,1.548,Medium,no,other,Marc Hesse at RethinkDB
+CVE-2015-3143,2015-04-22,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,release_tag,11.734,Medium,no,other,Paras Sethia
+CVE-2015-3144,2015-04-22,5de8d84098db1bd24e7fffefbe14e81f2a05995a,2014-05-06,commit,0.962,Medium,no,other,Hanno Böck
+CVE-2015-3145,2015-04-22,f24dc09d209a2f91ca38d854f0c15ad93f3d7e2d,2013-06-12,commit,1.860,Medium,no,other,Hanno Böck
+CVE-2015-3148,2015-04-22,bdb5e5a25037a585e0ec6b83d29b25961c6823f8,2003-07-28,release_tag,11.734,Medium,no,other,Isaac Boukris
+CVE-2015-3153,2015-04-29,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,15.331,High,no,other,Yehezkel Horowitz; Oren Souroujon
+CVE-2015-3236,2015-06-17,9ce2d7001939b795b45a8ce7700d1a3dcde0475d,2015-01-07,release_tag,0.439,High,no,other,Tomas Tomecek; Kamil Dudka
+CVE-2015-3237,2015-06-17,e80d9d5902f38407d971587f2a6b7b839247ca92,2014-11-29,commit,0.547,High,no,other,Daniel Stenberg
+CVE-2016-0754,2016-01-27,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,before_history,16.079,High,no,other,Ray Satiro (Jay)
+CVE-2016-0755,2016-01-27,5c2df3e1a4da7b17ae053ee8c4ecef5eb2d30464,2003-08-15,release_tag,12.452,Medium,no,other,Isaac Boukris
+CVE-2016-3739,2016-05-18,51427e1947ddc07b4ce8ad9dcb04846125170f83,2010-05-05,commit,6.036,High,no,other,Moti Avrahami
+CVE-2016-4802,2016-05-30,a5b206f3981c3637699d5750766601bd626c240b,2004-03-18,release_tag,12.199,High,no,other,Guohui from Huawei WeiRan Labs
+CVE-2016-5419,2016-08-03,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,16.595,High,no,other,Bru Rom
+CVE-2016-5420,2016-08-03,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,release_tag,15.367,Medium,no,other,the curl security team
+CVE-2016-5421,2016-08-03,70812c2f32fc5734bcbbe572b9f61c380433ad6a,2013-08-11,release_tag,2.978,High,no,other,Marcelo Echeverria; Fernando Muñoz
+CVE-2016-7141,2016-09-07,6247b6d4685beee6362f76664bb50963d40e651d,2009-08-12,release_tag,7.072,High,no,other,Red Hat
+CVE-2016-7167,2016-09-14,a5b206f3981c3637699d5750766601bd626c240b,2004-03-18,release_tag,12.491,Medium,no,other,the Mitre CVE Assignment Team
+CVE-2016-8615,2016-11-02,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,16.844,High,no,other,Cure53
+CVE-2016-8616,2016-11-02,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,release_tag,15.616,Medium,no,other,Cure53
+CVE-2016-8617,2016-11-02,00b00c693127d9e3a4eedce4c8cdf6e87087192d,2001-08-03,commit,15.249,Medium,no,other,Cure53
+CVE-2016-8618,2016-11-02,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,16.844,Medium,no,other,Cure53
+CVE-2016-8619,2016-11-02,def69c30879c0246bccb02d79e06b937e39d0ba4,2000-09-21,commit,16.115,High,no,other,Cure53
+CVE-2016-8620,2016-11-02,0966b324d911423c81351fb12e9219f71cd63be8,2013-12-16,release_tag,2.878,Medium,no,other,Luật Nguyễn
+CVE-2016-8621,2016-11-02,f6433211ae9afb30ec461e6633dafc6d8c77eaa9,2004-09-11,commit,12.142,Medium,no,other,Luật Nguyễn
+CVE-2016-8622,2016-11-02,75ca568fa1c19de4c5358fed246686de8467c238,2012-01-24,commit,4.773,Medium,no,other,Cure53
+CVE-2016-8623,2016-11-02,41ae97e710f728495a1d6adba6476c21b94c4881,2003-08-04,commit,13.246,High,no,other,Cure53
+CVE-2016-8624,2016-11-02,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,16.844,Medium,no,other,Fernando Muñoz
+CVE-2016-8625,2016-11-02,9631fa740708b1890197fad01e25b34b7e8eb80e,2004-04-26,commit,12.519,High,no,other,Christian Heimes
+CVE-2016-9586,2016-12-21,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,16.977,Medium,no,other,Daniel Stenberg
+CVE-2016-9952,2016-12-21,4ab2d26cb83dfbb74ba9eeaaa4835b4dd12883d4,2012-07-09,commit,4.450,Medium,no,other,Dan McNulty
+CVE-2016-9953,2016-12-21,4ab2d26cb83dfbb74ba9eeaaa4835b4dd12883d4,2012-07-09,commit,4.450,Medium,no,other,Dan McNulty
+CVE-2016-9594,2016-12-23,f682156a4fc6c43fb38db4abda49b9a1bc1ed368,2016-11-14,commit,0.107,High,no,other,Kamil Dudka
+CVE-2017-2629,2017-02-22,cb4e2be7c6d42ca0780f8e0a747cecf9ba45f151,2016-11-24,commit,0.245,Medium,no,other,Marcus Hoffmann
+CVE-2017-7407,2017-04-03,d073ec0a719bfad28b791f1ead089be655b896e9,2000-02-21,commit,17.111,Medium,no,other,Brian Carpenter (Geeknik Labs)
+CVE-2017-7468,2017-04-19,95c717bbd9c327c38b4efcc37d5cda29b8ee2a36,2016-12-20,commit,0.328,High,no,other,lijian996 on github
+CVE-2017-9502,2017-06-14,1d4202ade602dd4f1192c69aed5cc905e7a9b4e2,2017-01-12,commit,0.418,High,no,other,Marcel Raad
+CVE-2017-1000099,2017-08-09,7c312f84ea930d89c0f0f774b50032c4f9ae30e4,2017-05-01,commit,0.272,Medium,no,other,Even Rouault
+CVE-2017-1000100,2017-08-09,56d9624b566ac15ffb4b4b6eef220a5000b767e0,2005-09-02,commit,11.933,High,no,other,Even Rouault
+CVE-2017-1000101,2017-08-09,5ca96cb84410270e233c92bf1b2583cba40c3fad,2013-08-16,commit,3.981,Medium,no,other,Brian Carpenter; Yongji Ouyang
+CVE-2017-1000254,2017-10-04,415d2e7cb7dd4f40b7c857f0fba23487dcd030a0,2001-03-02,commit,16.592,Medium,no,other,Max Dymond
+CVE-2017-1000257,2017-10-23,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,commit,7.861,Medium,no,other,Brian Carpenter (Geeknik Labs); 0xd34db347
+CVE-2017-8816,2017-11-29,86724581b6c02d160b52f817550cfdfc9c93af62,2014-01-29,commit,3.831,Medium,no,other,Alex Nichols
+CVE-2017-8817,2017-11-29,0825cd80a62c21725fb3615f1fdd3aa6cc5f0f34,2010-05-12,commit,7.549,Medium,no,fuzz,OSS-Fuzz
+CVE-2017-8818,2017-11-29,70f1db321a2b39c75f679b5b052aa1ac0636bd50,2017-08-28,commit,0.254,High,no,other,John Schoenick
+CVE-2018-1000005,2018-01-24,0761a51ee0551ad9e523cbdba24ce00d22fff9c1,2016-05-12,commit,1.701,Low,no,other,Zhouyihai Ding
+CVE-2018-1000007,2018-01-24,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,18.071,Low,no,other,Craig de Stigter
+CVE-2018-1000120,2018-03-14,6e1e9caa32da099569bb95e64faf0b5f3cf103b5,2004-12-16,commit,13.239,High,no,other,Duy Phan Thanh
+CVE-2018-1000121,2018-03-14,2e056353b00d0944bdb2f8e948cc40a4dc0f3dfb,2010-05-24,commit,7.804,Low,no,other,Dario Weisser
+CVE-2018-1000122,2018-03-14,bc4582b68a673d3b0f5a2e7d971605de2c8b3730,2010-01-21,commit,8.142,Medium,no,fuzz,OSS-fuzz
+CVE-2018-1000300,2018-05-16,e40e9d7f0decc799e3ccfe2c418632f8bb52031a,2017-05-01,commit,1.040,High,no,other,Dario Weisser
+CVE-2018-1000301,2018-05-16,bc4582b68a673d3b0f5a2e7d971605de2c8b3730,2010-01-21,commit,8.314,Medium,no,fuzz,OSS-Fuzz
+CVE-2018-0500,2018-07-11,e40e9d7f0decc799e3ccfe2c418632f8bb52031a,2017-05-01,commit,1.193,High,no,other,Peter Wu
+CVE-2018-14618,2018-09-05,be285cde3f52571087816759220a68cb994d9307,2006-04-05,commit,12.419,High,no,other,Zhaoyang Wu
+CVE-2018-16839,2018-10-31,c56f9797e7feb7c2dc93bc389d4b85cc75220d77,2013-08-20,commit,5.197,Low,no,other,Harry Sintonen
+CVE-2018-16840,2018-10-31,b46cfbc068ebe90f18e9777b9e877e4934c1b5e3,2018-02-15,commit,0.707,Low,no,other,Brian Carpenter (Geeknik Labs)
+CVE-2018-16842,2018-10-31,d9ca9154d111e1287cc7ef06ec543094a4433f1f,2005-08-15,commit,13.209,Low,no,other,Brian Carpenter (Geeknik Labs)
+CVE-2018-16890,2019-02-06,86724581b6c02d160b52f817550cfdfc9c93af62,2014-01-29,commit,5.021,Medium,no,other,Wenxiang Qian of Tencent Blade Team
+CVE-2019-3822,2019-02-06,86724581b6c02d160b52f817550cfdfc9c93af62,2014-01-29,commit,5.021,High,no,other,Wenxiang Qian of Tencent Blade Team
+CVE-2019-3823,2019-02-06,2766262a68688c1dd8143f9c4be84b46c408b70a,2013-10-26,commit,5.282,Low,no,other,Brian Carpenter (Geeknik Labs)
+CVE-2019-5435,2019-05-22,fb30ac5a2d63773c529c19259754e2b306ac2e2e,2018-09-08,commit,0.701,Low,no,other,Wenchao Li
+CVE-2019-5436,2019-05-22,0516ce7786e9500c2e447d48aa9b3f24a6ca70f9,2009-01-26,commit,10.316,Low,no,other,l00p3r
+CVE-2019-5443,2019-06-24,1a7f66a3de2625d10f65415e6eb3e56067dc0555,2015-08-11,release_tag,3.867,High,no,other,Rich Mirch
+CVE-2019-5481,2019-09-11,0649433da53c7165f839e24e889e131e2894dd32,2016-11-11,commit,2.832,Medium,no,other,Thomas Vegas
+CVE-2019-5482,2019-09-11,0516ce7786e9500c2e447d48aa9b3f24a6ca70f9,2009-01-26,commit,10.623,Medium,no,other,Thomas Vegas
+CVE-2020-8169,2020-06-24,46e164069d1a5230e4e64cbd2ff46c46cce056bb,2018-09-22,commit,1.755,Medium,no,other,Marek Szlagor; Gregory Jefferis; Jeroen Ooms
+CVE-2020-8177,2020-06-24,80675818e0417be8c991513b328c5507e93b47e5,2010-01-23,commit,10.416,Medium,no,other,sn on hackerone
+CVE-2020-8231,2020-08-19,c43127414d89ccb9ef6517081f68986d991bcfb3,2013-01-17,commit,7.586,Low,no,other,Marc Aldorasi
+CVE-2020-8284,2020-12-09,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,20.945,Low,no,other,Varnavas Papaioannou
+CVE-2020-8285,2020-12-09,0825cd80a62c21725fb3615f1fdd3aa6cc5f0f34,2010-05-12,commit,10.577,Medium,no,other,xnynx on github
+CVE-2020-8286,2020-12-09,d1cf5d570663dac157740cb5e49d24614f185da7,2015-01-22,commit,5.878,Medium,no,other,Ospoco
+CVE-2021-22876,2021-03-31,f30ffef477636dc10a72eb30590a84a0218e5935,2000-06-20,commit,20.776,Low,no,other,Viktor Szakats
+CVE-2021-22890,2021-03-31,549310e907e82e44c59548351d4c6ac4aaada114,2018-11-21,commit,2.356,Low,no,other,Mingtao Yang (Facebook)
+CVE-2021-22897,2021-05-26,9aefbff30d280c60fc9d8cc3e0b2f19fc70a2f28,2018-06-12,commit,2.953,Low,no,other,Harry Sintonen
+CVE-2021-22898,2021-05-26,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,commit,20.259,Medium,no,other,Harry Sintonen
+CVE-2021-22901,2021-05-26,a304051620b92e12b6b1b4e19edc57b34ea332b6,2021-01-19,commit,0.348,High,no,other,Harry Sintonen
+CVE-2021-22922,2021-07-21,b5fdbe848bc3d088445817aa890d3f2f74ac5b02,2012-05-26,commit,9.150,Medium,no,other,Harry Sintonen
+CVE-2021-22923,2021-07-21,b5fdbe848bc3d088445817aa890d3f2f74ac5b02,2012-05-26,commit,9.150,Medium,no,other,Harry Sintonen
+CVE-2021-22924,2021-07-21,89721ff04af70f527baae1368f3b992777bf6526,2003-03-24,commit,18.324,Medium,no,other,Harry Sintonen
+CVE-2021-22925,2021-07-21,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,commit,20.413,Medium,no,other,Red Hat Product Security
+CVE-2021-22926,2021-07-21,d2fe616e7e44a106ac976aaeaa441ad7d8a6df11,2013-09-05,commit,7.872,Medium,no,other,Harry Sintonen
+CVE-2021-22945,2021-09-15,2522903b792ac5a802f780df60dc4647c58e2477,2020-04-14,commit,1.420,Medium,no,other,z2_
+CVE-2021-22946,2021-09-15,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,commit,11.757,Medium,no,other,Patrick Monnerat
+CVE-2021-22947,2021-09-15,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,commit,11.757,Medium,no,other,Patrick Monnerat
+CVE-2022-22576,2022-04-27,19a05c908f7d8be82de6f69f533317d8a0db49dd,2013-08-25,commit,8.670,Medium,no,other,Patrick Monnerat
+CVE-2022-27774,2022-04-27,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,22.325,Medium,no,other,Harry Sintonen
+CVE-2022-27775,2022-04-27,2d0e9b40d3237b1450cbbfbcb996da244d964898,2019-05-05,commit,2.977,Low,no,other,Harry Sintonen
+CVE-2022-27776,2022-04-27,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,22.325,Low,no,other,Harry Sintonen
+CVE-2022-27778,2022-05-11,08a96c6e4e6cf6a1917a117db1b5394713e3f01f,2022-03-10,commit,0.169,Medium,no,other,Harry Sintonen
+CVE-2022-27779,2022-05-11,b27ad8e1d3e68eb3214fcbb398ca436873aa7c67,2022-01-27,commit,0.285,Medium,no,other,Axel Chong
+CVE-2022-27780,2022-05-11,9a8564a920188e49d5bd8c1c8573ddef97f6e03a,2021-10-11,commit,0.580,Medium,no,other,Axel Chong
+CVE-2022-27781,2022-05-11,f6c335d63f2da025a0a3efde1fe59e3bb7189b70,2013-10-30,commit,8.529,Low,no,other,Florian Kohnhäuser
+CVE-2022-27782,2022-05-11,2147284cad624325f5b0034c2f394db62086d9e6,2006-11-02,commit,15.519,Medium,no,other,Harry Sintonen
+CVE-2022-30115,2022-05-11,b27ad8e1d3e68eb3214fcbb398ca436873aa7c67,2022-01-27,commit,0.285,Medium,no,other,Axel Chong
+CVE-2022-32205,2022-06-27,ed35d6590e72c23c568af1e3b8ac6e4e2d883888,2020-05-04,commit,2.146,Low,no,other,Harry Sintonen
+CVE-2022-32206,2022-06-27,dbcced8e32b50c068ac297106f0502ee200a1ebd,2017-11-05,commit,4.640,Medium,no,other,Harry Sintonen
+CVE-2022-32207,2022-06-27,b834890a3fa3f525cd8ef4e99554cdb4558d7e1b,2020-02-17,commit,2.355,Medium,no,other,Harry Sintonen
+CVE-2022-32208,2022-06-27,54967d2a3ab5559631407f7b7f67ef48c2dda6dd,2007-07-01,commit,14.987,Low,no,other,Harry Sintonen
+CVE-2022-35252,2022-08-31,ae1912cb0d494b48d514d937826c9fe83ec96c4d,1999-12-29,commit,22.671,Low,no,other,Axel Chong
+CVE-2022-32221,2022-10-26,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,commit,21.596,Medium,no,other,Robby Simpson
+CVE-2022-35260,2022-10-26,eeaae10c0fb27aa066fdc296074edeacfdeb6522,2022-05-31,commit,0.406,Low,no,other,Hiroki Kurosawa
+CVE-2022-42915,2022-10-26,51c0ebcff2140c38ff389b4fcfb8216f5e9d198c,2021-05-08,commit,1.468,Medium,no,other,Trail of Bits
+CVE-2022-42916,2022-10-26,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,commit,1.977,Medium,no,other,Hiroki Kurosawa
+CVE-2022-43551,2022-12-21,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,commit,2.130,Medium,no,other,Hiroki Kurosawa
+CVE-2022-43552,2022-12-21,b7eeb6e67fca686f840eacd6b8394edb58b07482,2006-09-07,commit,16.286,Low,no,other,Trail of Bits
+CVE-2023-23914,2023-02-15,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,commit,2.284,Low,no,other,Harry Sintonen
+CVE-2023-23915,2023-02-15,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,commit,2.284,Low,no,other,Harry Sintonen
+CVE-2023-23916,2023-02-15,dbcced8e32b50c068ac297106f0502ee200a1ebd,2017-11-05,commit,5.279,Medium,no,other,Patrick Monnerat
+CVE-2023-27533,2023-03-20,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,commit,22.076,Low,no,other,Harry Sintonen
+CVE-2023-27534,2023-03-20,ba6f20a2442ab1ebfe947cff19a552f92114a29a,2007-11-08,commit,15.361,Low,no,other,Harry Sintonen
+CVE-2023-27535,2023-03-20,177dbc7be07125582ddb7416dba7140b88ab9f62,2005-01-25,commit,18.146,Medium,no,other,Harry Sintonen
+CVE-2023-27536,2023-03-20,ebf42c4be76df40ec6d3bf32f229bbb274e2c32f,2011-08-03,commit,11.627,Low,no,other,Harry Sintonen
+CVE-2023-27537,2023-03-20,076a2f629119222aeeb50f5a03bf9f9052fabb9a,2022-12-27,commit,0.227,Low,no,other,Hiroki Kurosawa
+CVE-2023-27538,2023-03-20,2147284cad624325f5b0034c2f394db62086d9e6,2006-11-02,commit,16.376,Low,no,other,Harry Sintonen
+CVE-2023-28319,2023-05-17,3467e89bb97e6c87c77e82a046c59cb4b2d29a74,2021-12-02,commit,1.455,Medium,no,other,Wei Chong Tan
+CVE-2023-28320,2023-05-17,3c49b405de4fbf1fd7127f91908261268640e54f,2002-06-11,commit,20.931,Low,no,other,Harry Sintonen
+CVE-2023-28321,2023-05-17,9631fa740708b1890197fad01e25b34b7e8eb80e,2004-04-26,commit,19.056,Low,no,other,Hiroki Kurosawa
+CVE-2023-28322,2023-05-17,546572da0457f37c698c02d0a08d90fdfcbeedec,2001-03-22,commit,22.152,Low,no,other,Hiroki Kurosawa
+CVE-2023-38039,2023-09-13,4d94fac9f0d1dd02b8308291e4c47651142dc28b,2022-05-30,commit,1.290,Medium,no,other,selmelc on hackerone
+CVE-2023-38545,2023-10-11,4a4b63daaa01ef59b131d91e8e6e6dfe275c0f08,2020-02-16,commit,3.648,High,no,other,Jay Satiro
+CVE-2023-38546,2023-10-11,74d5a6fb3b9a96d9fa51ba90996e94c878ebd151,2001-10-19,commit,21.978,Low,no,other,w0x42 on hackerone
+CVE-2023-46218,2023-12-06,e77b5b7453c1e8ccd7ec0816890d98e2f392e465,2015-10-17,commit,8.136,Medium,no,other,Harry Sintonen
+CVE-2023-46219,2023-12-06,20f9dd6bae50b7223171b17ba7798946e74f877f,2022-06-26,commit,1.446,Low,no,other,Maksymilian Arciemowicz
+CVE-2024-0853,2024-01-31,395365ad2d9a6c3f1a35d5e268a6af2824129832,2023-11-28,commit,0.174,Low,no,other,Hiroki Kurosawa
+CVE-2024-2004,2024-03-27,e6f8445edef8e7996d1cfb141d6df184efef972c,2022-07-04,commit,1.731,Low,no,other,Dan Fandrich
+CVE-2024-2379,2024-03-27,5d044ad9480a9f556f4b6a252d7533b1ba7fe57e,2024-01-11,commit,0.207,Low,no,other,Dexter Gerig
+CVE-2024-2398,2024-03-27,ea7134ac874a66107e54ff93657ac565cf2ec4aa,2015-06-24,commit,8.757,Medium,no,other,w0x42 on hackerone
+CVE-2024-2466,2024-03-27,fa714830e92cba7b16b9d3f2cc92a72ee9d821fa,2023-11-19,commit,0.352,Medium,no,other,Frank Yueh
+CVE-2024-6197,2024-07-24,623c3a8fa0bdb2751f14b3741760d81910b7ec64,2024-01-27,commit,0.489,Medium,no,other,z2_
+CVE-2024-6874,2024-07-24,add22feeef07858307be5722e1869e082554290e,2024-04-16,commit,0.269,Low,no,other,z2_
+CVE-2024-7264,2024-07-31,3a24cb7bc456366cbc3a03f7ab6d2576105a1f2d,2013-07-15,commit,11.044,Low,no,other,Dov Murik (Transmit Security)
+CVE-2024-8096,2024-09-11,f13669a375f5bfd14797bda91642cabe076974fa,2015-01-16,commit,9.651,Medium,no,other,Hiroki Kurosawa
+CVE-2024-9681,2024-11-06,7385610d0c74c6a254fea5e4cd6e1d559d848c8c,2020-11-03,commit,4.007,Low,no,other,newfunction
+CVE-2024-11053,2024-12-11,46620b97431e19c53ce82e55055c85830f088cf4,2021-02-13,commit,3.823,Low,no,other,Harry Sintonen
+CVE-2025-0167,2025-02-05,46620b97431e19c53ce82e55055c85830f088cf4,2021-02-13,commit,3.977,Low,no,other,Yihang Zhou
+CVE-2025-0665,2025-02-05,92124838c6b7e09e3f35ff84e1eb63cf0105c9b5,2024-11-14,commit,0.227,Low,no,other,Ankom Coper; Christian Heusel
+CVE-2025-0725,2025-02-05,019c4088cfcca0d2b7c5cc4f52ca5dac0c616089,2003-04-11,commit,21.822,Low,no,other,z2_
+CVE-2025-4947,2025-05-28,4c46e277b2a0c0489de0e0fcb91f315c62f0369c,2024-05-16,commit,1.030,Medium,no,other,Hiroki Kurosawa
+CVE-2025-5025,2025-05-28,5f78cf503c786a1d48d13528dde038bccfa6c67c,2023-10-31,commit,1.572,Medium,no,other,Hiroki Kurosawa
+CVE-2025-5399,2025-06-04,3588df9478d7c27046b34cdb510728a26bedabc7,2025-03-14,commit,0.224,Low,no,other,z2_ on hackerone
+CVE-2025-10148,2025-09-10,d78e129d50b2d190f1c1bde2ad1f62f02f152db0,2024-09-27,commit,0.952,Low,no,other,Calvin Ruocco (Vector Informatik GmbH)
+CVE-2025-9086,2025-09-10,1aea05a6c2699e80c75936d58569851555acd603,2025-02-19,commit,0.556,Low,yes,explicit_ai,Google Big Sleep
+CVE-2025-10966,2025-11-05,6773c7ca65cf2183295e56603f9b86a5ce816a06,2020-01-12,commit,5.813,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2025-13034,2026-01-07,3210101088dfa3d6a125d213226b092f2f866722,2024-04-09,commit,1.746,Medium,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2025-14017,2026-01-07,ccba0d10b6baf5c73cae8cf4fb3f29f0f55c5a34,2007-08-16,commit,18.394,Medium,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2025-14524,2026-01-07,06c1bea72faabb6fad4b7ef818aafaa336c9a7aa,2013-08-25,commit,12.368,Low,no,other,anonymous237 on hackerone
+CVE-2025-14819,2026-01-07,3c16697ebd796f799227be293e8689aec5f8190d,2022-11-08,commit,3.164,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2025-15079,2026-01-07,c92d2e14cfb0db662f958effd2ac86f995cf1b5a,2017-12-01,commit,8.100,Low,no,other,Harry Sintonen
+CVE-2025-15224,2026-01-07,c92d2e14cfb0db662f958effd2ac86f995cf1b5a,2017-12-01,commit,8.100,Low,no,other,Harry Sintonen
+CVE-2026-1965,2026-03-11,e56ae1426cb7a0a4a427cf8d6099a821fdaae428,2003-06-10,commit,22.750,Medium,no,other,Zhicheng Chen
+CVE-2026-3783,2026-03-11,06c1bea72faabb6fad4b7ef818aafaa336c9a7aa,2013-08-25,commit,12.541,Medium,no,other,spectreglobalsec on hackerone
+CVE-2026-3784,2026-03-11,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,commit,25.051,Low,no,other,Muhamad Arga Reksapati (HackerOne: nobcoder)
+CVE-2026-3805,2026-03-11,f4831daa9b2a97e8a2921d6b62cc4dfdd0d8646e,2025-03-07,commit,1.011,Medium,no,other,Daniel Wade
+CVE-2026-4873,2026-04-29,ec3bb8f727405642a471b4b1b9eb0118fc003104,2009-12-12,commit,16.376,Low,no,other,Arkadi Vainbrand
+CVE-2026-5545,2026-04-29,e56ae1426cb7a0a4a427cf8d6099a821fdaae428,2003-06-10,commit,22.884,Medium,no,other,Quac Tran and Ngoc Hieu
+CVE-2026-5773,2026-04-29,aec2e865f06669b9cb5d26cc1148d70bc418b163,2014-11-30,commit,11.410,Low,no,other,Osama Hamad
+CVE-2026-6253,2026-04-29,3b60bb725913ce7339aefef0a14b12df4c24db60,2005-06-22,commit,20.850,Medium,no,other,"Dwij Mehta (O2 Lab, Texas A&M University)"
+CVE-2026-6276,2026-04-29,e15e51384a423be31318b3c9c7d612a1aae661fd,2020-06-15,commit,5.868,Low,no,other,Muhamad Arga Reksapati
+CVE-2026-6429,2026-04-29,01165e08e0d131b399fba2190f17af67e66f0888,2005-04-25,commit,21.009,Medium,no,other,Muhamad Arga Reksapati
+CVE-2026-7009,2026-04-29,eefd03c572996e5de4dec4fe295ad6f103e0eefc,2025-10-03,commit,0.570,Medium,no,other,Carlos Carrillo
+CVE-2026-7168,2026-04-29,fc6eff13b5414caf6edf22d73a3239e074a04216,2004-05-04,commit,21.985,Medium,no,other,Muhamad Arga Reksapati
+CVE-2026-10536,2026-06-24,71b7e0161032927cdfb4e75ea40f65b8898b3956,2022-12-30,commit,3.481,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-11352,2026-06-24,6a3d0b6d631d5e9bec797306b5b41a9f440a088d,2025-12-15,commit,0.523,Low,yes,ai_affiliated,vectorqueue on hackerone (AntAISecurityLab)
+CVE-2026-11564,2026-06-24,eefd03c572996e5de4dec4fe295ad6f103e0eefc,2025-10-03,commit,0.723,Low,yes,ai_affiliated,Filipe Casal of Trail of Bits in collaboration with OpenAI
+CVE-2026-11586,2026-06-24,0b091328773c64e23f5c4739da74527093c6a5ab,2025-09-05,commit,0.800,Low,yes,ai_affiliated,evergarden1123 on hackerone (AntAISecurityLab)
+CVE-2026-11856,2026-06-24,334d78cd18a7310144383929bdcef34ffbf6159b,2003-05-22,commit,23.089,Medium,no,other,jjchuck on hackerone
+CVE-2026-12064,2026-06-24,18270893abdb19f0ca170c118f8a2847dbd304be,2021-11-21,commit,4.587,Low,yes,ai_affiliated,alienowo on hackerone (AntAISecurityLab)
+CVE-2026-8286,2026-06-24,a1701eea289fe7ea80651f801cf992838a491dde,2013-02-10,commit,13.367,Low,yes,explicit_ai,Andrew Nesbitt (powered by Mythos)
+CVE-2026-8458,2026-06-24,97c272e5d173ad5f706443e2477f0a84f0044edd,2015-04-28,commit,11.156,Low,no,other,Muhamad Arga Reksapati
+CVE-2026-8924,2026-06-24,e77b5b7453c1e8ccd7ec0816890d98e2f392e465,2015-10-17,commit,10.684,Low,no,other,vegagent on hackerone
+CVE-2026-8925,2026-06-24,ab650379a8c25ca952f651476d25b4cdd77bb3fc,2025-06-10,commit,1.038,Medium,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-8926,2026-06-24,e9b9bbac22c26cf67316fa8e6c6b9e831af31949,2024-11-17,commit,1.599,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-8927,2026-06-24,fc6eff13b5414caf6edf22d73a3239e074a04216,2004-05-04,commit,22.138,Medium,no,other,Ady Elouej
+CVE-2026-8932,2026-06-24,a1d6ad26100bc493c7b04f1301b1634b7f5aa8b4,2001-02-20,commit,25.339,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-9079,2026-06-24,d5e83eb745762f48d8fafadc5df5dd3ae8d8941e,2024-04-04,commit,2.220,Medium,no,other,Guannan Wang; Zhanpeng Liu; Jiashuo Liang; Guancheng Li
+CVE-2026-9080,2026-06-24,cfc657a48dbafb4194676d4c9d841388b3a22210,2025-02-22,commit,1.334,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-9545,2026-06-24,962097b8dd44ed5b9e7984bc1cdffdbdd566857f,2024-10-11,commit,1.700,Low,yes,ai_affiliated,Eunsoo Kim (Autonomous Code Security team at Microsoft)
+CVE-2026-9546,2026-06-24,2cb868242dc2ac9cd52ee64987ef51d5964a56f9,2025-12-04,commit,0.553,Low,no,other,renjian on hackerone
+CVE-2026-9547,2026-06-24,507cf6a13db0375eadd4655b4c64710db29e9cf2,2020-02-27,commit,6.321,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-13608,2026-09-02,eeca818b1e8d1e61c2d4d833aed56ce4c510a9d4,2022-01-11,commit,4.641,Low,yes,ai_affiliated,Eunsoo Kim (Autonomous Code Security team at Microsoft)
+CVE-2026-18924,2026-09-02,ea7134ac874a66107e54ff93657ac565cf2ec4aa,2015-06-24,commit,11.190,Low,no,other,Stephan Zeisberg (Security Research Labs)
+CVE-2026-19931,2026-09-02,6c6035532383e300c712e4c1cd9fdd749ed5cf59,2019-03-14,commit,7.471,Medium,no,other,Martin Dukek
+CVE-2026-80229,2026-09-02,f2ce6c46b9dcc46ced0ce43fa95176ea7599a854,2025-04-29,commit,1.345,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-80230,2026-09-02,8363656cb4e0c60a11d8531ead0ec43120b50591,2015-08-21,commit,11.032,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-80231,2026-09-02,148534db57dda611cf8516e92e4d6e35fc1e5074,2020-05-08,commit,6.318,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-80255,2026-09-02,1aea05a6c2699e80c75936d58569851555acd603,2025-02-19,commit,1.534,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-82208,2026-09-02,0f2876b2c33f6784a27b6f7345bd8cd95b46352a,2024-07-29,commit,2.094,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-82209,2026-09-02,e77b5b7453c1e8ccd7ec0816890d98e2f392e465,2015-10-17,commit,10.876,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-107928,2026-10-14,664249d095275ec532f55dd1752d80c8c1093a77,2022-09-09,commit,4.095,Low,yes,explicit_ai,Luna with Claude; Anthropic
+CVE-2026-107929,2026-10-14,3060557af702dd59155ea703a0790455c2f49a59,2024-06-04,commit,2.358,Low,no,other,Maksim Hayder
+CVE-2026-86409,2026-10-14,08e8455dddc5e48e58a12ade3815c01ae3da3b64,2020-12-21,commit,5.813,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-86410,2026-10-14,801bd5138ce31aa0d906fa4e2eabfc599d74e793,2022-01-04,release_tag,4.774,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-86411,2026-10-14,4ff212f8ed328fb95261e11add8f4d2f0616895a,2026-05-31,commit,0.371,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-86412,2026-10-14,3f0629ca443825916cbc0795bcd5f241fbf7104c,2025-11-13,commit,0.918,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-86413,2026-10-14,8f71d0fde515aa4c68002477356c35bd79927729,2026-05-12,commit,0.424,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-86414,2026-10-14,52ceab5e41a01b4d1227876d51a3680a3ce5a841,2003-09-03,commit,23.111,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-86415,2026-10-14,d69bfad3fa3daf5e72331f6870667607828d5891,2026-06-08,commit,0.350,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-87861,2026-10-14,bd10924b47c8bf94127eaee8c56e7b5e5418da46,2026-06-16,commit,0.328,Low,no,other,Axel Mierczuk
+CVE-2026-87862,2026-10-14,a94973805df96269bf3f3bf0a20ccb9887313316,2024-10-09,commit,2.013,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-87863,2026-10-14,0c667188e0c6cda615a036b8a2b4125f2c404dde,2023-07-11,commit,3.259,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-87864,2026-10-14,f8c8c76d39ac2fa825481ba42ab2247cd122f963,2013-03-02,commit,13.618,Low,yes,ai_affiliated,Stanislav Fort (Aisle Research)
+CVE-2026-87865,2026-10-14,e96fe70cabcb3a5a009821dbb453dc0160ddc3f5,2020-03-09,commit,6.597,Low,no,other,Bobbeh Rhino
+CVE-2026-87866,2026-10-14,0675abbc7572ff6d711a1f325d9b812f98bce78f,2015-04-22,commit,11.478,Low,no,other,Muhamad Arga Reksapati
+CVE-2026-92386,2026-10-14,142ac257b3242459b284020c59f1902b9687a954,2024-02-07,commit,2.682,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92387,2026-10-14,a5598b6fcb9ec6b57a7770939a0ffb004456f333,2024-08-19,commit,2.151,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92388,2026-10-14,0825cd80a62c21725fb3615f1fdd3aa6cc5f0f34,2010-05-12,commit,16.423,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92389,2026-10-14,56d9624b566ac15ffb4b4b6eef220a5000b767e0,2005-09-02,commit,21.114,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92390,2026-10-14,80675818e0417be8c991513b328c5507e93b47e5,2010-01-23,commit,16.722,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92391,2026-10-14,ce0881edee3c78609eae49665fb70264d8786d29,2017-09-02,commit,9.114,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-92392,2026-10-14,cd9107e0128191b7b5396b9eb81bbd20c2d36755,2025-01-22,commit,1.726,High,yes,explicit_ai,Luna with Claude; Anthropic
+CVE-2026-94265,2026-10-14,8f71d0fde515aa4c68002477356c35bd79927729,2026-05-12,commit,0.424,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)
+CVE-2026-94266,2026-10-14,46e164069d1a5230e4e64cbd2ff46c46cce056bb,2018-09-22,commit,8.060,Low,yes,ai_affiliated,Joshua Rogers (Aisle Research)

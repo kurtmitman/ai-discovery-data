@@ -59,20 +59,28 @@ Only the hazard $D/S$ is a clean measure of what changed in search.
 
 ## 2. Data
 
-- **Bugs.** All 212 curl CVEs, from curl's own advisory record, as mirrored
-  record by record into OSV's public bucket (read 2026-10-29; disclosures
-  through 2026-10-14). Each record names the commit that introduced the
-  flaw. Its committer date, read from a clone of `github.com/curl/curl`,
-  gives the bug's vintage $v$ and its age at disclosure.
+- **Bugs.** All 239 curl CVEs, from curl's own advisory record (read
+  2026-11-04; disclosures through 2026-10-14). 212 records name the commit
+  that introduced the flaw. 25 name only the first affected release and are
+  dated by the commit that release's tag points at, and 2 predate curl's
+  first commit and join the 1999 import lump. Committer dates, read from a
+  clone of `github.com/curl/curl`, give each bug's vintage $v$ and its age
+  at disclosure.
 - **AI marker.** The repository's own classifier (`lib/credits.py`). Through
   2026-09-02 it gives 45 disclosures, 22 AI-marked, matching
   [problems/cyber-curl](../../problems/cyber-curl/README.md). The record now
-  runs six weeks further: **68 CVEs in 2026, 41 AI-marked**, and the
-  2026-10-14 release alone carried 23.
+  runs six weeks further: **69 CVEs in 2026, 42 AI-marked**, and the
+  2026-10-14 release alone carried 24.
 - **Inflow.** Commits per calendar year on curl's main branch. These ran at
-  about 1,260/yr over 2010–19 and about 3,480/yr over 2025–26.
+  about 1,260/yr over 2010–19 and about 3,470/yr over 2025–26.
 
-The 2026 release batches had 6, 4, 8, 18, 9 and 23 CVEs. The "Q3 dip" in the
+The 2026 release batches had 6, 4, 8, 18, 9 and 24 CVEs.
+
+The first version of this note read OSV's mirror of curl's record, which
+holds only the 212 records with an introducing commit. The 27 it dropped are
+almost all from before 2020 (9 from 2016 alone), so it understated the pre-AI
+disclosure rate. That shrank the estimated backlog and inflated the 2026
+hazard multiple. Every number below uses the full record. The "Q3 dip" in the
 quarterly series is release timing; the flow is still rising.
 
 ## 3. Calibration
@@ -81,72 +89,71 @@ quarterly series is release timing; the flow is still rising.
 disclosed at $t$ has density proportional to
 $c(v)\,e^{-(\lambda_0+\delta)(t-v)}$. That identifies
 $\theta = \lambda_0 + \delta$ from disclosure ages alone, whatever the scale
-of $\kappa$. The estimate is a conditional MLE over the 131 disclosures from
+of $\kappa$. The estimate is a conditional MLE over the 152 disclosures from
 2010–24. curl's 1999 "Initial revision" commit imports earlier code in one
 go, so it gets its own estimated weight.
 
-- $\theta = 0.086$/yr (95% CI 0.056–0.120), so a bug lived about **12
+- $\theta = 0.072$/yr (95% CI 0.042–0.102), so a bug lived about **14
   years** on average before disclosure.
 - The pre-AI disclosure count then fixes $\kappa\lambda_0$. The fitted model
-  runs at 7.8–11.3 disclosures a year over 2010–25 (black line, left panel
+  runs at 8.5–13.5 disclosures a year over 2010–25 (black line, left panel
   below).
 - $\delta$ is **not identified** from these data. The table shows
   $\delta = 0$ (every bug is eventually found) and $\delta = 0.05$ (5% of
   latent bugs a year are rewritten away unfound, so humans would ever find
-  42% of them).
+  31% of them).
 
 | | $\delta = 0$ | $\delta = 0.05$ |
 |---|---|---|
-| pre-AI hazard $\lambda_0$ | 0.086/yr | 0.036/yr |
-| latent stock on 2026-01-01 | 139 bugs | 331 bugs |
-| found in 2026 through Oct 14 | 68 (49% of that stock) | 68 (21%) |
-| hazard, Jun 24 – Oct 14 2026 | 0.94/yr (10.9× $\lambda_0$) | 0.34/yr (9.4× $\lambda_0$) |
-| hazard, last interval (to Oct 14) | 1.93/yr | 0.66/yr |
-| half-life of the excess flow at the Jun–Oct hazard | 9 months | 22 months |
+| pre-AI hazard $\lambda_0$ | 0.072/yr | 0.022/yr |
+| latent stock on 2026-01-01 | 198 bugs | 647 bugs |
+| found in 2026 through Oct 14 | 69 (35% of that stock) | 69 (11%) |
+| hazard, Jun 24 – Oct 14 2026 | 0.61/yr (8.4× $\lambda_0$) | 0.17/yr (7.5× $\lambda_0$) |
+| hazard, last interval (to Oct 14) | 1.23/yr | 0.32/yr |
+| half-life of the excess flow at the Jun–Oct hazard | 14 months | 39 months |
 
 **Implied hazard.** The right panel replays every disclosure batch since 2010
 through the model. Between consecutive batches it solves for the constant
 hazard that finds exactly that batch out of the latent stock: the same move
 as backing job-finding rates out of unemployment stocks and flows. Over
-2014–24 the implied hazard wanders between about 0.04 and 0.17. Through 2026
-it climbs, unevenly, to roughly 20× $\lambda_0$ in the last interval.
+2016–25 the implied hazard wanders between about 0.04 and 0.15. Through 2026
+it climbs, unevenly, to roughly 17× $\lambda_0$ in the last interval.
 
 ![curl CVEs per year with the pre-AI model fit, and the implied search hazard.](depletion-curl-hazard.png)
 
 ## 4. What it predicts
 
 Annual curl CVEs, from the stock left after 2026-10-14. Each 2026 figure is the
-68 observed plus the model for the rest of the year.
+69 observed plus the model for the rest of the year.
 
 | scenario | 2026 | 2027 | 2028 | 2029 | 2030 |
 |---|---|---|---|---|---|
-| **$\delta = 0$**, hazard holds at its Jun–Oct level | 87 | 59 | 39 | 32 | 28 |
-| … inflow back at the 2010s commit rate | 87 | 53 | 27 | 16 | 12 |
-| … hazard keeps doubling every year | 88 | 78 | 47 | 31 | 28 |
-| … hazard falls back to $\lambda_0$ | 70 | 9 | 11 | 12 | 13 |
-| **$\delta = 0.05$**, hazard holds | 91 | 89 | 78 | 71 | 65 |
-| … hazard keeps doubling every year | 92 | 136 | 159 | 125 | 81 |
-| … hazard falls back to $\lambda_0$ | 71 | 12 | 13 | 14 | 15 |
+| **$\delta = 0$**, hazard holds at its Jun–Oct level | 90 | 75 | 57 | 47 | 40 |
+| … inflow back at the 2010s commit rate | 90 | 70 | 44 | 29 | 21 |
+| … hazard keeps doubling every year | 92 | 107 | 84 | 50 | 38 |
+| … hazard falls back to $\lambda_0$ | 72 | 13 | 14 | 16 | 17 |
+| **$\delta = 0.05$**, hazard holds | 93 | 103 | 100 | 97 | 94 |
+| … hazard keeps doubling every year | 95 | 165 | 257 | 298 | 228 |
+| … hazard falls back to $\lambda_0$ | 72 | 15 | 16 | 18 | 19 |
 
 ![Projected curl CVEs per year under each hazard path.](depletion-curl-scenarios.png)
 
 What the table says:
-- **Your reversion story is the $\delta = 0$ rows.** About half the backlog
-  is already gone. Even if the hazard stays where it is, the flow falls by a
-  third in 2027. It settles at the inflow: about 27/yr if curl keeps
-  committing at its 2025–26 pace, or about 10–12/yr at its 2010s pace. That
-  is a level shift plus whatever extra code is being written, not a trend
-  break.
-- **If AI use stopped, there would be a hangover.** The flow would drop
-  *below* the old rate (9 in 2027), because the bugs that would normally have
-  surfaced were found early.
-- **2027–28 are the test.** With $\delta = 0$ no hazard path keeps the flow
-  up: even a hazard that doubles every year gives 78 in 2027 and 47 in 2028.
-  With $\delta = 0.05$ a steady hazard keeps it near 80–90 through 2028.
-  A count that stays near 2026 levels into 2028 would therefore mean a large
-  reservoir of bugs humans would never have found. In that case the
-  long-run flow genuinely rises, by up to the inverse of the human find share
-  (about 2.4× at $\delta = 0.05$).
+- **The reversion story is the $\delta = 0$ rows.** About a third of the
+  backlog is already gone. If the hazard stays where it is, the flow falls
+  by about a sixth in 2027 and to about 40 by 2030. It settles at the inflow:
+  about 34/yr if curl keeps committing at its 2025–26 pace, or about 12/yr at
+  its 2010s pace. That is a level shift plus whatever extra code is being
+  written, not a trend break.
+- **If AI use stopped, the flow would fall straight back** to about 13 a year,
+  near its pre-AI level, and refill only as new code is written.
+- **2028–29 are the test.** With $\delta = 0$ no hazard path keeps the flow
+  up for long: a hazard that doubles every year gives 107 in 2027, 84 in
+  2028 and 50 in 2029. With $\delta = 0.05$ a steady hazard keeps it near
+  100 a year through 2030. A count that stays near 2026 levels into 2029
+  would therefore mean a large reservoir of bugs humans would never have
+  found. In that case the long-run flow genuinely rises, by up to the
+  inverse of the human find share (about 3.2× at $\delta = 0.05$).
 
 ## 5. The age test
 
@@ -155,17 +162,17 @@ The model also separates two kinds of AI search:
 - **(H) Scaled-up ordinary search.** The same hazard increase applies to
   every vintage, so the bugs found right after the jump have the age profile
   of the existing stock. That stock is young, because recent code has had
-  little exposure. Predicted median age in mid-2026: 4.6 years (7.1 if inflow
+  little exposure. Predicted median age in mid-2026: 5.3 years (7.6 if inflow
   is held at its pre-2024 rate).
 - **(U) A never-reached segment.** AI opens a class of bugs that humans
   effectively never found. That class has accumulated since curl began, so
-  its bugs are old: predicted median 13.5–15.5 years with $\delta = 0$.
+  its bugs are old: predicted median 12.8–14.4 years with $\delta = 0$.
 
 | disclosures | n | median age | mean | older than 10 years |
 |---|---|---|---|---|
-| 2016–24 | 115 | 7.6 | 8.5 | 39% |
-| 2026, all | 68 | 6.1 | 8.4 | 38% |
-| 2026, AI marker | 41 | 3.2 | 6.2 | 24% |
+| 2016–24 | 125 | 7.8 | 8.6 | 41% |
+| 2026, all | 69 | 5.9 | 8.4 | 38% |
+| 2026, AI marker | 42 | 3.2 | 6.2 | 24% |
 | 2026, no AI marker | 27 | 11.2 | 11.9 | 59% |
 
 ![Age at disclosure: 2016–24 against 2026 by AI marker, with the two model predictions.](depletion-curl-ages.png)
@@ -175,19 +182,19 @@ following weight on the never-reached segment (95% profile intervals):
 
 | | inflow = commits, $\delta=0$ | inflow flat from 2024, $\delta=0$ | inflow = commits, $\delta=0.05$ |
 |---|---|---|---|
-| all 2026 | 0.04 (0–0.42) | 0.00 (0–0.20) | 0.34 (0–1) |
-| AI marker | 0.00 (0–0.23) | 0.00 (0–0.15) | 0.00 (0–0.61) |
-| no AI marker | 0.73 (0.10–1) | 0.40 (0–0.99) | 1.00 (0.25–1) |
+| all 2026 | 0.00 (0–0.40) | 0.00 (0–0.21) | 0.10 (0–1) |
+| AI marker | 0.00 (0–0.23) | 0.00 (0–0.17) | 0.00 (0–0.80) |
+| no AI marker | 0.76 (0.06–1) | 0.42 (0–1) | 1.00 (0–1) |
 
 - **The AI-credited finds look like scaled-up search, skewed young.** At a
   median of 3.2 years they are younger than (H) predicts under either inflow
-  measure. 32 of the 41 come from
+  measure. 33 of the 42 come from
   one firm (Aisle Research), and the profile fits scanners working through
   recently changed code. They do not look like AI opening an old,
   unreachable class.
 - **The finds without an AI credit are old.** 8 of the 27 are over 20 years
   old, and 12 of the 27 are Medium severity, against 3 Medium and 1 High
-  among the 41 AI-marked. With 27 bugs the
+  among the 42 AI-marked. With 27 bugs the
   interval is wide. Uncredited AI use would explain them as easily as a
   surge of human attention.
 - **OpenSSL points the same way.** Using the oldest affected release line as
@@ -195,15 +202,15 @@ following weight on the never-reached segment (95% profile intervals):
 
 | OpenSSL disclosures | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |---|---|---|---|---|---|---|
-| n | 8 | 12 | 19 | 9 | 6 | 39 |
+| n | 8 | 12 | 19 | 9 | 6 | 63 |
 | median lower-bound age (years) | 4.5 | 1.2 | 8.0 | 5.6 | 3.0 | 4.8 |
-| share reaching back to 1.0.2 (2015 code) | 50% | 33% | 53% | 33% | 33% | 28% |
+| share reaching back to 1.0.2 (2015 code) | 50% | 33% | 53% | 33% | 33% | 24% |
 
 Taken together: so far this looks like a large, still-rising increase in
 ordinary search intensity working through a finite stock. That is the
 harvest story. Whether the stock is small ($\delta \approx 0$, flow back near
-the inflow by 2028–29) or large is the open question, and the 2027 count
-answers it.
+the inflow by 2029–30) or large is the open question, and the 2028–29 counts
+answer it.
 
 ## 6. Implications for the note's framing
 
@@ -215,8 +222,8 @@ answers it.
 
   A count must eventually fall on a closed list however good search gets.
 - **The welfare gain is in exposure time, not in counts.** The expected time
-  a curl bug stays latent, $1/(\lambda+\delta)$, has fallen from about 12
-  years to between 1 and 2.5 at the Jun–Oct 2026 hazard, depending on
+  a curl bug stays latent, $1/(\lambda+\delta)$, has fallen from about 14
+  years to between 1.6 and 4.5 at the Jun–Oct 2026 hazard, depending on
   $\delta$. That gain persists after the count
   returns to normal. A permanently higher count would be bad news: more bugs
   being written.
@@ -233,7 +240,10 @@ answers it.
   doubled over 2024–26, partly as fixes for the very reports modelled here.
   The flat-inflow column above is the check.
 - **Vintages.** The "introducing commit" is the one curl's maintainers name.
-  Bugs blamed on the 1999 import are lumped, with an estimated weight.
+  The 25 records that name only a first affected release are dated by that
+  release, which can be later than the commit that brought the bug in, so
+  their ages are lower bounds. Bugs blamed on the 1999 import, or on releases
+  older than it, are lumped, with an estimated weight.
 - **$\delta$** is assumed, and the size and duration of the harvest depend on
   it.
 - **Proportional hazard across vintages** is assumed. The young skew of the
