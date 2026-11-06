@@ -1,4 +1,4 @@
-# Harvest or trend break? A stock-flow model of bug discovery, calibrated to curl
+# Harvest or trend break? A stock-flow model of discovery, calibrated to curl and Kepler
 
 Tom Cunningham's note on
 [LLMs' contribution to discovery](https://tecunningham.github.io/posts/2026-08-08-llm-contribution-to-discoveries.html)
@@ -12,9 +12,11 @@ jump in the flow of discoveries is consistent with two different worlds:
    That rate may be set by humans writing code or posing questions.
 
 A 2026-against-2025 comparison cannot tell these apart. This note writes the
-second story down as a model, calibrates it to curl (where every CVE can be
-dated back to the commit that introduced it), and asks what the data already
-say about which world we are in.
+second story down as a model and calibrates it twice: to curl, where every
+CVE can be dated back to the commit that introduced it and the stock refills
+with new code, and to Kepler's frozen candidate list, a closed stock where a
+machine-learning harvest has already run its course. It then asks what the
+data say about which world we are in.
 
 This is interpretation, so it lives outside `problems/`. The register rules of
 [FORMAT.md](../../FORMAT.md) don't apply, and the PNGs here are not drawn in
@@ -212,13 +214,75 @@ harvest story. Whether the stock is small ($\delta \approx 0$, flow back near
 the inflow by 2029–30) or large is the open question, and the 2028–29 counts
 answer it.
 
-## 6. Implications for the note's framing
+## 6. A closed-stock case: Kepler's candidate list
+
+The same model applies to the
+[exoplanet series](../../problems/astro-exoplanets/README.md), and there it
+needs no ages. Kepler's candidate list (the KOI table) has been frozen since
+the final DR25 catalogue of 2017, and the telescope stopped observing in
+October 2018. From then on the list is a closed stock with no inflow
+($c = 0$), and every candidate is still open, confirmed as a planet, or ruled
+a false positive. The hazard is observed directly: confirmations in a year
+divided by the candidates still open at its start.
+
+[`kepler_koi.py`](kepler_koi.py) reads the KOI table (9,564 candidates at the
+2026-11-06 read: 2,748 confirmed, 4,839 false positives, 1,977 still open)
+and dates each confirmation by the matching planet's discovery publication
+in the exoplanet ledger, which also carries the machine-learning paper flag.
+The table records only today's disposition, so the open stock at the start of
+each year is rebuilt as the candidates still open now plus those confirmed in
+that year or later.
+
+| years | confirmed from the KOI list | open at start | hazard |
+|---|---|---|---|
+| 2014 | 811 (716 in Rowe et al. 2014) | 4,538 | 0.18 |
+| 2016 | 1,272 (1,269 in Morton et al. 2016) | 3,691 | 0.34 |
+| 2017–2020 | 13 | about 2,410 | 0.0013 pooled |
+| 2021 | 53 (50 in Armstrong et al. 2021, machine learning) | 2,406 | 0.022 |
+| 2022 | 303 (301 in Valizadegan et al. 2022, ExoMiner) | 2,353 | 0.129 |
+| 2023 | 70 (69 in Valizadegan et al. 2023, ExoMiner) | 2,050 | 0.034 |
+| 2024–2025 | 3 | about 1,980 | 0.0008 pooled |
+| 2026 | none through 2026-11-06 | 1,977 | 0 |
+
+![Kepler candidates confirmed per year, and confirmations over candidates still open.](depletion-kepler-hazard.png)
+
+What it shows:
+- **A harvest, then nothing.** Machine-learning validation raised the hazard
+  about fifty-fold for three years (0.063 pooled over 2021–23 against 0.0013
+  over 2017–20) and cleared 420 candidates, 17.5% of the open stock. The
+  hazard then fell back to its pre-ML level, although the classifiers still
+  exist: the candidates they could clear have been cleared.
+- **The same shape twice before, without AI.** Two statistical validation
+  methods each produced a one-off harvest: Rowe et al. 2014, by planet
+  multiplicity, cleared 18% of the stock then open, and Morton et al. 2016,
+  by false-positive probability, 34%. Each new technique bought a level
+  shift, not a trend.
+- **A segment, not a uniform hazard.** A proportional hazard would stay high
+  while the tools are in use. The collapse instead fits the never-reached
+  segment of section 5 working in reverse: each method opened a class of
+  candidates it could decide, emptied it, and left the rest as hard as
+  before.
+
+The two cases bracket the question. In curl the stock refills with new code
+and the hazard is still rising, so the outcome is open. In Kepler nothing
+refills, and a large AI-driven harvest has already run its course and ended.
+
+The pre-2017 rows are approximate: the list was still growing then, and false
+positives, whose decision dates are not recorded, are left out of the stock.
+51 confirmed candidates do not match a planet in the ledger by name, mostly
+planets known before Kepler (Kepler-1 b is TrES-2 b), and are not counted.
+The large 2026 machine-learning batch in the exoplanet series (Lafarga et al.
+2026) is from TESS, which is still observing, so it belongs to the open-stock
+version of the model rather than this one.
+
+## 7. Implications for the note's framing
 
 - **Measure hazards, not counts.** Where there is a denominator, the clean
   statistic is $D/S$:
   - remaining open problems on the closed lists (Hilbert, Millennium, Smale,
     Green, TOPP, Erdős);
-  - a latent stock backed out from ages, as here.
+  - a latent stock backed out from ages, as for curl;
+  - a counted stock of open candidates, as for Kepler.
 
   A count must eventually fall on a closed list however good search gets.
 - **The welfare gain is in exposure time, not in counts.** The expected time
@@ -234,7 +298,7 @@ answer it.
   nanoGPT, ω) were already worked at the margin by experts, so they had
   little backlog to harvest.
 
-## 7. Caveats
+## 8. Caveats
 
 - **Inflow proxy.** Commits stand in for new latent bugs. curl's commits
   doubled over 2024–26, partly as fixes for the very reports modelled here.
@@ -264,10 +328,16 @@ answer it.
 git clone --filter=tree:0 --no-checkout https://github.com/curl/curl /tmp/curl
 python3 analysis/depletion/curl_ages.py /tmp/curl
 python3 analysis/depletion/model.py
+python3 analysis/depletion/kepler_koi.py
 ```
 
 - `curl_ages.py` writes `curl-bug-ages.csv` (one row per CVE: disclosure
   date, introducing commit and its date, age, severity, AI marker, finders)
   and `curl-commits-by-year.csv`.
-- `model.py` (needs numpy and matplotlib) prints every number above and
-  draws the four `depletion-*.png` figures.
+- `model.py` (needs numpy and matplotlib) prints every curl number above
+  and draws the four curl and mechanics figures.
+- `kepler_koi.py` (also numpy and matplotlib) reads the KOI table from the
+  NASA Exoplanet Archive, joins it to
+  `problems/astro-exoplanets/exoplanets-confirmed.csv`, writes
+  `kepler-koi-by-year.csv`, prints every Kepler number above and draws
+  `depletion-kepler-hazard.png`.
